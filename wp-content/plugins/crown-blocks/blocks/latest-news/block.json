@@ -1,0 +1,17 @@
+{
+	"apiVersion": 2,
+	"name": "crown-blocks/latest-news",
+	"version": "0.1.2",
+	"title": "Latest News",
+	"category": "widgets",
+	"icon": "block-default",
+	"description": "Displays the latest news articles.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "crown-blocks",
+	"editorScript": "file:./build/index.js",
+    "script": "file:./build/public.js",
+    "editorStyle": "file:./build/index.css",
+    "style": "file:./build/style-index.css"
+}

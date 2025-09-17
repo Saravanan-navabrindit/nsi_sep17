@@ -1,0 +1,138 @@
+/*!**************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./blocks/cta/src/style.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************/
+.has-gradient-one-color {
+  background: linear-gradient(90deg, #45b6fa 0%, #2158f3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.has-gradient-two-color {
+  background: linear-gradient(270deg, #ADF2BD 0%, #8BEFF2 47.25%, #BBC7F2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.has-gradient-four-color {
+  background: linear-gradient(298.77deg, #515151 0%, #121924 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.has-gradient-five-color {
+  background: linear-gradient(302.32deg, #EE1E51 0%, #121924 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.bg-color-gradient-two {
+  background: linear-gradient(270deg, #ADF2BD 0%, #8BEFF2 47.25%, #BBC7F2 100%);
+}
+
+.bg-color-gradient-three {
+  background: linear-gradient(302.32deg, #144C3F 0%, #144D6C 49.53%, #2B2C5B 100%);
+}
+
+.bg-color-gradient-four {
+  background: linear-gradient(298.77deg, #515151 0%, #121924 100%);
+}
+
+.bg-color-gradient-five {
+  background: linear-gradient(302.32deg, #EE1E51 0%, #121924 100%);
+}
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-crown-blocks-cta {
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.wp-block-crown-blocks-cta.text-color-light {
+  color: #fff;
+}
+.wp-block-crown-blocks-cta.text-color-light p {
+  color: #F3F0E8;
+}
+.wp-block-crown-blocks-cta.text-color-dark {
+  color: #404040;
+}
+.wp-block-crown-blocks-cta.text-align-left {
+  text-align: left;
+}
+.wp-block-crown-blocks-cta.text-align-center {
+  text-align: center;
+}
+.wp-block-crown-blocks-cta.text-align-right {
+  text-align: right;
+}
+.wp-block-crown-blocks-cta.align-center > .inner {
+  justify-content: center;
+  text-align: center;
+}
+.wp-block-crown-blocks-cta .cta__background-image {
+  position: relative;
+  padding-bottom: 67%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+}
+.wp-block-crown-blocks-cta .cta__background-image::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #EFE7DA;
+  -webkit-clip-path: polygon(0 calc(80% - 5px), 100% calc(100% - 5px), 100% 100%, 0 100%);
+          clip-path: polygon(0 calc(80% - 5px), 100% calc(100% - 5px), 100% 100%, 0 100%);
+}
+.wp-block-crown-blocks-cta .cta__content {
+  position: relative;
+  padding: 20px 20px 40px;
+}
+@media (min-width: 992px) {
+  .wp-block-crown-blocks-cta .cta__content {
+    padding: 40px 30px 40px;
+  }
+}
+@media (min-width: 768px) {
+  .wp-block-crown-blocks-cta > .inner {
+    display: flex;
+  }
+  .wp-block-crown-blocks-cta .cta__background-image {
+    flex-basis: calc(50% + 30px);
+    order: 2;
+    padding-bottom: 0;
+    -webkit-clip-path: polygon(100px 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(100px 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .wp-block-crown-blocks-cta .cta__background-image::after {
+    -webkit-clip-path: polygon(0 0, 105px 0, 5px 100%, 0 100%);
+            clip-path: polygon(0 0, 105px 0, 5px 100%, 0 100%);
+  }
+  .wp-block-crown-blocks-cta .cta__content {
+    flex-basis: calc(50% - 30px);
+    order: 1;
+  }
+  .wp-block-crown-blocks-cta.reverse-image-slant .cta__background-image {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 100px 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 100px 100%);
+  }
+  .wp-block-crown-blocks-cta.reverse-image-slant .cta__background-image::after {
+    -webkit-clip-path: polygon(0 0, 5px 0, 105px 100%, 0 100%);
+            clip-path: polygon(0 0, 5px 0, 105px 100%, 0 100%);
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

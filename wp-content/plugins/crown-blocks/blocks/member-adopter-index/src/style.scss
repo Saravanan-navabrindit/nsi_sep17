@@ -1,0 +1,54 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-crown-blocks-member-adopter-index {
+	@include post-feed-block();
+	&.layout-simple .post-feed-header {
+		margin-bottom: 2rem;
+	}
+	.post-feed {
+		article {
+			display: flex;
+			font-size: 1rem;
+			@media (min-width: $screen-sm) {
+				width: 50%;
+			}
+			@media (min-width: $screen-md) {
+				width: 33.333333%;
+			}
+			@media (min-width: $screen-lg) {
+				width: 25%;
+			}
+			> a {
+				width: 100%;
+				display: flex;
+				color: inherit;
+				align-items: center;
+				&:hover {
+					color: $blue;
+				}
+			}
+			> a > .inner {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+			}
+			.contents {
+				flex: 1 1 auto;
+			}
+			.entry-title {
+				font-size: 1.125rem;
+				margin-top: 0;
+				margin-bottom: 0;
+				text-align: center;
+			}
+		}
+	}
+}

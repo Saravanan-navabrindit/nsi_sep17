@@ -1,0 +1,324 @@
+
+
+// .featured-post-cta {
+// 	a {
+// 		display: flex;
+// 		position: relative;
+// 		align-items: flex-start;
+// 		overflow: hidden;
+// 		&:hover {
+// 			.cta-bg img {
+// 				transform: scale(1.1);
+// 			}
+// 			.cta-contents:before {
+// 				top: -120px;
+// 			}
+// 			.cta-title {
+// 				transform: translateY(-4px);
+// 			}
+// 		}
+// 		&:before {
+// 			content: '';
+// 			display: block;
+// 			flex: 0 0 0;
+// 			height: 0;
+// 			padding-top: 85%;
+// 		}
+// 		> .inner {
+// 			position: relative;
+// 			color: #fff;
+// 			flex: 1 1 auto;
+// 			align-self: stretch;
+// 			padding: 20px + 2px + 20px;
+// 			text-align: center;
+// 			display: flex;
+// 		}
+// 	}
+// 	.cta-bg {
+// 		position: absolute;
+// 		left: 0;
+// 		top: 0;
+// 		right: 0;
+// 		bottom: 0;
+// 		overflow: hidden;
+// 		background-color: $dark;
+// 		img {
+// 			@include absolute-object-fit();
+// 			transition: transform .75s ease-out;
+// 		}
+// 	}
+// 	.cta-contents {
+// 		flex: 1 1 auto;
+// 		align-self: flex-end;
+// 		position: relative;
+// 		&:before {
+// 			content: '';
+// 			position: absolute;
+// 			display: block;
+// 			left: -20px - 2px - 20px;
+// 			top: -80px;
+// 			right: -20px - 2px - 20px;
+// 			bottom: -20px - 2px - 20px;
+// 			background: linear-gradient(180deg, fade-out($primary, 1) 0%, fade-out($primary, 0) 100%);
+// 			transition: top .75s ease-out;
+// 		}
+// 	}
+// 	.cta-title {
+// 		margin: 0;
+// 		font-size: 1.125rem;
+// 		font-weight: 400;
+// 		position: relative;
+// 		transition: transform .75s ease-out;
+// 	}
+// 	.cta-label {
+// 		position: absolute;
+// 		left: 20px;
+// 		top: 20px;
+// 		right: 20px;
+// 		bottom: 20px;
+// 		border: 2px solid #fff;
+// 		border-bottom-color: transparent;
+// 		font-size: 0.75rem;
+// 		line-height: $line-height-sm;
+// 		text-transform: uppercase;
+// 		letter-spacing: .1em;
+// 		color: $baby-blue;
+// 		span {
+// 			display: flex;
+// 			align-items: center;
+// 			position: absolute;
+// 			left: -2px;
+// 			right: -2px;
+// 			bottom: -8px;
+// 			&:before,
+// 			&:after {
+// 				content: '';
+// 				height: 0;
+// 				display: block;
+// 				border-top: 2px solid #fff;
+// 				flex: 1 1 auto;
+// 			}
+// 			&:before { margin-right: 20px; }
+// 			&:after { margin-left: 20px; }
+// 		}
+// 	}
+// }
+
+// .odometer-statistic {
+// 	&.fade-in {
+// 		opacity: 0;
+// 		&.animated {
+// 			opacity: 1;
+// 			transition: opacity .5s;
+// 		}
+// 	}
+// 	.stat-value {
+// 		span.pre,
+// 		span.post {
+// 			display: inline-block;
+// 		}
+// 		span.odometer {
+// 			font-family: inherit;
+// 		}
+// 	}
+// }
+
+// .blocks-gallery-item,
+// .slick-track,
+// .slick-slider {
+// 	max-width: 100%;
+// }
+
+.wp-block-gallery.slick-slider {
+	width: 100%;
+	margin-bottom: 30px;
+
+	.slick-track {
+		display: flex !important;
+	}
+
+	.slick-slide {
+		height: inherit !important;
+	}
+
+	.blocks-gallery-item {
+		position: relative;
+		padding-bottom: 5%;
+		
+		figure {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+
+			img {
+				width:100%;
+				height:100%;
+				object-fit: cover;
+			}
+		}
+	}
+
+	.slick-arrow {
+		bottom: 50%;
+	}
+
+	.slick-list {
+		margin: 0 50px;
+	}
+}
+
+.slick-arrow {
+	width: 3rem;
+	height: 3rem;
+	overflow: hidden;
+	padding: 0;
+	border: none;
+	outline: none;
+	text-indent: -1000000px;
+	position: absolute;
+	top: calc(50% - (3rem / 2));
+	right: 0;
+	background-color: transparent;
+	z-index: 10;
+
+	&.slick-prev {
+		right: auto;
+		left: 0;
+	}
+
+	&.slick-prev:before {
+		transform: rotateY(-180deg);
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-image: escape-svg(url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>'));
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		text-indent: 0;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+
+// .absolute-position {
+// 	position: absolute;
+// 	z-index: 1;
+// }
+
+// .alert-warning {
+// 	color: $zigby-gray;
+// 	border-color: $light-gray;
+// 	background-color: $ghost;
+// }
+
+
+// .spec-download-request-select-form {
+// 	border: 1px solid #ccc;
+// 	background-color: #fff;
+// 	padding: 20px;
+// 	.group {
+// 		border-bottom: 1px solid #ccc;
+// 		margin: 0 -20px 20px;
+// 		padding: 0 20px;
+// 		h4 {
+// 			font-size: 18px;
+// 		}
+// 		ul {
+// 			list-style: none;
+// 			padding: 0;
+// 			li {
+// 				label {
+// 					font-weight: 400;
+// 					font-size: 16px;
+// 					position: relative;
+// 					padding-left: 20px;
+// 					font-family: $font-family-sans-serif-alt;
+// 				}
+// 				input {
+// 					position: absolute;
+// 					left: 0;
+// 					top: 3px;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+// form.member-search {
+// 	display: flex;
+// 	.form-group {
+// 		margin-bottom: 0;
+// 		margin-right: 10px;
+// 		flex: 1 1 auto;
+// 	}
+// 	.form-footer {
+// 		display: flex;
+// 		button {
+// 			display: flex;
+// 			align-items: center;
+// 			justify-content: center;
+// 		}
+// 	}
+// }
+
+
+
+table.shop_table {
+	.product-name {
+		.sku {
+			font-size: 14px;
+			font-style: italic;
+			margin-bottom: 0;
+		}
+	}
+}
+.woocommerce .quantity .qty {
+	width: 5em;
+}
+#add_payment_method table.cart td.actions .coupon .input-text,
+.woocommerce-cart table.cart td.actions .coupon .input-text,
+.woocommerce-checkout table.cart td.actions .coupon .input-text {
+	width: 10em;
+}
+
+
+#add-sku-to-cart {
+	display: flex;
+	margin: -5px;
+	margin-bottom: 2rem;
+	max-width: 600px;
+	.field,
+	.form-footer {
+		padding: 5px;
+	}
+	.field {
+		flex: 1 1 auto;
+		&.quantity {
+			flex: 0 1 auto;
+		}
+	}
+}
+
+
+.woocommerce-billing-fields.hide-billing-fields {
+	#billing_first_name_field,
+	#billing_last_name_field,
+	#billing_company_field,
+	#billing_country_field,
+	#billing_address_1_field,
+	#billing_address_2_field,
+	#billing_city_field,
+	#billing_state_field,
+	#billing_postcode_field {
+		display: none !important;
+	}
+}

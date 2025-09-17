@@ -1,0 +1,352 @@
+.btn {
+	// @extend %button-link;
+
+	// display: inline-block;
+	// position: relative;
+	// color: $white;
+	// background-color: $black;
+	text-decoration: none;
+	// border-radius: 0;
+	// text-transform: none;
+
+	// &:hover {
+	// 	color: $black;
+	// 	background-color: $white;
+	// }
+
+	&.btn--full {
+		width: 100%;
+	}
+	
+	// &.btn--lg {
+	// 	padding: 4px 39px;
+	// 	font-size: 18px;
+	// }
+	// &.btn--sm {
+	// 	padding: 4px 39px;
+	// 	font-size: 18px;
+	// }
+
+	&.btn--underline .btn-label {
+		text-decoration: underline;
+	}
+	
+	@each $color, $value in $theme-colors {
+		&.btn--#{$color} {
+			background-color: $value;
+			border-color: $value;
+			color: color-yiq($value);
+
+			&:hover {
+				background-color: darken($value, 8%);
+				border-color: darken($value, 8%);
+				color: color-yiq($value);
+			}
+		}
+	}
+
+	@each $color, $value in $theme-colors {
+		&.btn--link-#{$color},
+		&.btn--outline-#{$color} {
+			.btn__arrow {
+				color: $value;
+			}
+			.btn__back-arrow {
+				color: $value;
+			}
+		}
+	}
+
+	&.btn--clear {
+		color: $black;
+		background-color: transparent;
+		border: 2px solid transparent;
+		box-shadow: none;
+	}
+	
+	&.btn--outline {
+		color: currentColor;
+		background-color: transparent;
+		border: $btn-border-width solid currentColor;
+		border-radius: 0;
+
+		&:hover {
+			color: currentColor;
+		background-color: transparent;
+		}
+
+		@each $color, $value in $theme-colors {
+			&.btn--outline-#{$color} {
+				color: $value;
+				border-color: $value;
+
+				&:hover {
+					background-color: transparent;
+					color: $value;
+				}
+			}
+		}
+		&.btn--outline-white {
+			&:hover {
+				background-color: $black;
+			}
+		}
+	}
+
+	&.btn--link {
+		padding: 0;
+		outline: none;
+		background-color: transparent;
+		color: inherit;
+		text-transform: none;
+		font-weight: 400;
+		letter-spacing: 0;
+
+		&:focus {
+			box-shadow: none;
+		}
+		&:hover .btn-label {
+			text-decoration: underline;
+		}
+		&.btn--underline:hover .btn-label {
+			text-decoration: none;
+		}
+
+		&.link-arrow,
+		&.back-arrow {
+			padding-right: 40px;
+		}
+		.btn__arrow {
+			right: 6px;
+		}
+	}
+
+	&.btn--cta {
+		overflow: hidden;
+		background-color: $black;
+		color: $white;
+		font-size: 15px;
+		letter-spacing: 1.5px;
+		line-height: 18px;
+		text-transform: uppercase;
+		padding: 20px;
+		min-width: 100%;
+		text-align: left;
+		border: 0;
+
+		@each $color, $value in $theme-colors {
+			&.btn--cta-#{$color} {
+				&::before {
+					background: $value;
+				}
+			}
+		}
+
+		.btn-label {
+			position: relative;
+			z-index: 2;
+			transition: color 0.2s;
+		}
+
+		&:hover {
+			.btn-label {
+				color: $black;
+			}
+	
+			&::before {
+				width: 100%;
+				right: 0;
+				transform: skewX(0);
+			}
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			background: $black-40;
+			transition: 0.2s ease;
+			top: 0;
+			right: -20px;
+			height: 100%;
+			width: 82px;
+			transform: skewX(20deg);
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			bottom: 0;
+			right: 18px;
+			height: 13px;
+  		width: 17px;
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='14px' height='11px' viewBox='0 0 14 11' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EFill 1%3C/title%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpath d='M11.3454579,4.9029558 L7.73288456,1.1571952 L7.73288456,11.6510083 C7.73288456,12.7829972 6.05718424,12.7829972 6.05718424,11.6510083 L6.05718424,1.31348884 L2.66887876,5.05924944 C2.11073256,5.72268788 1.10531236,4.708167 1.66345857,4.04472856 L6.54152078,-1.33897623 C6.72757162,-1.53387738 7.09966698,-1.57260054 7.28573675,-1.33897623 L12.3129954,3.84977454 C12.9093397,4.47448652 11.9408874,5.56646032 11.3445432,4.90302189 L11.3454579,4.9029558 Z' id='Fill-1' fill='%2E3738' transform='translate(7.000000, 5.500000) rotate(-270.000000) translate(-7.000000, -5.500000) '%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+			z-index: 2;
+			transform: translateY(-50%);
+		}
+
+		&.btn--wide-bottom {
+			&::before {
+				transform: skewX(-20deg);
+			}
+
+			&:hover {
+				&::before {
+					width: 100%;
+					right: 0;
+					transform: skewX(0);
+				}
+			}
+		}
+	}
+
+	.btn__arrow {
+		&, &::before {
+			position: absolute;
+			transition: transform .15s;
+			top: 50%;
+		}
+		
+		margin-top: -1px;
+		width: 18px;
+		transform: translate3d(-5px,0,0);
+		background-color: currentColor;
+		height: 2px;
+		right: 12px;
+
+		&::before {
+			content: '';
+			width: 12px;
+			height: 12px;
+			border-top: 2px solid currentColor;
+			border-right: 2px solid currentColor;
+			transform: rotate(45deg);
+			margin-top: -6px;
+			right: 0;
+		}
+	}
+
+	.btn__back-arrow {
+		display: inline-block;
+		top: 50%;
+		margin-top: -2px;
+		width: 18px;
+		transform: translate3d(-5px,0,0);
+
+		&::before {
+			content: "";
+			border-left: 2px solid $black;
+			border-bottom: 2px solid $black;
+			width: 10px;
+			height: 10px;
+			display: inline-block;
+			transform: rotate(45deg);
+			transition: transform 0.2s;
+		}
+	}
+
+	&.link-arrow,
+	&.back-arrow {
+		position: relative;
+		&.btn--default,
+		&.btn--outline {
+			padding-right: 49px;
+
+			&.btn--lg { padding-right: 55px; }
+			&.btn--sm { padding-right: 47px; }
+
+			.btn__arrow {
+				// right: 10px;
+			}
+		}
+
+		&:hover .btn__arrow {
+			transform: translate3d(0,0,0);
+		}
+	}
+
+	&.back-arrow {
+		&:hover,
+		&:focus {
+			.btn__back-arrow::before {
+				transform: rotate(45deg) translateX(-5px) translateY(5px);
+			}
+		}
+	}
+
+	&.btn-load-more {
+		display: inline-flex;
+    align-items: center;
+	
+		.plus-icon {
+			margin-left: 6px;
+			color: $black;
+		}
+	}
+
+	&__icon {
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 10px;
+	}
+
+	.btn-label {
+		display: inline-block;
+	}
+	
+}
+
+@each $breakpoint, $width in $grid-breakpoints {
+	.btn--block-to-#{$breakpoint} {
+		display: block;
+		width: 100%;
+
+		@media (min-width: $breakpoint) {
+			display: inline-block;
+			width: auto;
+			+ .btn--block {
+				margin-top: 0;
+			}
+			@each $breakpoint2, $width2 in $grid-breakpoints {
+				+ .btn--block-to-#{$breakpoint2} {
+					margin-top: 0;
+				}
+			}
+		}
+		+ .btn--block {
+			margin-top: 20px;
+		}
+		@each $breakpoint2, $width2 in $grid-breakpoints {
+			@if $width2 >= $width {
+				+ .btn--block-to-#{$breakpoint2} {
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+}
+.btn--block {
+	
+	display: block;
+	width: 100%;
+
+	// Vertically space out multiple block buttons
+	+ .btn--block {
+		margin-top: 20px;
+	}
+}
+
+// button,
+// input[type=button] {
+// 	@extend .btn;
+// 	@extend .btn-baby-black;
+// }
+
+// input[type=submit],
+// button[type=submit] {
+// 	@extend .btn;
+// 	@extend .btn-sky-black;
+// }

@@ -1,0 +1,87 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-crown-blocks-cross-reference-index {
+	@include post-feed-block();
+	margin-top: 40px;
+	.post-feed {
+		.product-teasers {
+			.product {
+				width: 50%;
+				@media (min-width: 992px) {
+					width: 33.333333%;
+				}
+			}
+		}
+	}
+	.modal.product-docs {
+		.modal-content {
+			background-color: #000;
+			color: #fff;
+			border: none;
+		}
+		.modal-header {
+			border-bottom: none;
+			padding-bottom: 0;
+			.close {
+				color: #fff;
+			}
+		}
+		.modal-body {
+			padding-top: 0;
+			> .inner {
+				@media (min-width: 768px) {
+					display: flex;
+					align-items: center;
+					padding: 0 20px;
+				}
+			}
+		}
+		.product-teaser {
+			width: 260px;
+			margin: 0 auto 20px;
+			text-align: center;
+			@media (min-width: 768px) {
+				margin-right: 60px;
+			}
+			img {
+				margin-bottom: 16px;
+			}
+		}
+		.product-docs {
+			flex: 1 1 auto;
+			@media (min-width: 768px) {
+				padding-bottom: 80px;
+			}
+			ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				li {
+					display: flex;
+					align-items: center;
+					+ li {
+						margin-top: 24px;
+					}
+					span {
+						display: block;
+					}
+					.name {
+						flex: 1 1 auto;
+						margin-right: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+#main-content .wp-block-crown-blocks-cross-reference-index {
+	@include full-width-block;
+}

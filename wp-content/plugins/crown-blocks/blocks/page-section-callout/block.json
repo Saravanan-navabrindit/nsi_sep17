@@ -1,0 +1,17 @@
+{
+	"apiVersion": 2,
+	"name": "crown-blocks/page-section-callout",
+	"version": "0.1.1",
+	"title": "Callout Page Section",
+	"category": "layout",
+	"icon": "cover-image",
+	"description": "Featured image callout page section",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "crown-blocks",
+	"editorScript": "file:./build/index.js",
+    "script": "file:./build/public.js",
+    "editorStyle": "file:./build/index.css",
+    "style": "file:./build/style-index.css"
+}

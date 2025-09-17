@@ -1,0 +1,11 @@
+{
+	"require": {
+		"symfony/class-loader": "2.4.*",
+		"facebook/php-sdk-v4": "4.0.*",
+		"j7mbo/twitter-api-php": "dev-master",
+		"christiaan/zohocrmclient": "dev-master"
+	},
+	"autoload": {
+		"files": []
+	}
+}

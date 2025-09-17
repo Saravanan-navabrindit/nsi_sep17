@@ -1,0 +1,241 @@
+// Colors
+
+$white:  #FFFFFF !default;
+$black: #000000;
+$black-90: #1A1A1A;
+$black-80: #333333;
+$black-70: #4D4D4D;
+$black-60: #666666;
+$black-50: #808080;
+$black-40: #999999;
+$black-30: #CCCCCC;
+$black-10: #E6E6E6;
+
+$primary:       $black !default;
+$secondary:     $white !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+	(
+		"white": $white,
+		"black": $black,
+		"black-90": $black-90,
+		"black-80": $black-80,
+		"black-70": $black-70,
+		"black-60": $black-60,
+		"black-50": $black-50,
+		"black-40": $black-40,
+		"black-30": $black-30,
+		"black-10": $black-10,
+
+		"pure-white": $white,
+		"pure-black": $black,
+		"light-gray": #E6E6E6,
+		"extra-light-gray": #FBF9F9
+
+	),
+	$theme-colors
+);
+
+// $yiq-contrasted-threshold:  168 !default; // acceptable values are between 0 and 255
+// $yiq-text-dark:             $onyx !default;
+// $yiq-text-light:            $white !default;
+
+$body-bg:       $white !default;
+$body-color:    $black !default;
+
+$header-bg: $white;
+$footer-bg: $black;
+
+// $link-color:                $red !default;
+// $link-decoration:           none !default;
+// $link-hover-color:          darken($link-color, 15%) !default;
+// $link-hover-decoration:     none !default;
+
+// Spacing
+
+$spacer: 1rem !default;
+
+$paragraph-margin-bottom:   1rem !default;
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px
+) !default;
+
+$container-padding-x: (
+	xs: 15px,
+	sm: 15px,
+	md: 20px,
+	lg: 30px,
+	xl: 40px
+) !default;
+
+$container-max-widths: (
+	sm: 1230px + (map-get($container-padding-x, sm) * 2),
+	md: 1240px + (map-get($container-padding-x, md) * 2),
+	lg: 1250px + (map-get($container-padding-x, lg) * 2),
+	xl: 1260px + (map-get($container-padding-x, xl) * 2)
+) !default;
+
+$container-effective-max-width: 1260px;
+
+$mobile-menu-width: 260px;
+
+// Components
+
+$border-width:                1px !default;
+
+$border-radius:               .1875rem !default;
+$border-radius-lg:            .25rem !default;
+$border-radius-sm:            .125rem !default;
+
+$component-active-color:      $white !default;
+$component-active-bg:         $black !default;
+
+// Typography
+
+$font-family-sans-serif:      'Source Sans Pro', -apple-system, BlinkMacSystemFont, Arial, sans-serif, "Apple Color Emoji" !default;
+$font-family-sans-serif-alt:  'Artegra Sans Extended', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, Arial, sans-serif, "Apple Color Emoji" !default;
+
+$font-size-xs:                (calc(14 / 16) * 1rem) !default;
+$font-size-sm:                (calc(16 / 16) * 1rem) !default;
+$font-size-base:              (calc(18 / 16) * 1rem) !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                (calc(28 / 16) * 1rem) !default;
+
+
+$font-weight-lighter:         100 !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-semi-bold:       600 !default;
+$font-weight-bold:            700 !default;
+$font-weight-bolder:          bolder !default;
+$font-weight-base:            $font-weight-normal !default;
+
+$line-height-base:            1.4 !default;
+$line-height-lg:              1.6 !default;
+$line-height-sm:              1.2 !default;
+
+$h1-font-size:                (calc(55 / 16) * 1rem) !default;
+$h2-font-size:                (calc(44 / 16) * 1rem) !default;
+$h3-font-size:                (calc(35 / 16) * 1rem) !default;
+$h4-font-size:                (calc(23 / 16) * 1rem) !default;
+
+
+$headings-margin:             3.5rem 0 !default;
+$headings-font-family:        $font-family-sans-serif !default;
+$headings-font-weight:        700 !default;
+$headings-line-height:        1.2 !default;
+$headings-color:              null !default;
+
+$display1-weight:             $font-weight-bolder !default;
+$display2-weight:             $font-weight-bolder !default;
+$display3-weight:             $font-weight-bolder !default;
+$display4-weight:             $font-weight-bolder !default;
+
+// $lead-font-size:              $font-size-lg !default;
+// $lead-font-weight:            $font-weight-base !default;
+
+// Buttons + Forms
+
+$input-btn-padding-y:         .9rem !default;
+$input-btn-padding-x:         .8rem !default;
+$input-btn-font-family:       $font-family-sans-serif !default;
+$input-btn-font-size:         $font-size-base !default;
+$input-btn-line-height:       $line-height-sm !default;
+
+$input-btn-padding-y-sm:      .5rem !default;
+$input-btn-padding-x-sm:      .45rem !default;
+$input-btn-font-size-sm:      $font-size-sm !default;
+$input-btn-line-height-sm:    $line-height-sm !default;
+
+$input-btn-padding-y-lg:      1.2rem !default;
+$input-btn-padding-x-lg:      1rem !default;
+$input-btn-font-size-lg:      $font-size-lg !default;
+$input-btn-line-height-lg:    $line-height-sm !default;
+
+$input-btn-border-width:      $border-width !default;
+
+// Buttons
+
+$btn-padding-y:               .93rem !default;
+$btn-padding-x:               1.5rem !default;
+$btn-font-family:             $font-family-sans-serif !default;
+$btn-font-size:               18px !default;
+$btn-line-height:             $input-btn-line-height !default;
+
+$btn-padding-y-sm:            .56rem !default;
+$btn-padding-x-sm:            1rem !default;
+$btn-font-size-sm:            14px !default;
+$btn-line-height-sm:          $input-btn-line-height-sm !default;
+
+$btn-padding-y-lg:            1.06rem !default;
+$btn-padding-x-lg:            1.75rem !default;
+$btn-font-size-lg:            24px !default;
+$btn-line-height-lg:          $input-btn-line-height-lg !default;
+
+$btn-border-width:            2px !default;
+
+$btn-font-weight:             600 !default;
+$btn-letter-spacing:          0 !default;
+
+$btn-border-radius:           0 !default;
+$btn-border-radius-lg:        0 !default;
+$btn-border-radius-sm:        0 !default;
+
+// Forms
+
+$form-control-selectors: (
+	'input[type="text"]',
+	'input[type="password"]',
+	'input[type="datetime"]',
+	'input[type="datetime-local"]',
+	'input[type="date"]',
+	'input[type="month"]',
+	'input[type="time"]',
+	'input[type="week"]',
+	'input[type="number"]',
+	'input[type="email"]',
+	'input[type="url"]',
+	'input[type="search"]',
+	'input[type="tel"]',
+	'input[type="color"]',
+	'select',
+	'textarea'
+) !default;
+
+$input-bg:                              $black-10 !default;
+$input-disabled-bg:                     #e9e9e9 !default;
+
+$input-color:                           $black !default;
+$input-border-color:                    $black !default;
+$input-border-width:                    $input-btn-border-width !default;
+$input-box-shadow:                      inset 0 1px 1px rgba(#000, .075) !default;
+
+$input-border-radius:                   0 !default;
+$input-border-radius-lg:                0 !default;
+$input-border-radius-sm:                0 !default;
+
+$input-focus-border-color:              lighten($component-active-bg, 15%) !default;
+
+$input-placeholder-color:               #969696 !default;
+
+// Z-Index
+
+$zindex-dropdown:                   1000 !default;
+$zindex-sticky:                     1020 !default;
+$zindex-fixed:                      1030 !default;
+$zindex-modal-backdrop:             100000 !default;
+$zindex-modal:                      100050 !default;
+$zindex-popover:                    100060 !default;
+$zindex-tooltip:                    100070 !default;
+
+// Modals
+
+$modal-content-color:               $body-color !default;
+$modal-content-border-radius:       0 !default;
+
+$modal-title-line-height:           $headings-line-height !default;

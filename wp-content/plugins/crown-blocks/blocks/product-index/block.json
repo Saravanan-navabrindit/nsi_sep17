@@ -1,0 +1,17 @@
+{
+	"apiVersion": 2,
+	"name": "crown-blocks/product-index",
+	"version": "0.1.0",
+	"title": "Product Index",
+	"category": "widgets",
+	"icon": "cart",
+	"description": "Displays the index of product entries.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "crown-blocks",
+	"editorScript": "file:./build/index.js",
+    "script": "file:./build/public.js",
+    "editorStyle": "file:./build/index.css",
+    "style": "file:./build/style-index.css"
+}

@@ -1,0 +1,176 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@use "sass:math";
+@import '../../../common';
+$spacer: 1rem;
+
+.wp-block-crown-blocks-panel {
+     display: flex;
+     position: relative;
+
+     @media (max-width: 767px) {
+        width: 100%;
+     }
+ 
+     &.text-color-light {
+		color: #fff;
+
+		.step-heading__number {
+			opacity: 0.7;
+			background: linear-gradient(180deg, #ffffff 0%, rgba(#ffffff, 0) 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+
+		p {
+			color: #F3F0E8;
+		}
+	}
+	&.text-color-dark {
+		color: $black;
+	}
+
+     &.vertical-alignment-center { align-items: center; }
+     &.vertical-alignment-bottom { align-items: flex-end; }
+ 
+     > .inner {
+         width: 100%;
+         position: relative;
+     }
+     &.enable-shadow > .inner {
+         padding: 30px;
+         box-shadow: 0 30px 75px rgba(0,0,0,0.2);
+         background-color: #fff;
+     }
+     &.enable-shadow.large-padding > .inner {
+         @media ( max-width: $screen-lg - 1 ) {
+             padding: 30px !important;
+         }
+     }
+
+     > .section-bg {
+        position: relative;
+
+		&, .bg-image {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+		}
+
+		@media (max-width: 767px) {
+            left: -15px;
+            right: -15px;
+		}
+		
+		.bg-image {
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+    }
+ 
+     @for $i from 0 through 20 {
+         &.contents-pl-#{$i} > .inner > .panel-contents { padding-left: $spacer * $i; }
+         &.contents-pr-#{$i} > .inner > .panel-contents { padding-right: $spacer * $i; }
+         &.contents-pt-#{$i} > .inner > .panel-contents { padding-top: $spacer * $i; }
+         &.contents-pb-#{$i} > .inner > .panel-contents { padding-right: $spacer * $i; }
+         &.contents-ob-#{$i} > .inner > .panel-contents { margin-bottom: -$spacer * $i; }
+     }
+     @media (min-width: 576px) {
+         @for $i from 0 through 20 {
+             &.contents-pl-sm-#{$i} > .inner > .panel-contents { padding-left: $spacer * $i; }
+             &.contents-pr-sm-#{$i} > .inner > .panel-contents { padding-right: $spacer * $i; }
+             &.contents-pt-sm-#{$i} > .inner > .panel-contents { padding-top: $spacer * $i; }
+             &.contents-pb-sm-#{$i} > .inner > .panel-contents { padding-right: $spacer * $i; }
+             &.contents-ob-sm-#{$i} > .inner > .panel-contents { margin-bottom: -$spacer * $i; }
+         }
+     }
+     @media (min-width: 768px) {
+         @for $i from 0 through 20 {
+             &.contents-pl-md-#{$i} > .inner > .panel-contents { padding-left: $spacer * $i; }
+             &.contents-pr-md-#{$i} > .inner > .panel-contents { padding-right: $spacer * $i; }
+             &.contents-pt-md-#{$i} > .inner > .panel-contents { padding-top: $spacer * $i; }
+             &.contents-pb-md-#{$i} > .inner > .panel-contents { padding-right: $spacer * $i; }
+             &.contents-ob-md-#{$i} > .inner > .panel-contents { margin-bottom: -$spacer * $i; }
+         }
+     }
+     @media (min-width: 992px) {
+         @for $i from 0 through 20 {
+             &.contents-pl-lg-#{$i} > .inner > .panel-contents { padding-left: $spacer * $i; }
+             &.contents-pr-lg-#{$i} > .inner > .panel-contents { padding-right: $spacer * $i; }
+             &.contents-pt-lg-#{$i} > .inner > .panel-contents { padding-top: $spacer * $i; }
+             &.contents-pb-lg-#{$i} > .inner > .panel-contents { padding-right: $spacer * $i; }
+             &.contents-ob-lg-#{$i} > .inner > .panel-contents { margin-bottom: -$spacer * $i; }
+         }
+     }
+     @media (min-width: 1200px) {
+         @for $i from 0 through 20 {
+             &.contents-pl-xl-#{$i} > .inner > .panel-contents { padding-left: $spacer * $i; }
+             &.contents-pr-xl-#{$i} > .inner > .panel-contents { padding-right: $spacer * $i; }
+             &.contents-pt-xl-#{$i} > .inner > .panel-contents { padding-top: $spacer * $i; }
+             &.contents-pb-xl-#{$i} > .inner > .panel-contents { padding-right: $spacer * $i; }
+             &.contents-ob-xl-#{$i} > .inner > .panel-contents { margin-bottom: -$spacer * $i; }
+         }
+     }
+
+     &.line {
+        display: inline-block;
+		position: relative;
+
+		.section-bg::after {
+			content: '';
+			display: none;
+			position: absolute;
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+            z-index: 3;
+            right: 0;
+
+            @media (min-width: 768px) {
+                display: block;
+            }
+		}
+     }
+
+     &.line-middle {
+		.section-bg::after {
+            background-image: escape-svg(url('data:image/svg+xml,<svg width="569px" height="267px" viewBox="0 0 569 267" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Home*" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="HOME" transform="translate(-735.000000, -394.000000)" fill="#2158F3"><g id="Hero" transform="translate(0.000000, 104.000000)"><g id="Super-Connector-2" transform="translate(735.000000, 290.000000)"><path d="M214.071429,0 C265.552257,-2.36677295e-14 307.285714,41.7334572 307.285714,93.2142857 L307.285014,203.312542 C320.976802,192.606837 338.209594,186.219979 356.935179,186.20213 L356.935179,186.20213 L569,186 L569,217 L356.960094,217.263785 C329.515701,217.297927 307.285714,239.555586 307.285714,267 L307.285714,267 L276.214286,267 L276.214286,93.1893688 C276.203821,58.8729029 248.387893,31.052291 214.071429,31.0360474 L0,31 L0,0 L214.071429,0 Z"></path></g></g></g></g></svg>'));
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+			padding-bottom: 46.92%;
+			z-index: 3;
+		}
+    }
+
+     &.line-middle-top {
+		.section-bg::after {
+            background-image: escape-svg(url('data:image/svg+xml,<svg width="830px" height="410px" viewBox="0 0 830 410" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="1.42263183%" y1="58.1811855%" x2="23.1711179%" y2="58.1811855%" id="linearGradient-1"><stop stop-color="#4591FA" stop-opacity="0" offset="0%"></stop><stop stop-color="#2158F3" offset="100%"></stop></linearGradient></defs><g id="Home*" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="HOME" transform="translate(-610.000000, -2246.000000)" fill="url(#linearGradient-1)"><g id="Super-Connector-1" transform="translate(598.000000, 2246.000000)"><path d="M404.16,255.409836 L404.16,107.691943 C404.16,66.7757145 370.990843,33.6065574 330.074614,33.6065574 L323.317386,33.6065574 C282.401157,33.6065574 249.232,66.7757145 249.232,107.691943 L249.232,221.803279 C249.232,240.363668 234.185832,255.409836 215.625443,255.409836 L0,255.409836 L0,221.803279 L215.552,221.803279 L215.552,101.025526 C215.552,45.2306688 260.782669,1.02493491e-14 316.577526,0 L336.814474,0 C392.609331,3.96150565e-15 437.84,45.2306688 437.84,101.025526 L437.84,302.308057 C437.84,343.224285 471.009157,376.393443 511.925386,376.393443 L518.682614,376.393443 C559.598843,376.393443 592.768,343.224285 592.768,302.308057 L592.768,255.409836 C592.768,236.849447 607.814168,221.803279 626.374557,221.803279 L842,221.803279 L842,255.409836 L626.448,255.409836 L626.448,308.974474 C626.448,364.769331 581.217331,410 525.422474,410 L505.185526,410 C449.390669,410 404.16,364.769331 404.16,308.974474 L404.16,255.409836 L404.16,255.409836 Z" id="Combined-Shape"></path></g></g></g></svg>'));
+			z-index: 3;
+			top: 50%;
+			transform: translateY(-75%);
+			width: 110%;
+			padding-bottom: 59.69%;
+		}
+    }
+
+    &.line-middle-bottom {
+		.section-bg::after {
+            background-image: escape-svg(url('data:image/svg+xml,<svg width="830px" height="410px" viewBox="0 0 830 410" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="1.42263183%" y1="58.1811855%" x2="23.1711179%" y2="58.1811855%" id="linearGradient-1"><stop stop-color="#4591FA" stop-opacity="0" offset="0%"></stop><stop stop-color="#2158F3" offset="100%"></stop></linearGradient></defs><g id="Home*" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="HOME" transform="translate(-610.000000, -2246.000000)" fill="url(#linearGradient-1)"><g id="Super-Connector-1" transform="translate(598.000000, 2246.000000)"><path d="M404.16,255.409836 L404.16,107.691943 C404.16,66.7757145 370.990843,33.6065574 330.074614,33.6065574 L323.317386,33.6065574 C282.401157,33.6065574 249.232,66.7757145 249.232,107.691943 L249.232,221.803279 C249.232,240.363668 234.185832,255.409836 215.625443,255.409836 L0,255.409836 L0,221.803279 L215.552,221.803279 L215.552,101.025526 C215.552,45.2306688 260.782669,1.02493491e-14 316.577526,0 L336.814474,0 C392.609331,3.96150565e-15 437.84,45.2306688 437.84,101.025526 L437.84,302.308057 C437.84,343.224285 471.009157,376.393443 511.925386,376.393443 L518.682614,376.393443 C559.598843,376.393443 592.768,343.224285 592.768,302.308057 L592.768,255.409836 C592.768,236.849447 607.814168,221.803279 626.374557,221.803279 L842,221.803279 L842,255.409836 L626.448,255.409836 L626.448,308.974474 C626.448,364.769331 581.217331,410 525.422474,410 L505.185526,410 C449.390669,410 404.16,364.769331 404.16,308.974474 L404.16,255.409836 L404.16,255.409836 Z" id="Combined-Shape"></path></g></g></g></svg>'));
+			z-index: 3;
+            top: 100%;
+            transform: translateY(-75%);
+			width: 110%;
+			padding-bottom: 59.69%;
+		}
+    }
+ 
+}

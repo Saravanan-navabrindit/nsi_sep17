@@ -1,0 +1,154 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@use "sass:math";
+@import '../../../common';
+
+.wp-block-crown-blocks-two-column {
+
+	> .inner > .columns > .inner {
+		.wp-block-crown-blocks-column:first-child {
+			.wp-block-crown-blocks-page-section {
+				margin-right: 0;
+			}
+		}
+		.wp-block-crown-blocks-column:last-child {
+			.wp-block-crown-blocks-page-section {
+				margin-left: 0;
+			}
+		}
+		grid-gap: 0;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 'column1 column2';
+		> .wp-block-crown-blocks-column {
+			min-width: 0;
+		}
+		> .wp-block-crown-blocks-column:nth-child(1) { grid-area: column1; }
+		> .wp-block-crown-blocks-column:nth-child(2) { grid-area: column2; }
+	}
+	&.middle-border {
+		> .inner > .columns > .inner > .column {
+			position: relative;
+
+			&:first-child::after {
+				content: "";
+				display: none;
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 1px;
+				height: 100%;
+				background-color: rgba(0,0,0,0.15);
+
+				.text-color-light & {
+					background-color: rgba(255,255,255,0.11);
+				}
+			}
+		}
+	}
+	
+	$column-container-selector: '> .inner > .columns > .inner';
+
+	&.column-breakpoint-xs > #{$column-container-selector}
+	{ display: grid;
+
+		> .column:first-child::after { display: block; }
+	}
+	&.column-breakpoint-xs {
+		@for $i from 1 through 11 {
+			&.column-layout-xs-#{$i} #{$column-container-selector} { grid-template-columns: ($i * 1fr) (12fr - $i * 1fr); }
+		}
+		@for $i from 0 through 12 {
+			&.column-spacing-xs-#{($i * 10)} #{$column-container-selector} {
+				grid-gap: $i * 10px;
+
+				> .column:first-child::after { right: math.div(($i * 10px), 2) * -1; }
+			}
+		}
+	}
+	
+	@media (min-width: 576px) {
+		&.column-breakpoint-sm #{$column-container-selector} {
+			display: grid;
+
+			> .column:first-child::after { display: block; }
+		}
+		&.column-breakpoint-xs, &.column-breakpoint-sm {
+			@for $i from 1 through 11 {
+				&.column-layout-sm-#{$i} #{$column-container-selector} { grid-template-columns: ($i * 1fr) (12fr - $i * 1fr); }
+			}
+			@for $i from 0 through 12 {
+				&.column-spacing-sm-#{($i * 10)} #{$column-container-selector} {
+					grid-gap: $i * 10px;
+
+					> .column:first-child::after { right: math.div(($i * 10px), 2) * -1; }
+				}
+			}
+		}
+	}
+
+	@media (min-width: 768px) {
+		&.column-breakpoint-md #{$column-container-selector} {
+			display: grid;
+
+			> .column:first-child::after { display: block; }
+		}
+		&.column-breakpoint-xs, &.column-breakpoint-sm, &.column-breakpoint-md {
+			@for $i from 1 through 11 {
+				&.column-layout-md-#{$i} #{$column-container-selector} { grid-template-columns: ($i * 1fr) (12fr - $i * 1fr); }
+			}
+			@for $i from 0 through 12 {
+				&.column-spacing-md-#{($i * 10)} #{$column-container-selector} {
+					grid-gap: $i * 10px;
+
+					> .column:first-child::after { right: math.div(($i * 10px), 2) * -1; }
+				}
+			}
+		}
+	}
+
+	@media (min-width: 992px) {
+		&.column-breakpoint-lg #{$column-container-selector} {
+			display: grid;
+
+			> .column:first-child::after { display: block; }
+		}
+		&.column-breakpoint-xs, &.column-breakpoint-sm, &.column-breakpoint-md, &.column-breakpoint-lg {
+			@for $i from 1 through 11 {
+				&.column-layout-lg-#{$i} #{$column-container-selector} { grid-template-columns: ($i * 1fr) (12fr - $i * 1fr); }
+			}
+			@for $i from 0 through 12 {
+				&.column-spacing-lg-#{($i * 10)} #{$column-container-selector} {
+					grid-gap: $i * 10px;
+
+					> .column:first-child::after { right: math.div(($i * 10px), 2) * -1; }
+				}
+			}
+		}
+	}
+
+	@media (min-width: 1200px) {
+		&.column-breakpoint-xl #{$column-container-selector} {
+			display: grid;
+
+			> .column:first-child::after { display: block; }
+		}
+		&.column-breakpoint-xs, &.column-breakpoint-sm, &.column-breakpoint-md, &.column-breakpoint-lg, &.column-breakpoint-xl {
+			@for $i from 1 through 11 {
+				&.column-layout-xl-#{$i} #{$column-container-selector} { grid-template-columns: ($i * 1fr) (12fr - $i * 1fr); }
+			}
+			@for $i from 0 through 12 {
+				&.column-spacing-xl-#{($i * 10)} #{$column-container-selector} {
+					grid-gap: $i * 10px;
+
+					> .column:first-child::after { right: math.div(($i * 10px), 2) * -1; }
+				}
+			}
+		}
+	}
+
+}

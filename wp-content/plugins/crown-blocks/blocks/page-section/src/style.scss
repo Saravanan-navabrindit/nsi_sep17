@@ -1,0 +1,210 @@
+
+@import '../../../common';
+
+$spacer: 1rem;
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .wp-block-crown-blocks-page-section {
+    position: relative;
+
+	&.text-color-light {
+		color: #fff;
+	}
+
+	&.text-color-dark {
+		color: $black;
+	}
+
+	&.text-align-left { text-align: left; }
+	&.text-align-center { text-align: center; }
+	&.text-align-right { text-align: right; }
+
+	&.content-align-left,
+	&.content-align-center {
+		.container > .inner {
+			margin-right: auto;
+		}
+	}
+	&.content-align-right,
+	&.content-align-center {
+		.container > .inner {
+			margin-left: auto;
+		}
+	}
+
+    > .section-bg {
+		overflow: hidden;
+
+		&, .bg-image {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+		}
+		
+		.bg-image {
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+	}
+
+	> .inner {
+		position: relative;
+	}
+    &.is-style-hero > .inner {
+		@media (min-width: $screen-md) {
+			min-height: 400px;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+		}
+		@media (min-width: $screen-lg) {
+			min-height: 500px;
+		}
+		@media (min-width: $screen-xl) {
+			min-height: 600px;
+		}
+    }
+    
+	> .inner > .container {
+		max-width: none;
+		padding-left: 0;
+		padding-right: 0;
+		> .inner {
+			padding-top: 30px;
+			padding-bottom: 30px;
+			@media (min-width: $screen-md) {
+				padding-top: 40px;
+				padding-bottom: 40px;
+			}
+			@media (min-width: $screen-lg) {
+				padding-top: 60px;
+				padding-bottom: 60px;
+			}
+			@media (min-width: $screen-xl) {
+				padding-top: 80px;
+				padding-bottom: 80px;
+			}
+		}
+	}
+	&.restricted-content-width {
+		> .inner > .container {
+			padding-left: 15px;
+			padding-right: 15px;
+			@media (min-width: $screen-md) {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+			@media (min-width: $screen-lg) {
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+			@media (min-width: $screen-xl) {
+				padding-left: 40px;
+				padding-right: 40px;
+			}
+		}
+	}
+
+	&.slanted-bg-top {
+		padding-top: 100px;
+		margin-top: -100px;
+		clip-path: polygon( 0 0, 100% 100px, 100% 100%, 0 100% );
+
+		&.slanted-bg-top-reverse {
+			clip-path: polygon( 0 100px, 100% 0, 100% 100%, 0 100% );
+		}
+	}
+	&.slanted-bg-bottom {
+		padding-bottom: 100px;
+		margin-bottom: -100px;
+		clip-path: polygon( 0 0, 100% 0, 100% calc(100% - 100px), 0 100% );
+
+		&.slanted-bg-bottom-reverse {
+			clip-path: polygon( 0 0, 100% 0, 100% 100%, 0 calc(100% - 100px) );
+		}
+	}
+	&.slanted-bg-top.slanted-bg-bottom {
+		clip-path: polygon( 0 0, 100% 100px, 100% calc(100% - 100px), 0 100% );
+
+		&.slanted-bg-top-reverse {
+			clip-path: polygon( 0 100px, 100% 0, 100% calc(100% - 100px), 0 100% );
+		}
+		&.slanted-bg-bottom-reverse {
+			clip-path: polygon( 0 0, 100% 100px, 100% 100%, 0 calc(100% - 100px) );
+		}
+		&.slanted-bg-top-reverse.slanted-bg-bottom-reverse {
+			clip-path: polygon( 0 100px, 100% 0, 100% 100%, 0 calc(100% - 100px) );
+		}
+	}
+
+	@for $i from 0 through 20 {
+		&.contents-pt-#{$i} > .inner > .container > .inner { padding-top: $spacer * $i !important; }
+		&.contents-pb-#{$i} > .inner > .container > .inner { padding-bottom: $spacer * $i !important; }
+		&.contents-ot-#{$i} > .inner > .container > .inner { margin-top: -$spacer * $i !important; }
+		&.contents-ob-#{$i} > .inner > .container > .inner { margin-bottom: -$spacer * $i !important; }
+		&.contents-px-#{$i} > .inner > .container > .inner { padding-left: $spacer * $i !important; padding-right: $spacer * $i !important; }
+		&.contents-ox-#{$i} { margin-left: -$spacer * $i !important; margin-right: -$spacer * $i !important; }
+	}
+	@media (min-width: 576px) {
+		@for $i from 0 through 20 {
+			&.contents-pt-sm-#{$i} > .inner > .container > .inner { padding-top: $spacer * $i !important; }
+			&.contents-pb-sm-#{$i} > .inner > .container > .inner { padding-bottom: $spacer * $i !important; }
+			&.contents-ot-sm-#{$i} > .inner > .container > .inner { margin-top: -$spacer * $i !important; }
+			&.contents-ob-sm-#{$i} > .inner > .container > .inner { margin-bottom: -$spacer * $i !important; }
+			&.contents-px-sm-#{$i} > .inner > .container > .inner { padding-left: $spacer * $i !important; padding-right: $spacer * $i !important; }
+			&.contents-ox-sm-#{$i} { margin-left: -$spacer * $i !important; margin-right: -$spacer * $i !important; }
+		}
+	}
+	@media (min-width: 768px) {
+		@for $i from 0 through 20 {
+			&.contents-pt-md-#{$i} > .inner > .container > .inner { padding-top: $spacer * $i !important; }
+			&.contents-pb-md-#{$i} > .inner > .container > .inner { padding-bottom: $spacer * $i !important; }
+			&.contents-ot-md-#{$i} > .inner > .container > .inner { margin-top: -$spacer * $i !important; }
+			&.contents-ob-md-#{$i} > .inner > .container > .inner { margin-bottom: -$spacer * $i !important; }
+			&.contents-px-md-#{$i} > .inner > .container > .inner { padding-left: $spacer * $i !important; padding-right: $spacer * $i !important; }
+			&.contents-ox-md-#{$i} { margin-left: -$spacer * $i !important; margin-right: -$spacer * $i !important; }
+		}
+	}
+	@media (min-width: 992px) {
+		@for $i from 0 through 20 {
+			&.contents-pt-lg-#{$i} > .inner > .container > .inner { padding-top: $spacer * $i !important; }
+			&.contents-pb-lg-#{$i} > .inner > .container > .inner { padding-bottom: $spacer * $i !important; }
+			&.contents-ot-lg-#{$i} > .inner > .container > .inner { margin-top: -$spacer * $i !important; }
+			&.contents-ob-lg-#{$i} > .inner > .container > .inner { margin-bottom: -$spacer * $i !important; }
+			&.contents-px-lg-#{$i} > .inner > .container > .inner { padding-left: $spacer * $i !important; padding-right: $spacer * $i !important; }
+			&.contents-ox-lg-#{$i} { margin-left: -$spacer * $i !important; margin-right: -$spacer * $i !important; }
+		}
+	}
+	@media (min-width: 1200px) {
+		@for $i from 0 through 20 {
+			&.contents-pt-xl-#{$i} > .inner > .container > .inner { padding-top: $spacer * $i !important; }
+			&.contents-pb-xl-#{$i} > .inner > .container > .inner { padding-bottom: $spacer * $i !important; }
+			&.contents-ot-xl-#{$i} > .inner > .container > .inner { margin-top: -$spacer * $i !important; }
+			&.contents-ob-xl-#{$i} > .inner > .container > .inner { margin-bottom: -$spacer * $i !important; }
+			&.contents-px-xl-#{$i} > .inner > .container > .inner { padding-left: $spacer * $i !important; padding-right: $spacer * $i !important; }
+			&.contents-ox-xl-#{$i} { margin-left: -$spacer * $i !important; margin-right: -$spacer * $i !important; }
+		}
+	}
+}
+#main-content .wp-block-crown-blocks-page-section.full-width {
+	@include full-width-block;
+}
+
+#main-content .woocommerce .cart > .button.single_add_to_cart_button.button.alt {
+	background-color: black;
+	margin-right: 4px;
+	transition: background-color 500ms linear;
+
+	&:hover {
+		background-color: #808080;
+	}
+}

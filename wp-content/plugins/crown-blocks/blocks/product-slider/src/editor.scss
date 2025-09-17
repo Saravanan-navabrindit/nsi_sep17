@@ -1,0 +1,44 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-crown-blocks-product-slider {
+	.product-teasers {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -15px;
+		.product {
+			padding: 15px;
+			width: 25%;
+			.woocommerce-loop-product__thumbnail {
+				margin-bottom: 10px;
+				position: relative;
+				border: 1px solid #ccc;
+				border-radius: 3px;
+				&:before {
+					content: '';
+					display: block;
+					height: 0;
+					padding-top: 100%;
+				}
+				img {
+					position: absolute;
+					left: 10px;
+					top: 10px;
+					width: calc(100% - 20px);
+					height: calc(100% - 20px);
+					object-fit: contain;
+					object-position: center;
+				}
+			}
+			.attributes {
+				display: none;
+			}
+		}
+	}
+}

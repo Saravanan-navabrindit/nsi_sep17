@@ -1,0 +1,36 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-crown-blocks-button-group {
+	.wp-block-crown-blocks-button {
+		margin: 0 16px 20px 0;
+		display: inline-block;
+	}
+	&.button-align-left {
+		> .inner {
+			text-align: left;
+		}
+	}
+	&.button-align-center {
+		> .inner {
+			text-align: center;
+		}
+		.wp-block-crown-blocks-button {
+			margin-left: 8px;
+			margin-right: 8px;
+		}
+	}
+	&.button-align-right {
+		> .inner {
+			text-align: right;
+		}
+		.wp-block-crown-blocks-button {
+			margin-left: 16px;
+			margin-right: 0;
+		}
+	}
+}

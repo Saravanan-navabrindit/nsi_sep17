@@ -1,0 +1,27 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-crown-blocks-step-heading {
+  position: relative;
+  .step-heading__number {
+    color: #52A1FF;
+    font-family: 'Urbanist';
+    font-size: 90px;
+    font-weight: 900;
+    letter-spacing: 0;
+    background: linear-gradient(180deg, #2158f3 0%, rgba(#2158f3, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .step-heading__title {
+    margin-top: -50px;
+  }
+}

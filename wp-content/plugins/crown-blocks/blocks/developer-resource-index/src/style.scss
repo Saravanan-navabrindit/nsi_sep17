@@ -1,0 +1,82 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-crown-blocks-developer-resource-index {
+	@include post-feed-block();
+	.post-feed {
+		article {
+			display: flex;
+			font-size: 1rem;
+			@media (min-width: $screen-md) {
+				width: 50%;
+			}
+			@media (min-width: $screen-lg) {
+				width: 33.333333%;
+			}
+			&.file-format-type-video {
+				.cta {
+					padding-right: 3rem;
+					a.icon-link {
+						display: block;
+					}
+				}
+			}
+			&.file-format-type-video .cta a.icon-link {
+				background-image: escape-svg(url('data:image/svg+xml,<svg width="14px" height="22px" fill="#ffffff" viewBox="0 0 14 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon transform="translate(7.000000, 10.888889) rotate(90.000000) translate(-7.000000, -10.888889) " points="7 3.88888889 17.8888889 17.8888889 -3.88888889 17.8888889"></polygon></svg>'));
+				background-position: 55% 50%;
+			}
+			> .inner {
+				width: 100%;
+				border: 1px solid $navy-blue;
+				border-radius: 2px;
+				padding: 1.5rem;
+				display: flex;
+				flex-direction: column;
+			}
+			.contents {
+				flex: 1 1 auto;
+			}
+			.entry-title {
+				font-size: 1.75rem;
+				margin-top: 0;
+				margin-bottom: 0.75rem;
+			}
+			.cta {
+				margin-bottom: 0;
+				margin-top: 1.5rem;
+				position: relative;
+				a {
+					font-family: $font-family-sans-serif;
+					letter-spacing: 0;
+					&:hover {
+						text-decoration: underline;
+					}
+					&.download {
+						color: $blue;
+					}
+					&.icon-link {
+						position: absolute;
+						right: 0;
+						bottom: 0;
+						text-indent: -1000000px;
+						width: 2.5rem;
+						height: 2.5rem;
+						background-color: $blue;
+						border-radius: 100rem;
+						overflow: hidden;
+						display: none;
+						background-repeat: no-repeat;
+						background-position: center;
+					}
+				}
+			}
+		}
+	}
+}

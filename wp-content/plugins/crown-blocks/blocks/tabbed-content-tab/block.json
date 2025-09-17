@@ -1,0 +1,18 @@
+{
+	"apiVersion": 2,
+	"name": "crown-blocks/tabbed-content-tab",
+	"version": "0.1.0",
+	"title": "Tabbed Content Tab",
+	"category": "layout",
+	"icon": "table-row-after",
+	"description": "Tabbed Content Tab block",
+	"supports": {
+		"html": false
+	},
+	"parent": [ "crown-blocks/tabbed-content" ],
+	"textdomain": "crown-blocks",
+	"editorScript": "file:./build/index.js",
+    "script": "file:./build/public.js",
+    "editorStyle": "file:./build/index.css",
+    "style": "file:./build/style-index.css"
+}

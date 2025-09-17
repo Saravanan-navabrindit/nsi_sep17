@@ -1,0 +1,178 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./blocks/post-header/src/style.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************/
+.has-gradient-one-color {
+  background: linear-gradient(90deg, #45b6fa 0%, #2158f3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.has-gradient-two-color {
+  background: linear-gradient(270deg, #ADF2BD 0%, #8BEFF2 47.25%, #BBC7F2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.has-gradient-four-color {
+  background: linear-gradient(298.77deg, #515151 0%, #121924 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.has-gradient-five-color {
+  background: linear-gradient(302.32deg, #EE1E51 0%, #121924 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.bg-color-gradient-two {
+  background: linear-gradient(270deg, #ADF2BD 0%, #8BEFF2 47.25%, #BBC7F2 100%);
+}
+
+.bg-color-gradient-three {
+  background: linear-gradient(302.32deg, #144C3F 0%, #144D6C 49.53%, #2B2C5B 100%);
+}
+
+.bg-color-gradient-four {
+  background: linear-gradient(298.77deg, #515151 0%, #121924 100%);
+}
+
+.bg-color-gradient-five {
+  background: linear-gradient(302.32deg, #EE1E51 0%, #121924 100%);
+}
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-crown-blocks-post-header {
+  margin: 40px 0;
+}
+@media (min-width: 576px) {
+  .wp-block-crown-blocks-post-header {
+    margin: 80px 0;
+  }
+}
+@media (min-width: 576px) {
+  .wp-block-crown-blocks-post-header .post-header {
+    width: 50%;
+  }
+}
+.wp-block-crown-blocks-post-header .post-header__date {
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+.wp-block-crown-blocks-post-header .post-header__title {
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 43px;
+}
+.wp-block-crown-blocks-post-header .post-header__image {
+  border-radius: 5px;
+}
+.wp-block-crown-blocks-post-header .post-header__hero {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 576px) {
+  .wp-block-crown-blocks-post-header .post-header__hero {
+    flex-wrap: nowrap;
+  }
+}
+.wp-block-crown-blocks-post-header .post-header__image-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+@media (min-width: 576px) {
+  .wp-block-crown-blocks-post-header .post-header__image-container {
+    width: 50%;
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+}
+.wp-block-crown-blocks-post-header .post-header__image-container--video .post-header__image {
+  display: none;
+}
+.wp-block-crown-blocks-post-header .post-header__image-container--video #post-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.wp-block-crown-blocks-post-header .post-header__video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.wp-block-crown-blocks-post-header .post-header__meta {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 576px) {
+  .wp-block-crown-blocks-post-header .post-header__meta {
+    width: 50%;
+  }
+}
+.wp-block-crown-blocks-post-header .social-sharing-links {
+  margin-top: 1.5rem;
+  position: relative;
+  z-index: 10;
+  transition: opacity 0.2s, transform 0.2s ease-out;
+}
+@media (min-width: 576px) {
+  .wp-block-crown-blocks-post-header .social-sharing-links {
+    margin-top: 3rem;
+  }
+}
+.wp-block-crown-blocks-post-header .social-sharing-links h4 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 17px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.wp-block-crown-blocks-post-header .social-sharing-links .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0 -5px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.wp-block-crown-blocks-post-header .social-sharing-links .menu .menu-item {
+  padding: 5px;
+}
+.wp-block-crown-blocks-post-header .social-sharing-links .menu .menu-item a {
+  display: block;
+}
+.wp-block-crown-blocks-post-header .social-sharing-links .menu .menu-item .icon {
+  display: block;
+  width: 1.625rem;
+  height: 1.625rem;
+  border-radius: 100%;
+  background-color: #BADCED;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wp-block-crown-blocks-post-header .social-sharing-links .menu .menu-item .icon svg {
+  width: 55%;
+  max-height: 55%;
+  fill: #FFFFFF;
+}
+.wp-block-crown-blocks-post-header .social-sharing-links .menu .menu-item .label {
+  display: none;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

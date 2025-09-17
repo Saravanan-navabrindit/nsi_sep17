@@ -1,0 +1,117 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-crown-blocks-technology-index {
+	@include post-feed-block();
+	.post-feed {
+		article {
+			display: flex;
+			font-size: 1rem;
+			@media (min-width: $screen-md) {
+				width: 50%;
+			}
+			&.featured {
+				@media (min-width: $screen-md) {
+					width: 100%;
+				}
+				.overview,
+				.entry-features {
+					@media (min-width: $screen-md) {
+						width: calc(50% - 1rem);
+					}
+				}
+				.overview {
+					@media (min-width: $screen-md) {
+						padding-right: 1rem;
+					}
+				}
+				.entry-features {
+					@media (min-width: $screen-md) {
+						margin-top: 0;
+						margin-bottom: 0;
+					}
+				}
+			}
+			> .inner {
+				width: 100%;
+				border: 1px solid $navy-blue;
+				border-radius: 2px;
+				padding: 1.5rem;
+				@media (min-width: $screen-md) {
+					padding: 3rem;
+					display: flex;
+					justify-content: space-between;
+				}
+			}
+			.overview {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				.cta {
+					display: none;
+					@media (min-width: $screen-md) {
+						display: block;
+					}
+				}
+			}
+			.contents {
+				flex: 1 1 auto;
+			}
+			.entry-title {
+				font-size: 1.75rem;
+				margin-top: 0;
+				margin-bottom: 1.25rem;
+				img {
+					max-height: 3rem;
+					width: auto;
+					height: auto;
+					max-width: 100%;
+				}
+			}
+			.entry-features {
+				margin-top: .5rem;
+				margin-bottom: 2rem;
+				h4 {
+					margin-top: 0;
+					font-size: 1.125rem;
+					color: $blue;
+				}
+				.features {
+					display: flex;
+					flex-wrap: wrap;
+					margin: -0.5rem -1rem;
+				}
+				.feature {
+					padding: 0.5rem 1rem;
+					width: 100%;
+					@media (min-width: $screen-sm) {
+						width: 50%;
+					}
+					@media (min-width: $screen-md) {
+						width: 100%;
+					}
+					@media (min-width: $screen-lg) {
+						width: 50%;
+					}
+					> *:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+			.cta {
+				margin-bottom: 0;
+				margin-top: 1.5rem;
+				@media (min-width: $screen-md) {
+					display: none;
+				}
+			}
+		}
+	}
+}

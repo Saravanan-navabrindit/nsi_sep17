@@ -1,0 +1,18 @@
+{
+	"apiVersion": 2,
+	"name": "crown-blocks/process-step-cell",
+	"version": "0.1.0",
+	"title": "Process Step Cell",
+	"category": "widgets",
+	"icon": "grid-view",
+	"description": "Process Step Cell block",
+	"parent": [ "crown-blocks/process-step" ],
+	"supports": {
+		"html": false
+	},
+	"textdomain": "crown-blocks",
+	"editorScript": "file:./build/index.js",
+    "script": "file:./build/public.js",
+    "editorStyle": "file:./build/index.css",
+    "style": "file:./build/style-index.css"
+}

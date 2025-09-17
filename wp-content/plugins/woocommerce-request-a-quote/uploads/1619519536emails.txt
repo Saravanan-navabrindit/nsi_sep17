@@ -1,0 +1,267 @@
+
+phpcbf --standard=wordpress C:\Users\HP\Desktop\addify-reserved-stock
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Hi, 
+
+Apologies for having the issue.
+
+Kindly share the following information. So that we can debug and fix the issue for you.
+
+WordPress Admin credentials.
+FTP/cPanel credentials.
+Screenshots of the issue or a short video clip so we can understand it better.
+
+You can share either the staging or live site information.
+
+Thanks & stay safe.
+
+Saad,
+Happiness Engineer.
+
+
+Sorry for the late reply. It was the weekend.
+
+================================================================================================
+Hi, 
+
+Thank you for sharing the information.
+
+Kindly allow us some time to fix the issue.
+
+We'll get back to you soon.
+
+Thanks & stay safe.
+
+Saad,
+Happiness Engineer.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Your issue has been resolved. Kindly check your site and give us your worthy feedback.
+
+Please find the attached screenshots.
+
+Thanks & stay safe.
+
+Saad,
+Happiness Engineer.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Thanks for your positive response.
+
+Can you please give us a small favor and drop 5-stars and your comment about the plugin and support by visiting the mentioned link below? This will really motivate us to keep the product updated.
+
+Thanks & stay safe.
+
+Saad,
+Happiness Engineer.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Hi, 
+
+Thanks for sharing the credentials.
+
+Please also share the FTP credentials.
+
+So we can access our plugin folder the fix the issue for you.
+
+Thanks & stay safe.
+
+Saad,
+Happiness Engineer.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Sorry, we are not able to access the WordPress Admin.
+
+Please check your provided credentials and find the attached screenshot.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Apologies for the late reply.
+
+We're getting the same issue again.
+
+Please find the attached screenshot.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Apologies for having the issue.
+
+We can see that you are using an old version of the plugin.
+
+1st please TAKE BACKUP OF THE CURRENT VERSION.
+2nd kindly update the plugin to the latest version 1.2.6.
+
+3rd please clear the page cache if you are using any cache plugin. If not, then use Ctrl+F5 key to clear the browser cache.
+
+Please find the attached screenshot.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Sorry for the late reply. It was the weekend.
+
+Thanks & stay safe.
+
+Saad,
+Happiness Engineer.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Thanks,
+
+Koala Apps,
+Support Team
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Can you please explain the issues you are facing in a bit more detail? We might be able to help you and improve it for our future customers.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+The issue appears only on your website, so we need to troubleshoot and fix this on your website. You can create a new temporary admin and delete it once the work is done. 
+
+Thank you!
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+You can download the plugin from the staging site and install it on your live site.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Here is a guide that explains how to connect your website with WooCommerce.com to receive automatic updates,
+
+https://docs.woocommerce.com/document/managing-woocommerce-com-subscriptions/
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Your issue has been resolved. Kindly check your site and give us your worthy feedback.
+
+You must have to add prices for the products. If you don't enter the price then the add to cart button will not display.
+
+Our Add to Quote button replace it with the Quote button.
+
+I checked your site and you were not using products prices, kindly add the prices so that the plugin can work properly.
+
+Just for testing purposes, I added a temporary product price.
+
+Please find the attached screenshots.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+If we don't have the access we may not be to help you as its not an issue with the plugin but configurations. We are a trusted seller and you can share the info, as per the privacy policy we do not share info with anyone, as soon as the work is done you can delete our temporary admin account.
+
+Thank you and stay safe!
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Furthermore, you can read the documentation here to know more about the plugin features.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Apologies for having the issue.
+
+Can you please explain the issues you are facing in a bit more detail? We might be able to help you and fix it for you.
+
+OR you can share a short video to reproduce the issue so that we can understand it in a better way.
+
+Thanks & stay safe.
+
+Saad,
+Happiness Engineer.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Hi,
+Sorry that you are having this issue, please create a support ticket using the following link,
+https://woocommerce.com/my-account/create-a-ticket/
+This will ensure that your ticket lands with our support team.
+Thanks,
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Thank you for purchasing our extension. 
+You would need to install user roles editor a free extension available on WordPress.org to add user roles. 
+
+You can use any other user roles extension as well. Our plugin does not add any user roles because if we add new user roles, many third-party plugins that use user roles won't be able to use ours. In order to ensure that a standard is followed, our extension uses the roles created by any popular roles editor plugin.
+
+This has been answered in the documentation - FAQs section, 
+
+https://docs.woocommerce.com/document/b2b-for-woocommerce/?_ga=2.267257038.1128418036.1602867972-305917097.1578732931#section-33
+Thank you,
+Saad, Happiness Engineer. 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Thank you very much for your suggestion.
+We appreciate the time and effort you have spent to share your insightful comments, which will be seriously considered and adequately implemented.
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Hi,
+No problem, really sorry for the inconvenience. You can put a refund request using the following link, 
+https://woocommerce.com/refund-policy/
+
+Thank you,
+Support Team. 
+
+
+
+You may have noticed that we sent you the wrongly last email. 
+
+First, we want to apologize for any inconvenience our mistake might have caused you. 
+
+5WGI1Y2FT
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+We replied to every of your mail but didn't get any response back maybe all go to spam. 
+Now I am sending it to another email account. 
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+We use dynamic IPs which always get changed.
+
+This would be great if you disable the restriction temporarily, after the issue is resolved you can activate it again.
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Kindly share your WP admin credentials so we can debug the issue. 
+Further, if we'll require FTP access for fixing we'll ask you.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Thank you for sharing the information.
+
+Kindly enable these in Wp Config File so we can debug the issue or allow us access from the root of the FTP,
+ define(WP_DEBUG, 'true');define(WP_DEBUG_LOG, 'true'); define(WP_DEBUG_DISPLAY, 'true'); 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Support Acc: 
+
+addifyhelp@gmail.com
+support@@2211
+
+help.koalaapps@gmail.com
+CZkhfx4JHj339nG
+
+
+Plugin Testing Methodology 
+
+Standards 
+Functionality
+Spellings Grammer 
+Desktop Visibility 
+Mobile Visibility 
+Logic 

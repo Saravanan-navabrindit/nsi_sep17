@@ -1,0 +1,35 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-crown-blocks-latest-news {
+	.post-feed {
+		 > .inner {
+			 display: flex;
+			 margin: 0 -15px;
+			 justify-content: center;
+		 }
+	}
+	article.index-entry-post {
+		width: 100%;
+		display: none;
+		padding: 0 15px;
+		margin: 0;
+		&:nth-child(1) { display: block; }
+		@media (min-width: $screen-sm) {
+			width: 50%;
+			&:nth-child(2) { display: block; }
+		}
+		@media (min-width: $screen-md) {
+			width: 33.333333%;
+			&:nth-child(3) { display: block; }
+		}
+		
+	}
+}

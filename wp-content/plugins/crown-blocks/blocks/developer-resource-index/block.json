@@ -1,0 +1,17 @@
+{
+	"apiVersion": 2,
+	"name": "crown-blocks/developer-resource-index",
+	"version": "0.1.0",
+	"title": "Developer Resource Index",
+	"category": "widgets",
+	"icon": "media-document",
+	"description": "Displays the index of developer resource entries.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "crown-blocks",
+	"editorScript": "file:./build/index.js",
+    "script": "file:./build/public.js",
+    "editorStyle": "file:./build/index.css",
+    "style": "file:./build/style-index.css"
+}

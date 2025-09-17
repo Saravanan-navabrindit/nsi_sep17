@@ -1,0 +1,18 @@
+{
+	"apiVersion": 2,
+	"name": "crown-blocks/flexible-grid-cell",
+	"version": "0.1.0",
+	"title": "Flexible Grid Cell",
+	"category": "widgets",
+	"icon": "grid-view",
+	"description": "Flexible Grid Cell block",
+	"parent": [ "crown-blocks/flexible-grid" ],
+	"supports": {
+		"html": false
+	},
+	"textdomain": "crown-blocks",
+	"editorScript": "file:./build/index.js",
+    "script": "file:./build/public.js",
+    "editorStyle": "file:./build/index.css",
+    "style": "file:./build/style-index.css"
+}

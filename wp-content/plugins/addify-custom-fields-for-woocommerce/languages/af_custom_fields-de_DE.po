@@ -1,0 +1,652 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Custom Fields for WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-26 10:01+0000\n"
+"PO-Revision-Date: 2023-04-26 10:04+0000\n"
+"Last-Translator: addify testing\n"
+"Language-Team: German\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.4; wp-6.2\n"
+"X-Domain: af_custom_fields"
+
+#. %s: field label
+#: includes/account/validate-fields.php:51
+#: includes/registration/validate-fields.php:53
+#: includes/registration/validate-fields.php:179
+msgid " is not a valid email address!"
+msgstr ""
+
+#. %s: field label
+#: includes/account/validate-fields.php:84
+#: includes/registration/validate-fields.php:69
+#: includes/registration/validate-fields.php:213
+msgid " is not a valid number!"
+msgstr ""
+
+#. %s: field label
+#: includes/registration/validate-fields.php:158
+msgid " is required!"
+msgstr ""
+
+#. %s: field label
+#: includes/account/validate-fields.php:93
+msgid " is required."
+msgstr ""
+
+#: class-af-custom-fields.php:86
+msgid ""
+" Kindly activate soap application from your server to validate VIES VAT "
+"number validation."
+msgstr ""
+
+#. %s: field label
+#: includes/class-af-c-f-checkout.php:512
+#, php-format
+msgid "%s is a not a valid email address"
+msgstr ""
+
+#. %s: field label
+#: includes/class-af-c-f-checkout.php:518
+#, php-format
+msgid "%s is a not a valid number"
+msgstr ""
+
+#. %s: field label
+#: includes/class-af-c-f-checkout.php:530
+#: includes/class-af-c-f-checkout.php:537
+#, php-format
+msgid "%s is a not a valid VAT number"
+msgstr ""
+
+#. %s: field label
+#: includes/class-af-c-f-checkout.php:471
+#: includes/class-af-c-f-checkout.php:504
+#, php-format
+msgid "%s is a required field"
+msgstr ""
+
+#. %s: field label
+#: includes/class-af-c-f-checkout.php:490
+#, php-format
+msgid "%s is not a valid"
+msgstr ""
+
+#. %s: field label
+#: includes/account/validate-fields.php:66
+#: includes/account/validate-fields.php:73
+#: includes/registration/validate-fields.php:93
+#: includes/registration/validate-fields.php:195
+#: includes/registration/validate-fields.php:202
+#, php-format
+msgid "%s is not a valid Vat Number."
+msgstr ""
+
+#. %s: field label
+#: includes/registration/validate-fields.php:86
+#, php-format
+msgid "%s is not a valid VIES VAT number."
+msgstr ""
+
+#. %s: field label
+#: includes/class-af-c-f-checkout.php:495
+#, php-format
+msgid "%s is required"
+msgstr ""
+
+#. %s: field label
+#: includes/account/validate-fields.php:31
+#: includes/account/validate-fields.php:37
+#: includes/account/validate-fields.php:43
+#: includes/registration/validate-fields.php:30
+#: includes/registration/validate-fields.php:45
+#: includes/registration/validate-fields.php:60
+#: includes/registration/validate-fields.php:104
+#: includes/registration/validate-fields.php:165
+#: includes/registration/validate-fields.php:171
+#: includes/registration/validate-fields.php:223
+#, php-format
+msgid "%s is required!"
+msgstr ""
+
+#: templates/registration/user-roles-dropdown.php:4
+msgid "---Select---"
+msgstr ""
+
+#. %s: field label
+#: includes/account/validate-fields.php:120
+#: includes/registration/validate-fields.php:134
+#: includes/registration/validate-fields.php:251
+msgid ": File size is too big!"
+msgstr ""
+
+#. %s: field label
+#: includes/account/validate-fields.php:105
+#: includes/registration/validate-fields.php:117
+#: includes/registration/validate-fields.php:236
+msgid ": File type is not allowed!"
+msgstr ""
+
+#: includes/emails/class-af-email-admin-register-new-user.php:46
+msgid "[{site_title}]: New user has been registered.."
+msgstr ""
+
+#: includes/emails/class-af-email-admin-register-new-user.php:50
+msgid "Account Created : {username}"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Add extra fields to registration and checkout page. Supports 19 fields types "
+"and ability to add fields dependable fields."
+msgstr ""
+
+#: class-af-custom-fields.php:139 class-af-custom-fields.php:140
+msgid "Add New Field"
+msgstr ""
+
+#. Author of the plugin
+msgid "Addify"
+msgstr ""
+
+#: includes/emails/class-af-email-approve-user-account.php:60
+msgid "Addify Approve New User"
+msgstr ""
+
+#: includes/emails/class-af-email-declined-user-account.php:60
+msgid "Addify Declined New Account"
+msgstr ""
+
+#: includes/emails/class-af-email-register-new-account.php:60
+msgid "Addify New account/Pending User"
+msgstr ""
+
+#: includes/emails/class-af-email-admin-register-new-user.php:14
+msgid "Addify New User Registered"
+msgstr ""
+
+#: includes/emails/class-af-email-admin-register-new-user.php:135
+msgid "Additional content"
+msgstr ""
+
+#: class-af-custom-fields.php:308
+msgid "Address 2"
+msgstr ""
+
+#: includes/class-af-c-f-checkout.php:62 admin/settings/general.php:37
+msgid "After Billing Form"
+msgstr ""
+
+#: includes/class-af-c-f-checkout.php:65 admin/settings/general.php:40
+msgid "After Customer Details"
+msgstr ""
+
+#: includes/class-af-c-f-checkout.php:70 admin/settings/general.php:45
+#: admin/settings/general.php:46 admin/settings/general.php:47
+msgid "After Order Notes"
+msgstr ""
+
+#: includes/class-af-c-f-checkout.php:68 admin/settings/general.php:43
+msgid "After Order Review"
+msgstr ""
+
+#: includes/class-af-c-f-checkout.php:74 admin/settings/general.php:49
+msgid "After Order Submit"
+msgstr ""
+
+#: includes/class-af-c-f-checkout.php:64 admin/settings/general.php:39
+msgid "After Shipping Form"
+msgstr ""
+
+#: includes/class-af-c-f-checkout.php:72
+msgid "After Terms and Conditions"
+msgstr ""
+
+#: includes/class-af-c-f-checkout.php:290
+msgid "Agree"
+msgstr ""
+
+#: admin/settings/billing.php:36
+msgid "All Billing Fields"
+msgstr ""
+
+#: class-af-custom-fields.php:188
+msgid "All Default Fields"
+msgstr ""
+
+#: class-af-custom-fields.php:149
+msgid "All Fields"
+msgstr ""
+
+#: admin/settings/shipping.php:32
+msgid "All Shipping Fields"
+msgstr ""
+
+#. %s: list of placeholders
+#: includes/emails/class-af-email-admin-register-new-user.php:101
+#, php-format
+msgid "Available placeholders: %s"
+msgstr ""
+
+#: includes/class-af-c-f-checkout.php:61 admin/settings/general.php:36
+msgid "Before Billing Form"
+msgstr ""
+
+#: includes/class-af-c-f-checkout.php:60 admin/settings/general.php:35
+msgid "Before Customer Details"
+msgstr ""
+
+#: includes/class-af-c-f-checkout.php:69 admin/settings/general.php:44
+msgid "Before Order Notes"
+msgstr ""
+
+#: includes/class-af-c-f-checkout.php:67 admin/settings/general.php:42
+msgid "Before Order Review"
+msgstr ""
+
+#: includes/class-af-c-f-checkout.php:66 admin/settings/general.php:41
+msgid "Before Order Review Heading"
+msgstr ""
+
+#: includes/class-af-c-f-checkout.php:73 admin/settings/general.php:48
+msgid "Before Order Submit"
+msgstr ""
+
+#: includes/class-af-c-f-checkout.php:63 admin/settings/general.php:38
+msgid "Before Shipping Form"
+msgstr ""
+
+#: includes/class-af-c-f-checkout.php:71
+msgid "Before Terms and Conditions"
+msgstr ""
+
+#: admin/settings/checkout.php:13
+msgid "Billing Fields"
+msgstr ""
+
+#: admin/settings/billing.php:16
+msgid "Billing fields by user roles"
+msgstr ""
+
+#. %s: Billing Field Label
+#. %s: Shipping Field Label
+#: admin/settings/title.php:53 admin/settings/title.php:102
+#, php-format
+msgid "Change label of %s"
+msgstr ""
+
+#: admin/settings/title.php:19
+msgid "Checkout billing fields labels"
+msgstr ""
+
+#: admin/settings/title.php:68
+msgid "Checkout Shipping Fields Labels"
+msgstr ""
+
+#: includes/emails/class-af-email-admin-register-new-user.php:146
+msgid "Choose which format of email to send."
+msgstr ""
+
+#: admin/settings/billing.php:32 admin/settings/billing.php:79
+#: admin/settings/shipping.php:76
+msgid "Click to Remove"
+msgstr ""
+
+#: admin/settings/billing.php:29 admin/settings/billing.php:50
+#: admin/settings/shipping.php:46
+msgid "Click to select"
+msgstr ""
+
+#: admin/user-profile-fields.php:326 templates/emails/customer-details.php:85
+#: templates/my-account/account-fields.php:542
+msgid "Click to View"
+msgstr ""
+
+#: class-af-custom-fields.php:257
+msgid "Company"
+msgstr ""
+
+#: class-af-custom-fields.php:274
+msgid "Country"
+msgstr ""
+
+#: templates/my-account/account-fields.php:527
+msgid "Current"
+msgstr ""
+
+#: class-af-custom-fields.php:138
+msgid "Custom Field"
+msgstr ""
+
+#: class-af-custom-fields.php:137 class-af-custom-fields.php:150
+msgid "Custom Fields"
+msgstr ""
+
+#. Name of the plugin
+msgid "Custom Fields for WooCommerce"
+msgstr ""
+
+#: class-af-custom-fields.php:37
+msgid ""
+"Custom Fields for WooCommerce plugin is inactive. WooCommerce plugin must be "
+"active in order to activate it."
+msgstr ""
+
+#: class-af-custom-fields.php:84
+msgid "Custom Fields for WooCommerce:"
+msgstr ""
+
+#: includes/emails/class-af-email-approve-user-account.php:61
+msgid ""
+"Customer \" Approve new account\" emails are sent to the customer when admin "
+"approve the customer account."
+msgstr ""
+
+#: includes/emails/class-af-email-declined-user-account.php:61
+msgid ""
+"Customer \"Declined new account\" emails are sent to the customer when admin "
+"disapprove the customer account."
+msgstr ""
+
+#: includes/emails/class-af-email-register-new-account.php:61
+msgid ""
+"Customer \"new account\" emails are sent to the customer when a customer "
+"signs up."
+msgstr ""
+
+#: class-af-custom-fields.php:178 class-af-custom-fields.php:179
+#: class-af-custom-fields.php:189
+msgid "Default Registration Fields"
+msgstr ""
+
+#: admin/settings/general.php:16
+msgid "Display Location"
+msgstr ""
+
+#: admin/settings/billing.php:31
+msgid "Drag to Sort"
+msgstr ""
+
+#: admin/settings/billing.php:72 admin/settings/shipping.php:69
+msgid "Drag to sort"
+msgstr ""
+
+#: class-af-custom-fields.php:141
+msgid "Edit Custom Field"
+msgstr ""
+
+#: class-af-custom-fields.php:180
+msgid "Edit Registration Field"
+msgstr ""
+
+#: includes/emails/class-af-email-admin-register-new-user.php:127
+msgid "Email heading"
+msgstr ""
+
+#: includes/emails/class-af-email-admin-register-new-user.php:16
+msgid "Email notification to admin when user create an account."
+msgstr ""
+
+#: includes/emails/class-af-email-admin-register-new-user.php:144
+msgid "Email type"
+msgstr ""
+
+#: admin/afreg_def_admin.php:7
+msgid "Enable Default Registration Fields"
+msgstr ""
+
+#: admin/afreg_def_admin.php:8
+msgid ""
+"Enable default woocommerce registration fields on registration page. When "
+"user enter these fields data will be populated on billing fields "
+"automatically."
+msgstr ""
+
+#: includes/emails/class-af-email-admin-register-new-user.php:106
+msgid "Enable this email notification"
+msgstr ""
+
+#: includes/emails/class-af-email-admin-register-new-user.php:104
+msgid "Enable/Disable"
+msgstr ""
+
+#. %s: WP admin email
+#: includes/emails/class-af-email-admin-register-new-user.php:113
+#, php-format
+msgid "Enter recipients (comma separated) for this email. Defaults to %s."
+msgstr ""
+
+#: includes/class-af-c-f-checkout.php:28 includes/class-af-c-f-checkout.php:441
+#: includes/class-af-c-f-checkout.php:898
+msgid "Failed Ajax security check!"
+msgstr ""
+
+#: admin/afreg_def_admin.php:66
+msgid "Field Width:"
+msgstr ""
+
+#: admin/settings/checkout.php:10
+msgid "Fields Label"
+msgstr ""
+
+#: class-af-custom-fields.php:223
+msgid "First Name"
+msgstr ""
+
+#: admin/afreg_def_admin.php:68
+msgid "Full Width"
+msgstr ""
+
+#: admin/settings/general.php:9
+msgid "General settings"
+msgstr ""
+
+#: admin/settings/billing.php:11 admin/settings/shipping.php:11
+msgid "Guest"
+msgstr ""
+
+#: admin/afreg_def_admin.php:72
+msgid "Half Width"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://woocommerce.com/products/custom-fields-for-woocommerce/"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://woocommerce.com/vendor/addify/"
+msgstr ""
+
+#. %s: field label
+#: includes/account/validate-fields.php:26
+#: includes/registration/validate-fields.php:25
+msgid "Invalid reCaptcha!"
+msgstr ""
+
+#: admin/afreg_def_admin.php:42
+msgid "Label:"
+msgstr ""
+
+#: class-af-custom-fields.php:240
+msgid "Last Name"
+msgstr ""
+
+#: admin/afreg_def_admin.php:52
+msgid "Message:"
+msgstr ""
+
+#: includes/emails/class-af-email-admin-register-new-user.php:138
+msgid "N/A"
+msgstr ""
+
+#: class-af-custom-fields.php:142
+msgid "New Custom Field"
+msgstr ""
+
+#: class-af-custom-fields.php:181
+msgid "New Registration Field"
+msgstr ""
+
+#: includes/class-af-c-f-checkout.php:282
+msgid "No"
+msgstr ""
+
+#: class-af-custom-fields.php:146 class-af-custom-fields.php:185
+msgid "No Custom field found"
+msgstr ""
+
+#: class-af-custom-fields.php:147 class-af-custom-fields.php:186
+msgid "No Custom field found in trash"
+msgstr ""
+
+#: admin/settings/general.php:20
+msgid "Option to display custom fields on checkout page."
+msgstr ""
+
+#: class-af-custom-fields.php:376
+msgid "Phone"
+msgstr ""
+
+#: admin/afreg_def_admin.php:47
+msgid "Placeholder:"
+msgstr ""
+
+#: class-af-custom-fields.php:359
+msgid "Postcode / Zip"
+msgstr ""
+
+#: admin/afreg_def_admin.php:83
+msgid "Publish"
+msgstr ""
+
+#: includes/emails/class-af-email-admin-register-new-user.php:110
+msgid "Recipient(s)"
+msgstr ""
+
+#: admin/afreg_def_admin.php:57
+msgid "Required:"
+msgstr ""
+
+#: class-af-custom-fields.php:144
+msgid "Search Custom Field"
+msgstr ""
+
+#: class-af-custom-fields.php:183
+msgid "Search Registration Field"
+msgstr ""
+
+#: includes/class-af-c-f-ajax.php:198
+#: includes/registration/validate-fields.php:14
+#: templates/registration/registration-fields.php:14
+msgid "Security Violated"
+msgstr ""
+
+#: includes/account/validate-fields.php:14
+msgid "Security Violated 1"
+msgstr ""
+
+#: includes/class-af-c-f-ajax.php:253
+msgid "Select a county / state..."
+msgstr ""
+
+#: admin/settings/billing.php:30 admin/settings/billing.php:47
+#: admin/settings/shipping.php:43
+msgid "Selected"
+msgstr ""
+
+#: admin/settings/billing.php:62 admin/settings/shipping.php:58
+msgid "Selected Fields ( Drag to sort )"
+msgstr ""
+
+#: admin/afreg_def_admin.php:11
+msgid "Settings saved successfully."
+msgstr ""
+
+#: admin/settings/checkout.php:16
+msgid "Shipping Fields"
+msgstr ""
+
+#: admin/settings/shipping.php:16
+msgid "Shipping fields by user roles"
+msgstr ""
+
+#: admin/afreg_def_admin.php:62
+msgid "Sort Order:"
+msgstr ""
+
+#: class-af-custom-fields.php:325
+msgid "State / County"
+msgstr ""
+
+#: admin/afreg_def_admin.php:81
+msgid "Status:"
+msgstr ""
+
+#: class-af-custom-fields.php:291
+msgid "Street Address"
+msgstr ""
+
+#: admin/settings/billing.php:18 admin/settings/shipping.php:18
+msgid ""
+"Street address, Town / City, State / County, Postcode / ZIP are not sortable"
+msgstr ""
+
+#: admin/settings/checkout.php:29
+msgid ""
+"Street address, Town / City, State / County, Postcode / ZIP fields labels "
+"are not customizable."
+msgstr ""
+
+#: includes/emails/class-af-email-admin-register-new-user.php:119
+msgid "Subject"
+msgstr ""
+
+#: includes/emails/class-af-email-admin-register-new-user.php:136
+msgid "Text to appear below the main email content."
+msgstr ""
+
+#: class-af-custom-fields.php:342
+msgid "Town / City"
+msgstr ""
+
+#: admin/afreg_def_admin.php:84
+msgid "Unpublish"
+msgstr ""
+
+#: class-af-custom-fields.php:143
+msgid "View Custom Field"
+msgstr ""
+
+#: class-af-custom-fields.php:182
+msgid "View Registration Field"
+msgstr ""
+
+#: includes/emails/class-af-email-approve-user-account.php:216
+#: includes/emails/class-af-email-declined-user-account.php:217
+#: includes/emails/class-af-email-register-new-account.php:217
+msgid "We look forward to seeing you soon."
+msgstr ""
+
+#: includes/emails/class-af-email-approve-user-account.php:98
+#: includes/emails/class-af-email-declined-user-account.php:99
+#: includes/emails/class-af-email-register-new-account.php:99
+msgid "Welcome to {site_title}"
+msgstr ""
+
+#: includes/class-af-c-f-checkout.php:282
+msgid "Yes"
+msgstr ""
+
+#: includes/emails/class-af-email-approve-user-account.php:88
+#: includes/emails/class-af-email-register-new-account.php:89
+msgid "Your {site_title} account has been created!"
+msgstr ""
+
+#: includes/emails/class-af-email-declined-user-account.php:89
+msgid "Your {site_title} account has been declined by Admin!"
+msgstr ""

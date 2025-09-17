@@ -1,0 +1,292 @@
+.manual-sync-products__settings__logs {
+    overflow-y: auto;
+    max-height: 500px;
+}
+
+table.addify_quote_items td>input.quote-qty-input {
+    width: 5.106325903em;
+}
+
+#footer-upgrade.alignright {
+    text-align: right;
+}
+
+#afrfq-quote-info .addify_quote_items_wrapper .addify_quote_items_total tr:nth-last-child(2),
+#afrfq-quote-info .addify_quote_items_wrapper .addify_quote_items_total tr:nth-last-child(3) {
+    display: none;
+}
+
+.disable-controls #wpcontent *, .disable-controls #wpcontent *:hover,
+.disable-controls #adminmenu *, .disable-controls #adminmenu *:hover,
+#myModal button.vieworder.button-primary,
+#myModal button.editprofile.button-primary {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+body.disable-controls {
+    opacity: 0.8;
+}
+
+#loader_fme-nsi {
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    z-index:1051;
+    position:fixed;
+    flex-direction: column;
+    display:none;
+    align-items: center;
+}
+
+#loader_fme-nsi img {
+    width: 13vw;
+}
+
+#customer_switching_message {
+    animation: colorSpinnerTransition 3s infinite alternate;
+    margin-top: 2rem;
+    font-size: 2vw;
+    opacity: 1;
+}
+#customer_switching_message > div {
+    margin-top: 1.5rem;;
+}
+
+@keyframes colorSpinnerTransition {
+    0% {
+        color: #00aaff;
+    }
+    100% {
+        color: #a0e4fc;
+    }
+}
+
+#afrfq-quote-info #addify_quote_items_table thead th, #afrfq-quote-info #addify_pricing_group_table thead th {
+    position: relative;
+    padding-bottom: 1.6em;
+}
+
+#afrfq-quote-info #addify_quote_items_table thead, #afrfq-quote-info #addify_pricing_group_table thead {
+    line-height: 2;
+}
+
+#addify_quote_items_table small, #addify_pricing_group_table small {
+    font-size: 70%;
+    position: absolute;
+}
+
+#addify_quote_items_table thead small, #addify_pricing_group_table thead small {
+    bottom: 6px;
+    text-wrap: wrap;
+    max-width: 70px;
+    right: 3px;
+}
+
+#addify_quote_items_table tbody p small, #addify_pricing_group_table tbody p small {
+    position: relative;
+}
+
+.afrfq-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.afrfq-modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    text-align: center;
+}
+.afrfq-modal-content h3 {
+    margin-bottom: 30px;
+}
+.afrfq-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.afrfq-close:hover, .afrfq-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#editor > div > div.editor-editor-interface.edit-post-layout .crown-block-button-toolbar .components-input-control__backdrop {
+    pointer-events: none;
+}
+
+.page--display-attributes {
+    display: block;
+    position: relative;
+}
+
+.page--display-attributes .row.row--header {
+    font-weight: 600;
+}
+
+.page--display-attributes .row {
+    border: 1px solid #000;
+    display: flex;
+    list-style-type: none;
+    max-width: 800px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.page--display-attributes .row:not(:first-child) {
+    border-top: 0;
+}
+
+.page--display-attributes .row:nth-child(2n) {
+    background: #fff;
+}
+
+.page--display-attributes .row .col--select {
+    border-right: 1px solid #000;
+    margin: 0;
+    padding: 5px;
+    width: 19%;
+    text-align: center;
+}
+
+.page--display-attributes .row .col--name-raw,
+.page--display-attributes .row .col--default-name {
+    border-right: 1px solid #000;
+}
+
+.page--display-attributes .row .col--name-raw,
+.page--display-attributes .row .col--display-name,
+.page--display-attributes .row .col--default-name {
+    border-right: 1px solid #000;
+    margin: 0;
+    padding: 5px;
+    width: 27%;
+}
+
+.page--display-attributes .button {
+    margin-top: 25px;
+}
+
+.page--edit-order-types {
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+}
+
+.page--edit-order-types .row {
+    border: 1px solid #000;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    max-width: 700px;
+    padding: 0;
+    width: 100%;
+}
+
+.page--edit-order-types .row:not(:first-child) {
+    border-top: 0;
+}
+
+.page--edit-order-types .row:nth-child(2n) {
+    background: #fff;
+}
+
+.page--edit-order-types .row.row--header {
+    font-weight: bold;
+}
+
+.page--edit-order-types .row.row--header .col--nicename {
+    padding: 5px 2px;
+}
+
+.page--edit-order-types .row .col--id {
+    border-right: 1px solid #000;
+    margin: 0;
+    padding: 5px;
+    width: 10%;
+}
+
+.page--edit-order-types .row .col--ns-value {
+    border-right: 1px solid #000;
+    margin: 0;
+    padding: 5px;
+    width: 45%;
+}
+
+.page--edit-order-types .row .col--nicename {
+    margin: 0;
+    padding: 2px;
+    width: 45%;
+}
+
+.page--edit-order-types .row .col--nicename input {
+    border-radius: 0;
+    font-weight: bold;
+    margin: 0;
+    width: 100%;
+}
+
+.page--edit-order-types .button {
+    margin-top: 25px;
+}
+
+#woocommerce-order-items .woocommerce_order_items_wrapper table.woocommerce_order_items .header-shipped-qty,
+#woocommerce-order-items .woocommerce_order_items_wrapper table.woocommerce_order_items .value-shipped-qty {
+    text-align: center;
+}
+
+.woocommerce_order_items_wrapper.wc-order-items-editable .value-shipped-qty .times {
+    margin-right: .25em;
+}
+
+#dsm-allowed-brands .dsm-allowed-brands--group {
+    display: flex;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+#dsm-allowed-brands .dsm-allowed-brands--group .dsm-allowed-brands--brands {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+
+#dsm-allowed-brands .dsm-allowed-brands--group .dsm-allowed-brands--brands label {
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+#dsm-allowed-brands .dsm-allowed-brands--group .dsm-domain,
+#dsm-allowed-brands .dsm-allowed-brands--group .dsm-button {
+    align-content: center;
+}
+
+.acf-disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.wp-admin table.wp-list-table .column-name {
+    width: 15%;
+}
+
+.wp-admin table.wp-list-table .column-date,
+.wp-admin table.wp-list-table .column-dropship_item,
+.wp-admin table.wp-list-table .column-restricted_item,
+.wp-admin table.wp-list-table .column-disable_purchase,
+.wp-admin table.wp-list-table .column-taxonomy-product_industry {
+    width: 8%;
+}

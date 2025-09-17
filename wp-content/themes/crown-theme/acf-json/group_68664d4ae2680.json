@@ -1,0 +1,72 @@
+{
+    "key": "group_68664d4ae2680",
+    "title": "Theme Settings - admins only",
+    "fields": [
+        {
+            "key": "field_68664d4ee4eb3",
+            "label": "General Settings",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_68664d63e4eb4",
+            "label": "Replace default Category pages links with HawkSearch Search Pages links",
+            "name": "nsi_replace_category_pages_with_hawksearch",
+            "aria-label": "",
+            "type": "checkbox",
+            "instructions": "Checking this checkbox will replace links to Category pages in Main Menu and Breadcrumbs to HawkSearch Search Pages",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "yes": "Yes"
+            },
+            "default_value": [],
+            "return_format": "value",
+            "allow_custom": 0,
+            "layout": "vertical",
+            "toggle": 0,
+            "save_custom": 0,
+            "custom_choice_button_text": "Add new choice"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-settings"
+            },
+            {
+                "param": "current_user_role",
+                "operator": "==",
+                "value": "administrator"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1751535124
+}

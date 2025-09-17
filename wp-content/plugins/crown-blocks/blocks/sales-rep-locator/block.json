@@ -1,0 +1,17 @@
+{
+	"apiVersion": 2,
+	"name": "crown-blocks/sales-rep-locator",
+	"version": "0.1.0",
+	"title": "Sales Rep Locator",
+	"category": "layout",
+	"icon": "block-default",
+	"description": "Displays the sales rep locator tool.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "crown-blocks",
+	"editorScript": "file:./build/index.js",
+    "script": "file:./build/public.js",
+    "editorStyle": "file:./build/index.css",
+    "style": "file:./build/style-index.css"
+}

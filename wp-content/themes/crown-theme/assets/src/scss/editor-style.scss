@@ -1,0 +1,51 @@
+@use "sass:math";
+
+
+// variables
+@import 'config/_variables';
+
+// libraries
+@import '../../../lib/bootstrap/scss/bootstrap';
+
+// configuration
+// @import 'config/_fonts';
+@import 'config/_functions';
+@import 'config/_mixins';
+
+// core
+@import 'core/_scaffolding';
+@import 'core/_type';
+@import 'core/_grid';
+@import 'core/_forms';
+
+// components
+@import 'components/_links';
+@import 'components/_buttons';
+@import 'components/_search-form';
+@import 'components/_pagination';
+@import 'components/_other';
+@import 'components/_blocks';
+
+// modules
+@import 'modules/_gravity-forms';
+
+
+.editor-styles-wrapper {
+	background: #fff;
+	padding: 0;
+}
+body {
+	padding: 0;
+}
+
+.editor-post-title__input {
+	font-family: $headings-font-family;
+	text-align: center;
+}
+.components-button {
+	overflow: hidden;
+}
+
+.js .tmce-active .wp-editor-area {
+	color: initial;
+}

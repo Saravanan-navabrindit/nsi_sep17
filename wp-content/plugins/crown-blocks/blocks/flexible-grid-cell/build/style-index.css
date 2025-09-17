@@ -1,0 +1,26 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./blocks/flexible-grid-cell/src/style.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-crown-blocks-grid-cell > .cell-bg {
+  position: relative;
+}
+.wp-block-crown-blocks-grid-cell > .cell-bg, .wp-block-crown-blocks-grid-cell > .cell-bg .bg-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.wp-block-crown-blocks-grid-cell > .cell-bg .bg-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

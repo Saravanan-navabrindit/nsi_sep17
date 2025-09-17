@@ -1,0 +1,79 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-crown-blocks-post-index {
+	@include post-feed-block();
+	.post-feed-header {
+		
+	}
+	.post-feed-filters {
+		background-color: #e6e6e6;
+		padding: 20px;
+		@media (min-width: 768px) {
+			padding: 30px;
+		}
+		> .inner {
+			display: flex;
+			flex-direction: column;
+			margin: -10px;
+			@media (min-width: 768px) {
+				flex-direction: row;
+			}
+		}
+		.filters-header {
+			display: none;
+		}
+		input,
+		select {
+			background-color: #fff !important;
+			border: 1px solid #000;
+		}
+		.filter,
+		.filters-footer {
+			padding: 10px;
+			margin: 0;
+			flex: 0 0 100%;
+			@media (min-width: 768px) {
+				flex: 1 1 100%;
+			}
+		}
+		.filter {
+			@media (min-width: 768px) {
+				align-self: flex-end;
+			}
+		}
+		.filters-footer {
+			display: flex;
+			padding: 10px 8px;
+			@media (min-width: 768px) {
+				align-self: flex-end;
+			}
+			.btn {
+				flex: 1 1 100%;
+				margin: 0 2px;
+			}
+			.reset {
+				border-color: #000;
+			}
+		}
+	}
+	.post-feed {
+		article {
+			width: 100%;
+			margin-bottom: 0;
+			@media (min-width: 768px) {
+				width: 50%;
+			}
+			@media (min-width: 992px) {
+				width: 33.333333%;
+			}
+		}
+	}
+}

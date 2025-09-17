@@ -1,0 +1,77 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@use "sass:math";
+@import '../../../common';
+$spacer: 1rem;
+
+.wp-block-crown-blocks-column {
+     display: flex;
+ 
+     &.vertical-alignment-center { align-items: center; }
+     &.vertical-alignment-bottom { align-items: flex-end; }
+ 
+     > .inner {
+         width: 100%;
+         position: relative;
+     }
+     &.enable-shadow > .inner {
+         padding: 30px;
+         box-shadow: 0 30px 75px rgba(0,0,0,0.2);
+         background-color: #fff;
+     }
+     &.enable-shadow.large-padding > .inner {
+         @media ( max-width: $screen-lg - 1 ) {
+             padding: 30px !important;
+         }
+     }
+ 
+     @for $i from 0 through 20 {
+         &.contents-pl-#{$i} > .inner > .column-contents { padding-left: $spacer * $i; }
+         &.contents-pr-#{$i} > .inner > .column-contents { padding-right: $spacer * $i; }
+         &.contents-pt-#{$i} > .inner > .column-contents { padding-top: $spacer * $i; }
+         &.contents-pb-#{$i} > .inner > .column-contents { padding-bottom: $spacer * $i; }
+         &.contents-ob-#{$i} > .inner > .column-contents { margin-bottom: -$spacer * $i; }
+     }
+     @media (min-width: 576px) {
+         @for $i from 0 through 20 {
+             &.contents-pl-sm-#{$i} > .inner > .column-contents { padding-left: $spacer * $i; }
+             &.contents-pr-sm-#{$i} > .inner > .column-contents { padding-right: $spacer * $i; }
+             &.contents-pt-sm-#{$i} > .inner > .column-contents { padding-top: $spacer * $i; }
+             &.contents-pb-sm-#{$i} > .inner > .column-contents { padding-bottom: $spacer * $i; }
+             &.contents-ob-sm-#{$i} > .inner > .column-contents { margin-bottom: -$spacer * $i; }
+         }
+     }
+     @media (min-width: 768px) {
+         @for $i from 0 through 20 {
+             &.contents-pl-md-#{$i} > .inner > .column-contents { padding-left: $spacer * $i; }
+             &.contents-pr-md-#{$i} > .inner > .column-contents { padding-right: $spacer * $i; }
+             &.contents-pt-md-#{$i} > .inner > .column-contents { padding-top: $spacer * $i; }
+             &.contents-pb-md-#{$i} > .inner > .column-contents { padding-bottom: $spacer * $i; }
+             &.contents-ob-md-#{$i} > .inner > .column-contents { margin-bottom: -$spacer * $i; }
+         }
+     }
+     @media (min-width: 992px) {
+         @for $i from 0 through 20 {
+             &.contents-pl-lg-#{$i} > .inner > .column-contents { padding-left: $spacer * $i; }
+             &.contents-pr-lg-#{$i} > .inner > .column-contents { padding-right: $spacer * $i; }
+             &.contents-pt-lg-#{$i} > .inner > .column-contents { padding-top: $spacer * $i; }
+             &.contents-pb-lg-#{$i} > .inner > .column-contents { padding-bottom: $spacer * $i; }
+             &.contents-ob-lg-#{$i} > .inner > .column-contents { margin-bottom: -$spacer * $i; }
+         }
+     }
+     @media (min-width: 1200px) {
+         @for $i from 0 through 20 {
+             &.contents-pl-xl-#{$i} > .inner > .column-contents { padding-left: $spacer * $i; }
+             &.contents-pr-xl-#{$i} > .inner > .column-contents { padding-right: $spacer * $i; }
+             &.contents-pt-xl-#{$i} > .inner > .column-contents { padding-top: $spacer * $i; }
+             &.contents-pb-xl-#{$i} > .inner > .column-contents { padding-bottom: $spacer * $i; }
+             &.contents-ob-xl-#{$i} > .inner > .column-contents { margin-bottom: -$spacer * $i; }
+         }
+     }
+ 
+}

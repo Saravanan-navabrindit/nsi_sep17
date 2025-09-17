@@ -1,0 +1,106 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-crown-blocks-cta {
+	border-radius: 5px;
+	overflow: hidden;
+	margin-bottom: 40px;
+	
+    &.text-color-light {
+		color: #fff;
+
+		p {
+			color: #F3F0E8;
+		}
+	}
+	&.text-color-dark {
+		color: $black;
+	}
+
+	&.text-align-left { text-align: left; }
+	&.text-align-center { text-align: center; }
+	&.text-align-right { text-align: right; }
+
+	&.align-center {
+		> .inner {
+			justify-content: center;
+			text-align: center;
+		}
+	}
+
+	.cta__background-image {
+		position: relative;
+		padding-bottom: 67%;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		clip-path: polygon( 0 0, 100% 0, 100% 100%, 0 80% );
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #EFE7DA;
+			clip-path: polygon( 0 calc(80% - 5px), 100% calc(100% - 5px), 100% 100%, 0 100% );
+		}
+	}
+
+	.cta__content {
+		position: relative;
+		padding: 20px 20px 40px;
+
+		@media (min-width: $screen-lg) {
+			padding: 40px 30px 40px;
+		}
+	}
+
+	@media (min-width: $screen-md) {
+		> .inner {
+			display: flex;
+		}
+
+		@mixin cta-bg-slant() {
+			clip-path: polygon( 100px 0, 100% 0, 100% 100%, 0 100% );
+
+			&::after {
+				clip-path: polygon( 0 0, 105px 0, 5px 100%, 0 100% );
+			}
+		}
+		@mixin cta-bg-slant-alt() {
+			clip-path: polygon( 0 0, 100% 0, 100% 100%, 100px 100% );
+
+			&::after {
+				clip-path: polygon( 0 0, 5px 0, 105px 100%, 0 100% );
+			}
+		}
+		
+		.cta__background-image {
+			flex-basis: calc(50% + 30px);
+			order: 2;
+			padding-bottom: 0;
+			@include cta-bg-slant;
+		}
+
+		.cta__content {
+			flex-basis: calc(50% - 30px);
+			order: 1;
+		}
+
+		&.reverse-image-slant {
+			.cta__background-image {
+				@include cta-bg-slant-alt;
+			}
+		}
+	}
+	
+}

@@ -1,0 +1,50 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-crown-blocks-latest-news-article {
+	h2 {
+		font-size: 1.125rem;
+		text-transform: uppercase;
+		opacity: .8;
+		letter-spacing: .1em;
+	}
+	article {
+		a {
+			color: inherit;
+		}
+		.entry-title {
+			@media (min-width: $screen-sm) {
+				font-size: 2.5rem;
+			}
+		}
+		.entry-author, 
+		.entry-date {
+			margin-bottom: 0.25rem;
+		}
+		.entry-date {
+			@media (min-width: $screen-sm) {
+				padding-right: 50%;
+			}
+		}
+		.cta {
+			margin-bottom: 0;
+			@media (min-width: $screen-sm) {
+				text-align: right;
+				margin-top: -1.75rem;
+			}
+		}
+	}
+	.block-cta {
+		margin-top: 2rem;
+		@media (min-width: $screen-sm) {
+			margin-top: 4rem;
+		}
+	}
+}

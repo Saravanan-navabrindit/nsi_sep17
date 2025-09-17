@@ -1,0 +1,9 @@
+
+.container {
+	@each $breakpoint, $padding-x in $container-padding-x {
+		@include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+			padding-left: $padding-x;
+			padding-right: $padding-x;
+		}
+	}
+}

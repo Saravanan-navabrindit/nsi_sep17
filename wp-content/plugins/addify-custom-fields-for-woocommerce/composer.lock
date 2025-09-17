@@ -1,0 +1,81 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "5956aa72cb4f572f2cc89f64d75eed8d",
+    "packages": [
+        {
+            "name": "ph-7/eu-vat-validator",
+            "version": "3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pH-7/eu-vat-validator.git",
+                "reference": "67c060ee07a753e97eed34b54246d658d1a65332"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pH-7/eu-vat-validator/zipball/67c060ee07a753e97eed34b54246d658d1a65332",
+                "reference": "67c060ee07a753e97eed34b54246d658d1a65332",
+                "shasum": ""
+            },
+            "require": {
+                "ext-soap": "*",
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "phake/phake": "^3.1",
+                "phpunit/phpunit": "^7.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PH7\\Eu\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Pierre-Henry Soria",
+                    "email": "hi@ph7.me",
+                    "homepage": "https://pierrehenry.be",
+                    "role": "Software Engineer"
+                }
+            ],
+            "description": "A simple and clean PHP class that validates EU VAT numbers against the central ec.europa.eu database (using the official europa API).",
+            "homepage": "http://ph7.me",
+            "keywords": [
+                "TVA",
+                "eu vat",
+                "tva number",
+                "validate eu vat",
+                "validate vat number",
+                "validation",
+                "validator",
+                "vat",
+                "vat number",
+                "vat number validator",
+                "vat validator",
+                "vies"
+            ],
+            "support": {
+                "issues": "https://github.com/pH-7/eu-vat-validator/issues",
+                "source": "https://github.com/pH-7/eu-vat-validator/tree/3.0"
+            },
+            "time": "2022-05-10T10:50:30+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}

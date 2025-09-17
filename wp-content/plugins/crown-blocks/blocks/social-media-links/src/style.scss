@@ -1,0 +1,47 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .wp-block-crown-blocks-social-media-links {
+   position: relative;
+   
+  .social-links {
+    margin: 0 0 15px;
+    .title {
+      font-family: "Space Grotesk";
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      line-height: 23px;
+      margin-bottom: 0;
+    }
+  
+    .menu {
+      display: flex;
+      list-style: none;
+      padding-left: 0;
+  
+      a {
+        display: flex;
+      }
+  
+      svg {
+        height: 16px;
+        margin-left: 8px;
+        position: relative;
+        top: -1px;
+  
+        path {
+          fill: #2158F3;
+        }
+      }
+  
+      .label {
+        display: none;
+      }
+    }
+  }
+}

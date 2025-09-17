@@ -1,0 +1,163 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .wp-block-crown-blocks-featured-image-slider {
+    // margin-left: -#{map-get($container-padding-x, xs)};
+	// margin-right: -#{map-get($container-padding-x, xs)};
+
+	// @media (min-width: $screen-sm) {
+	// 	margin-left: -#{map-get($container-padding-x, sm)};
+	// 	margin-right: -#{map-get($container-padding-x, sm)};
+	// }
+	// @media (min-width: $screen-md) {
+	// 	margin-left: -#{map-get($container-padding-x, md)};
+	// 	margin-right: -#{map-get($container-padding-x, md)};
+	// }
+	// @media (min-width: $screen-lg) {
+	// 	margin-left: -#{map-get($container-padding-x, lg)};
+	// 	margin-right: -#{map-get($container-padding-x, lg)};
+	// }
+	// @media (min-width: $screen-xl) {
+	// 	margin-left: -#{map-get($container-padding-x, xl)};
+	// 	margin-right: -#{map-get($container-padding-x, xl)};
+	// }
+	// @media ( min-width: #{$container-effective-max-width + (map-get($container-padding-x, xl) * 2)} ) {
+	// 	margin-left: calc((100vw - ( #{$container-effective-max-width} )) / -2);
+	// 	margin-right: calc((100vw - ( #{$container-effective-max-width} )) / -2);
+	// }
+
+    .slick-dots {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 20px 0 0;
+        // padding-left: 75px;
+        justify-content: center;
+
+        li {
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        button {
+            color: inherit;
+            border: 1px solid $blue;
+            border-radius: 6px;
+            background-color: transparent;
+            font-size: 0;
+            padding: 0;
+            outline: 0;
+            height: 12px;
+            width: 12px;
+            transition: all 0.2s;
+        }
+        li.slick-active button {
+            border-color: $blue;
+            background-color: $blue;
+        }
+    }
+
+    position: relative;
+
+    .slick-arrow {
+        width: 2.75rem;
+        height: 2.75rem;
+        overflow: hidden;
+        padding: 0;
+        border: none;
+        outline: none;
+        text-indent: -1000000px;
+        position: absolute;
+        bottom: -10px;
+        right: 0;
+        background-color: transparent;
+
+        &.slick-prev {
+        right: 2.75rem;
+        }
+
+        &.slick-disabled {
+            opacity: .3;
+            filter: grayscale(1);
+        }
+
+        &.slick-prev:before {
+        transform: translateY(-50%) translateX(-50%) rotate(-180deg);
+        background-image: escape-svg(url('data:image/svg+xml,<svg width="28px" height="15px" viewBox="0 0 28 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Tech-Solutions*" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="TECH-SOLUTIONS" transform="translate(-1280.000000, -5612.000000)" fill="#2158F3" fill-rule="nonzero"><g id="Key-Messaging-Carousel" transform="translate(101.000000, 5141.000000)"><g id="Group-14" transform="translate(1179.000000, 478.000000)"><path id="Line" d="M12.5,-6.5 L26.5,0.5 L12.5,7.5 L12.5,1.5 L0.5,1.5 C-0.0522847498,1.5 -0.5,1.05228475 -0.5,0.5 C-0.5,-0.0128358391 -0.11395981,-0.435507161 0.383378875,-0.493272269 L0.5,-0.5 L12.5,-0.5 L12.5,-6.5 Z"></path></g></g></g></g></svg>'));
+        }
+        &.slick-next:before {
+        background-image: escape-svg(url('data:image/svg+xml,<svg width="28px" height="15px" viewBox="0 0 28 15" version="1.1" xmlns="http://www.w3.org/2000/svg"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1227.000000, -5657.000000)" fill="#2158F3" fill-rule="nonzero"><g transform="translate(136.000000, 5121.000000)"><g id="Group-14" transform="translate(1091.000000, 543.000000)"><path id="Line" d="M12.5,-6.5 L26.5,0.5 L12.5,7.5 L12.5,1.5 L0.5,1.5 C-0.0522847498,1.5 -0.5,1.05228475 -0.5,0.5 C-0.5,-0.0128358391 -0.11395981,-0.435507161 0.383378875,-0.493272269 L0.5,-0.5 L12.5,-0.5 L12.5,-6.5 Z"></path></g></g></g></g></svg>'));
+        }
+        &:before {
+        content: '';
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        top: 50%;
+        width: 28px;
+        height: 15px;
+        font-size: 1rem;
+        line-height: 1;
+        text-indent: 0;
+        background-size: contain;
+        transform: translateY(-50%) translateX(-50%);
+        }
+    }
+
+    .slick-initialized .slick-slide {
+        display: flex;
+    }
+    .wp-block-crown-blocks-featured-image {
+        display: flex;
+        flex-direction: column;
+        background: transparent;
+        > .section-bg {
+            margin: 0 !important;
+            padding-bottom: 50%;
+            position: relative;
+            .bg-image {
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                padding-bottom: 0;
+            }
+        }
+
+        > .section-content {
+            margin-left: auto;
+            margin-right: auto;
+            flex: 1 1 auto;
+            display: flex;
+            width: 100%;
+            @media (min-width: $screen-md) {
+                width: 66.67%;
+            }
+            > .inner {
+                width: 100%;
+            }
+
+            .container {
+                padding: 30px 40px !important;
+            }
+            .section-bg {
+                &::after, &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,267 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .wp-block-crown-blocks-featured-image {
+    position: relative;
+	font-size: 20px;
+
+	&.text-color-light {
+		color: $white;
+
+		p {
+			color: #F3F0E8;
+		}
+	}
+	&.text-color-dark {
+		color: $black;
+
+		p {
+			color: $black;
+		}
+	}
+
+	&.text-align-left { text-align: left; }
+	&.text-align-center { text-align: center; }
+	&.text-align-right { text-align: right; }
+
+	// &.content-align-left,
+	// &.content-align-center {
+	// 	.container > .inner {
+	// 		margin-right: auto;
+	// 	}
+	// }
+	// &.content-align-right,
+	// &.content-align-center {
+	// 	.container > .inner {
+	// 		margin-left: auto;
+	// 	}
+	// }
+
+	&.bg-position-left,
+	&.bg-position-right {
+		@media (min-width: $screen-md) {
+			grid-gap: 0;
+			grid-template-columns: 1fr 1fr;
+			grid-template-areas: 'column1 column2';
+			grid-template-columns: 6fr 6fr;
+			display: grid;
+			align-items: end;
+		}
+		
+		@media (min-width: 768px) {
+			> .section-bg {
+				margin-left: -15px;
+				margin-right: -15px;
+			}
+
+			.section-content .section-bg {
+				left: -15px;
+				right: -15px;
+			}
+		}
+
+		@media (max-width: 767px) {
+			> .section-bg::after {
+				display: none;
+			}
+	 	}
+	}
+
+	&.bg-position-left {
+		> .wp-block-crown-blocks-panel {
+			min-width: 0;
+		}
+		> .section-bg {
+			grid-area: column1; 
+			.bg-image { padding-bottom: 84.94%;}
+
+			@media (max-width: 767px) {
+				margin-left: -15px;
+				margin-right: -15px;
+			}
+		}
+		> .section-content { 
+			grid-area: column2;
+			width: auto;
+			margin-bottom: 0;
+		
+			.section-bg {
+				&::before {
+					display: none;
+				}
+
+				&::after {
+					background-image: escape-svg(url('data:image/svg+xml,<svg width="1440px" height="118px" viewBox="0 0 1440 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="100%" y1="47.7678236%" x2="30.3296197%" y2="42.4245322%" id="linearGradient-1"><stop stop-color="#4591FA" stop-opacity="0" offset="0%"></stop><stop stop-color="#2158F3" offset="100%"></stop></linearGradient><linearGradient x1="0%" y1="53.5383857%" x2="69.8987099%" y2="46.7041774%" id="linearGradient-2"><stop stop-color="#4591FA" stop-opacity="0" offset="0%"></stop><stop stop-color="#2158F3" offset="100%"></stop></linearGradient></defs><g id="Home*" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="HOME" transform="translate(-1.000000, -7117.000000)"><g id="Join-CTA-Box" transform="translate(0.000000, 6936.000000)"><g id="Super-Connector-Segment" transform="translate(1.000000, 181.000000)"><path d="M152.079365,102.114164 C152.079365,104.621361 154.11185,106.653846 156.619048,106.653846 L156.619048,106.653846 L199.746032,106.653846 L199.746032,49.9267399 C199.746032,42.4051476 205.843487,36.3076923 213.365079,36.3076923 L286,36.3076923 L286,47.6538462 L215.634921,47.6538462 C213.127723,47.6538462 211.095238,49.6863313 211.095238,52.1935287 L211.095238,118 L154.349206,118 C146.827614,118 140.730159,111.902545 140.730159,104.380952 L140.730159,104.380952 L140.730159,36.3144078 C140.730159,22.5248219 129.551491,11.3461538 115.761905,11.3461538 L0,11.3461538 L0,0 L118.031746,0 C136.835727,0 152.079365,15.2436383 152.079365,34.047619 Z" id="Combined-Shape" fill="url(#linearGradient-1)" opacity="0.9"></path><path d="M1305,64.1428571 C1305,71.2436611 1299.24366,77 1292.14286,77 L1292.14286,77 L1170,77 L1170,66.3055556 L1290,66.3055556 C1292.36693,66.3055556 1294.28571,64.3867759 1294.28571,62.0198413 L1294.28571,62.0198413 L1294.28571,32.1428571 C1294.28571,14.3908473 1308.67656,-3.2609913e-15 1326.42857,0 L1326.42857,0 L1440,0 L1440,10.6944444 L1326.42857,10.6944444 C1314.5939,10.6944444 1305,20.2883427 1305,32.1230159 L1305,32.1230159 Z" id="Combined-Shape" fill="url(#linearGradient-2)"></path></g></g></g></g></svg>'));
+					width: 100vw;
+					top: -50px;
+				}
+			}
+		}
+	}
+
+	&.bg-position-right {
+		> .section-bg {
+			grid-area: column2; 
+			.bg-image { padding-bottom: 84.94%;}
+		}
+		> .section-content { 
+			grid-area: column1;
+			width: auto;
+			margin-bottom: 0;
+		
+			.section-bg {
+				&::before {
+					display: none;
+				}
+
+				&::after {
+					background-image: escape-svg(url('data:image/svg+xml,<svg width="1440px" height="118px" viewBox="0 0 1440 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="100%" y1="47.7678236%" x2="30.3296197%" y2="42.4245322%" id="linearGradient-1"><stop stop-color="#4591FA" stop-opacity="0" offset="0%"></stop><stop stop-color="#2158F3" offset="100%"></stop></linearGradient><linearGradient x1="0%" y1="53.5383857%" x2="69.8987099%" y2="46.7041774%" id="linearGradient-2"><stop stop-color="#4591FA" stop-opacity="0" offset="0%"></stop><stop stop-color="#2158F3" offset="100%"></stop></linearGradient></defs><g id="Home*" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="HOME" transform="translate(-1.000000, -7117.000000)"><g id="Join-CTA-Box" transform="translate(0.000000, 6936.000000)"><g id="Super-Connector-Segment" transform="translate(1.000000, 181.000000)"><path d="M152.079365,102.114164 C152.079365,104.621361 154.11185,106.653846 156.619048,106.653846 L156.619048,106.653846 L199.746032,106.653846 L199.746032,49.9267399 C199.746032,42.4051476 205.843487,36.3076923 213.365079,36.3076923 L286,36.3076923 L286,47.6538462 L215.634921,47.6538462 C213.127723,47.6538462 211.095238,49.6863313 211.095238,52.1935287 L211.095238,118 L154.349206,118 C146.827614,118 140.730159,111.902545 140.730159,104.380952 L140.730159,104.380952 L140.730159,36.3144078 C140.730159,22.5248219 129.551491,11.3461538 115.761905,11.3461538 L0,11.3461538 L0,0 L118.031746,0 C136.835727,0 152.079365,15.2436383 152.079365,34.047619 Z" id="Combined-Shape" fill="url(#linearGradient-1)" opacity="0.9"></path><path d="M1305,64.1428571 C1305,71.2436611 1299.24366,77 1292.14286,77 L1292.14286,77 L1170,77 L1170,66.3055556 L1290,66.3055556 C1292.36693,66.3055556 1294.28571,64.3867759 1294.28571,62.0198413 L1294.28571,62.0198413 L1294.28571,32.1428571 C1294.28571,14.3908473 1308.67656,-3.2609913e-15 1326.42857,0 L1326.42857,0 L1440,0 L1440,10.6944444 L1326.42857,10.6944444 C1314.5939,10.6944444 1305,20.2883427 1305,32.1230159 L1305,32.1230159 Z" id="Combined-Shape" fill="url(#linearGradient-2)"></path></g></g></g></g></svg>'));
+					width: 100vw;
+					top: -50px;
+					left: 0;
+					right: auto;
+				}
+			}
+		}
+	}
+
+	&.bg-position-top {
+		> .section-bg {
+			@extend .full-width;
+		}
+	}
+
+	> .section-bg {
+
+		.bg-image {
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			padding-bottom: 39.17%;
+		}
+	}
+
+	> .inner {
+		position: relative;
+
+		@media (min-width: $screen-md) {
+            min-height: 400px;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+        }
+        @media (min-width: $screen-lg) {
+            min-height: 500px;
+        }
+        @media (min-width: $screen-xl) {
+            min-height: 600px;
+        }
+	}
+	@media (min-width: $screen-md) {
+		&.content-align-vertical-top > .inner { justify-content: flex-start; }
+		&.content-align-vertical-center > .inner { justify-content: center; }
+		&.content-align-vertical-bottom > .inner { justify-content: flex-end; }
+	}
+    
+	// .container {
+	// 		padding: 30px 15px;
+			
+	// 		@media (min-width: $screen-md) {
+	// 				padding: 40px 20px;
+	// 		}
+	// 		@media (min-width: $screen-lg) {
+	// 				padding: 60px 30px;
+	// 		}
+	// 		@media (min-width: $screen-xl) {
+	// 				padding: 80px 40px;
+	// 		}
+	// }
+
+	.section-content {
+		@media (min-width: $screen-md) {
+			width: 66.67%;
+			margin-top: -50px;
+		}
+
+		> .inner {
+			position: relative;
+		}
+
+		.container {
+			position: relative;
+			padding-left: 0;
+		}
+
+		.section-bg {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+
+			&::after {
+				@media (min-width: $screen-md) {
+					content: '';
+					display: block;
+				}
+				position: absolute;
+				background-position: center;
+				background-size: contain;
+				background-repeat: no-repeat;
+				right: 0;
+				top: -100px;
+				width: 100%;
+				padding-bottom: 42.15%;
+				background-image: escape-svg(url('data:image/svg+xml,<svg width="904px" height="381px" viewBox="0 0 904 381" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="0%" y1="42.1098295%" x2="100%" y2="54.9696837%" id="linearGradient-1"><stop stop-color="#4591FA" stop-opacity="0" offset="0%"></stop><stop stop-color="#1C57E1" stop-opacity="0.720382194" offset="20.2992008%"></stop><stop stop-color="#083AC7" offset="50.2521822%"></stop><stop stop-color="#0C3FCC" offset="81.6943118%"></stop><stop stop-color="#0B3ECB" offset="100%"></stop></linearGradient></defs><g id="Home*" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="HOME" transform="translate(0.000000, -5580.000000)" fill="url(#linearGradient-1)"><g id="Certified-Products" transform="translate(0.000000, 5181.000000)"><g id="Super-Connector-2" transform="translate(0.000000, 399.000000)"><path d="M421.173487,0 C494.639977,-1.34955752e-14 554.196334,59.5563573 554.196334,133.022847 L554.19439,290.541454 C573.80537,275.078051 598.565637,265.855667 625.478276,265.868385 L625.478276,265.868385 L904,266 L904,315 L625.073148,311.105813 C624.747896,311.101272 624.422617,311.099001 624.097333,311.099001 C585.492077,311.099001 554.196334,342.394745 554.196334,381 L554.196334,381 L510.292242,381 L510.292242,132.984224 C510.239686,84.0270807 470.567463,44.3313461 421.61036,44.2497855 L0,44 L0,0 L421.173487,0 Z"></path></g></g></g></g></svg>'));
+			}
+
+			&::before {
+				@media (min-width: $screen-md) {
+					display: block;
+				}
+				content: '';
+				position: absolute;
+				background-position: center;
+				background-size: contain;
+				background-repeat: no-repeat;
+				left: 100%;
+				top: calc(50% - 150px);
+				width: 60%;
+				padding-bottom: 42.15%;
+				background-image: escape-svg(url('data:image/svg+xml,<svg width="536px" height="45px" viewBox="0 0 536 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="0%" y1="50%" x2="25.1820676%" y2="50%" id="linearGradient-1"><stop stop-color="#1A44B8" offset="0%"></stop><stop stop-color="#2158F3" offset="100%"></stop></linearGradient></defs><g id="Home*" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="HOME" transform="translate(-904.000000, -5877.000000)" fill="url(#linearGradient-1)"><g id="Certified-Products" transform="translate(0.000000, 5181.000000)"><g id="Group-15" transform="translate(0.000000, 399.000000)"><rect id="Rectangle" x="904" y="297" width="536" height="45"></rect></g></g></g></g></svg>'));
+			}
+		}
+	}
+}
+	.wp-block-crown-blocks-featured-image .section-bg.full-width {
+	margin-left: -#{map-get($container-padding-x, xs)};
+	margin-right: -#{map-get($container-padding-x, xs)};
+
+	@media (min-width: $screen-sm) {
+		margin-left: -#{map-get($container-padding-x, sm)};
+		margin-right: -#{map-get($container-padding-x, sm)};
+	}
+	@media (min-width: $screen-md) {
+		margin-left: -#{map-get($container-padding-x, md)};
+		margin-right: -#{map-get($container-padding-x, md)};
+	}
+	@media (min-width: $screen-lg) {
+		margin-left: -#{map-get($container-padding-x, lg)};
+		margin-right: -#{map-get($container-padding-x, lg)};
+	}
+	@media (min-width: $screen-xl) {
+		margin-left: -#{map-get($container-padding-x, xl)};
+		margin-right: -#{map-get($container-padding-x, xl)};
+	}
+	@media ( min-width: #{$container-effective-max-width + (map-get($container-padding-x, xl) * 2)} ) {
+		margin-left: calc((100vw - ( #{$container-effective-max-width} )) / -2);
+		margin-right: calc((100vw - ( #{$container-effective-max-width} )) / -2);
+	}
+}

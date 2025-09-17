@@ -1,0 +1,155 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FME Addons: Shop as a Customer for WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 09:25+0000\n"
+"PO-Revision-Date: 2021-04-13 09:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: Deutsch\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.2; wp-5.7\n"
+"X-Domain: shop-as-a-customer-for-woocommerce"
+
+#: shop-as-a-customer-for-woocommerce.php:293
+#: shop-as-a-customer-for-woocommerce.php:361
+msgid "Action"
+msgstr "Aktion"
+
+#: shop-as-a-customer-for-woocommerce.php:251
+msgid "By Default Order Status During Offline Payment"
+msgstr "Standardmäßig Auftragsstatus Während Der Offline-Zahlung"
+
+#: shop-as-a-customer-for-woocommerce.php:957
+msgid "compress to left"
+msgstr "komprimieren Links"
+
+#: shop-as-a-customer-for-woocommerce.php:930
+#: shop-as-a-customer-for-woocommerce.php:940
+msgid "compress to right"
+msgstr "komprimieren nach rechts"
+
+#: shop-as-a-customer-for-woocommerce.php:479
+#: shop-as-a-customer-for-woocommerce.php:566
+msgid "Customer"
+msgstr "Kunde"
+
+#: shop-as-a-customer-for-woocommerce.php:198
+msgid "Customer Logs"
+msgstr "Kunden-Protokolle"
+
+#: shop-as-a-customer-for-woocommerce.php:330
+#: shop-as-a-customer-for-woocommerce.php:1332
+msgid "Edit Profile"
+msgstr "Profil Bearbeiten"
+
+#: shop-as-a-customer-for-woocommerce.php:288
+#: shop-as-a-customer-for-woocommerce.php:356
+msgid "Email"
+msgstr "E-Mail"
+
+#. Name of the plugin
+msgid "FME Addons: Shop as a Customer for WooCommerce"
+msgstr "FME Addons: - Shop als Kunde für WooCommerce"
+
+#. Author of the plugin
+msgid "fmeaddons"
+msgstr "fmeaddons"
+
+#: shop-as-a-customer-for-woocommerce.php:276
+#: shop-as-a-customer-for-woocommerce.php:344
+#: shop-as-a-customer-for-woocommerce.php:467
+#: shop-as-a-customer-for-woocommerce.php:554
+msgid "ID"
+msgstr "ID"
+
+#: shop-as-a-customer-for-woocommerce.php:473
+#: shop-as-a-customer-for-woocommerce.php:560
+msgid "Logged in At"
+msgstr "Angemeldet Bei"
+
+#: shop-as-a-customer-for-woocommerce.php:489
+#: shop-as-a-customer-for-woocommerce.php:576
+msgid "Message On Whatsapp"
+msgstr "Nachricht Auf Whatsapp"
+
+#: shop-as-a-customer-for-woocommerce.php:282
+#: shop-as-a-customer-for-woocommerce.php:350
+msgid "Name"
+msgstr "Name"
+
+#: shop-as-a-customer-for-woocommerce.php:1182
+msgid "next"
+msgstr "weiter"
+
+#: shop-as-a-customer-for-woocommerce.php:1181
+msgid "No Records found"
+msgstr "Keine Datensätze gefunden"
+
+#: shop-as-a-customer-for-woocommerce.php:206
+msgid ""
+"Only Selected Roles will be allowed to switch & View orders. If no role is "
+"selected all roles will be considered as selected"
+msgstr ""
+"Nur die Ausgewählten Rollen werden dürfen, Schalter & View-Bestellungen. "
+"Wenn keine Aufgabe ausgewählt ist, werden alle Rollen werden als ausgewählt"
+
+#: shop-as-a-customer-for-woocommerce.php:484
+#: shop-as-a-customer-for-woocommerce.php:571
+msgid "Products"
+msgstr "Produkte"
+
+#: shop-as-a-customer-for-woocommerce.php:1337
+msgid "Recent Customer:"
+msgstr "Neuer Kunde:"
+
+#: shop-as-a-customer-for-woocommerce.php:267
+msgid "Save Settings"
+msgstr "Einstellungen Speichern"
+
+#: shop-as-a-customer-for-woocommerce.php:204
+msgid "Select Role(s)"
+msgstr "Wählen Sie die Rolle(N)"
+
+#: shop-as-a-customer-for-woocommerce.php:199
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: shop-as-a-customer-for-woocommerce.php:175
+#: shop-as-a-customer-for-woocommerce.php:1172
+msgid "Shop as Customer"
+msgstr "Shop als Kunde"
+
+#: shop-as-a-customer-for-woocommerce.php:328
+#: shop-as-a-customer-for-woocommerce.php:1327
+msgid "Switch"
+msgstr "Schalter"
+
+#: shop-as-a-customer-for-woocommerce.php:955
+msgid "Switch Back "
+msgstr "Wechseln Sie Zurück "
+
+#: shop-as-a-customer-for-woocommerce.php:1028
+msgid "Switch Back And View Orders"
+msgstr "Wechseln Sie Zurück, Und Bestellungen Ansehen"
+
+#: shop-as-a-customer-for-woocommerce.php:197
+msgid "Switch To Customers"
+msgstr "Wechseln Sie Zu Kunden"
+
+#: shop-as-a-customer-for-woocommerce.php:329
+#: shop-as-a-customer-for-woocommerce.php:1330
+msgid "View Orders"
+msgstr "zeigt Bestellungen an"
+
+#: shop-as-a-customer-for-woocommerce.php:947
+msgid "You are now login as "
+msgstr "Sie sind jetzt melden Sie sich als "
+
+#: shop-as-a-customer-for-woocommerce.php:195
+msgid "Your settings has been saved!"
+msgstr "Ihre Einstellungen wurden gespeichert!"

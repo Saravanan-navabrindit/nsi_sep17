@@ -1,0 +1,162 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-crown-blocks-team-member-index {
+	@include post-feed-block();
+	&.layout-simple .post-feed-header {
+		margin-bottom: 2rem;
+	}
+	.post-feed {
+		article {
+			display: flex;
+			font-size: 1rem;
+			@media (min-width: $screen-sm) {
+				width: 50%;
+			}
+			@media (min-width: $screen-md) {
+				width: 33.333333%;
+			}
+			@media (min-width: $screen-lg) {
+				width: 25%;
+			}
+			&.active {
+				> a {
+					color: $blue;
+					.entry-headshot-photo {
+						filter: grayscale(0);
+					}
+				}
+			}
+			> a {
+				width: 100%;
+				display: flex;
+				color: inherit;
+				.entry-headshot-photo {
+					filter: grayscale(1);
+					transition: filter 0.2s;
+				}
+			}
+			> a > .inner {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+			}
+			> .drawer {
+				display: none;
+			}
+			.entry-headshot-photo {
+				margin-bottom: 1rem;
+				> .inner {
+					position: relative;
+					padding-top: 100%;
+					background-color: $light-gray;
+					img {
+						position: absolute;
+						left: 0;
+						top: 0;
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						object-position: center;
+					}
+				}
+			}
+			.contents {
+				flex: 1 1 auto;
+			}
+			.entry-title {
+				font-size: 1.125rem;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			.entry-job-title,
+			.entry-company {
+				margin: 0;
+				margin-top: .25rem;
+			}
+		}
+		.drawer {
+			padding: 1rem;
+    		width: 100%;
+			.entry-details {
+				background-color: $blue;
+				color: #fff;
+				position: relative;
+				@media (min-width: $screen-md) {
+					display: flex;
+				}
+				@media (min-width: $screen-lg) {
+					background-image: escape-svg(url('data:image/svg+xml,<svg width="66px" height="438px" viewBox="0 0 66 438" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="28.9774051%" y1="100%" x2="28.9774051%" y2="33.3952216%" id="linearGradient-aeoh0jzths-1"><stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop><stop stop-color="#F3F0E8" offset="100%"></stop></linearGradient></defs><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.60018049"><g transform="translate(-0.001000, 0.000000)"><path d="M66.001,209.324 L66.001,229.972 L65.314424,229.977936 C40.5764338,230.379025 20.6461613,250.557633 20.6461613,275.391206 L20.646,437.999 L3.63797881e-12,437.999 L0.001,271.259903 C0.001,237.05388 27.7304607,209.324419 61.9364839,209.324419 L66.001,209.324 Z" fill="url(#linearGradient-aeoh0jzths-1)"></path><path d="M54.3019953,-5.68434189e-13 L54.3019953,128.014983 C54.3019953,132.575786 57.9992567,136.273047 62.5600598,136.273047 L66.000834,136.273 L66.000834,156.92 L58.4310276,156.920479 C44.7486183,156.920479 33.656834,145.828694 33.656834,132.146285 L33.656834,-5.68434189e-13 L54.3019953,-5.68434189e-13 Z" fill="#F3F0E8"></path></g></g></svg>'));
+					background-repeat: no-repeat;
+					background-position: 100% 0%;
+				}
+				> button.close {
+					position: absolute;
+					right: 1rem;
+					top: 1rem;
+					color: #fff;
+					background-image: escape-svg(url('data:image/svg+xml,<svg width="19px" height="19px" fill="#ffffff" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">data:image/svg+xml,<polygon points="0 16.8887815 7.38878108 9.50000024 0 2.11121898 2.11121892 0 9.5 7.38878126 16.8887811 0 19 2.11121898 11.6112189 9.50000024 19 16.8887815 16.8887811 19 9.5 11.6112192 2.11121892 19"></polygon>data:image/svg+xml,</svg>'));
+					background-position: center;
+					background-repeat: no-repeat;
+					width: 1.5rem;
+					height: 1.5rem;
+					overflow: hidden;
+					text-indent: -100000px;
+					padding: 0;
+					border: none;
+					background-color: transparent;
+					opacity: 1;
+					@media (min-width: $screen-lg) {
+						top: 1.5rem;
+						right: 2.5rem;
+					}
+				}
+			}
+			.entry-alt-photo {
+				flex: 0 0 41.666667%;
+				@media (min-width: $screen-md) {
+					display: flex;
+				}
+				> .inner {
+					@media (min-width: $screen-md) {
+						width: 100%;
+						position: relative;
+						padding-top: 75%;
+					}
+				}
+				img {
+					width: 100%;
+					@media (min-width: $screen-md) {
+						position: absolute;
+						left: 0;
+						top: 0;
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						object-position: center;
+					}
+				}
+			}
+			.entry-bio {
+				flex: 1 1 auto;
+				padding: 2rem 2rem;
+				@media (min-width: $screen-md) {
+					padding: 3rem 2rem;
+				}
+				@media (min-width: $screen-lg) {
+					padding: 4rem 3rem;
+				}
+				@media (min-width: $screen-lg) {
+					padding-right: 4.5rem;
+				}
+			}
+		}
+	}
+}

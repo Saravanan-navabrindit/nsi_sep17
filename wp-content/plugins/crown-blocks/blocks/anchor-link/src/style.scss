@@ -1,0 +1,123 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .wp-block-crown-blocks-anchor-link {
+     @include full-width-block;
+     
+    &.text-color-dark { color: $black; }
+    &.text-color-light { color: #f5f5f5; }
+
+    &.active-text-color-dark {
+        .tab.active,
+        .panels {
+            color: $black;
+        }
+    }
+    &.active-text-color-light {
+        .tab.active,
+        .panels {
+            color: #f5f5f5;
+        }
+    }
+     
+    .container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        
+        @media (min-width: $screen-md) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        @media (min-width: $screen-lg) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    }
+
+    .tabs {
+        background: $navy-blue;
+        color: $white;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 4;
+
+        .tab {
+            cursor: pointer;
+            transition: background-color .15s, opacity .15s;
+            color: inherit;
+            
+            // &:not(.active) {
+            //     background-color: transparent !important;
+            //     // opacity: 0.8;
+
+                &:hover {
+                    background-color: rgba(0,0,0,0.05) !important;
+                    opacity: 1;
+                }
+            // }
+            // &.active {
+            //     cursor: default;
+            // }
+
+            > .inner {
+                padding: 14px 0;
+                display: flex;
+                justify-content: center;
+
+                .tab-icon {
+                    flex-basis: 40px;
+                    flex-shrink: 0;
+                }
+
+                .tab-content {
+                    padding: 0 24px;
+                }
+                
+                .title {
+                    margin-bottom: 0;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-weight: 500 !important;
+                    letter-spacing: 1px;
+                    line-height: 21px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .tabs-select {
+        border-radius: 4px 4px 0 0;
+        
+        @media (min-width: $screen-lg) {
+            display: none;
+        }
+    }
+
+    // .panels {
+    //     .panel {
+    //         display: none;
+
+    //         &:first-child {
+    //             display: block;
+    //         }
+            
+    //         > .inner {
+    //             padding: 30px;
+
+    //             @media (min-width: $screen-xl) {
+    //                 padding: 60px;
+    //             }
+    //         }
+    //     }
+    // }
+}

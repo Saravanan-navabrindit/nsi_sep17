@@ -1,0 +1,126 @@
+
+
+body.search,
+body.woocommerce-cart,
+body.woocommerce-checkout,
+body.woocommerce-account {
+	#main > .inner > .container {
+		padding-top: 26px;
+		padding-bottom: 26px;
+		@media (min-width: 768px) {
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+		@media (min-width: 992px) {
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+	}
+}
+body.search {
+	#index-entries {
+		h1 {
+			margin-bottom: 30px;
+		}
+		.entries-list-container {
+			@include media-breakpoint-up(md) {
+				display: flex;
+			}
+		}
+		.entries-list {
+			flex: 1 1 auto;
+			article {
+				margin-bottom: 30px;
+				.entry-link {
+					font-size: 14px;
+					margin-bottom: 6px;
+					a {
+						text-decoration: none;
+						color: #888;
+					}
+				}
+			}
+		}
+		.product-entries-list {
+			display: none;
+			flex: 0 0 33.3333333%;
+			margin-right: 60px;
+			@include media-breakpoint-up(md) {
+				display: block;
+			}
+			h2 {
+				margin-bottom: 20px;
+				font-size: 24px;
+			}
+			article {
+				margin-bottom: 30px;
+				font-size: 14px;
+				position: relative;
+				min-height: 50px;
+				padding-left: 60px;
+				img {
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 50px;
+					height: 50px;
+					object-fit: contain;
+					object-position: center;
+				}
+				.entry-title {
+					font-size: 18px;
+				}
+				.entry-sku {
+					font-style: italic;
+					margin-bottom: 10px;
+				}
+				.add_to_cart_button {
+					@extend .btn;
+					// @extend .btn--outline;
+					// @extend .btn--outline-pure-black;
+					@extend .btn--pure-black;
+					@extend .btn-sm;
+				}
+				.added_to_cart {
+					@extend .btn;
+					@extend .btn--outline;
+					@extend .btn--outline-pure-black;
+					@extend .btn-sm;
+					margin-left: 4px;
+				}
+			}
+		}
+	}
+}
+
+article.index-entry-post {
+	font-size: 16px;
+	margin-bottom: 40px;
+	.entry-featured-image {
+		margin-bottom: 20px;
+		a {
+			display: block;
+			padding-top: 75%;
+			position: relative;
+		}
+		img {
+			position: absolute;
+			left: 0;
+			width: 100%;
+			top: 0;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+	.entry-title {
+		font-size: 20px;
+		a {
+			text-decoration: none;
+		}
+	}
+	.entry-date {
+		font-size: 12px;
+		margin-bottom: 16px;
+	}
+}

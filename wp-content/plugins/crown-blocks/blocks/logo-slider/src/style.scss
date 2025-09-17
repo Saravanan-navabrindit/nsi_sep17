@@ -1,0 +1,169 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ @use "sass:math";
+ @import '../../../common';
+
+ .wp-block-crown-blocks-logo-slider {
+  margin-bottom: 1rem;
+
+	&.text-color-light {
+		color: #fff;
+
+		p {
+			color: #F3F0E8;
+		}
+	}
+
+	.container-contents {
+		> .inner {
+			padding: 3rem 1.5rem;
+			> *:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+  @for $i from 4 through 8 {
+    &.column-layout-#{$i} .image { flex: 0 0 percentage(math.div(1, $i)); }
+  }
+
+	.logo-container {
+    margin: 0 -1rem;
+
+		.inner {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+
+			// @media (min-width: 768px) {
+			// 	flex-;
+			// }
+		}
+
+		.image {
+			padding: 1rem;
+			// filter: grayscale(1);
+			transition: filter 0.3s;
+			position: relative;
+			// &::before {
+			// 	content: '';
+			// 	display: block;
+			// 	height: 0;
+			// 	padding-top: 50%;
+			// }
+
+			&:hover,
+			&:focus {
+				// filter: grayscale(0);
+			}
+			// img {
+			// 	position: absolute;
+			// 	left: 1rem;
+			// 	top: 1rem;
+			// 	width: calc(100% - 2rem);
+			// 	height: calc(100% - 2rem);
+			// 	object-fit: contain;
+			// 	object-position: center;
+			// }
+		}
+	}
+
+	.slick-slide {
+		display: flex !important;
+		flex-direction: column;
+		justify-content: center;
+		> div > div {
+			vertical-align: middle;
+		}
+	}
+
+	&.block-horizontal-align-center {
+		.logo-container .inner {
+			justify-content: center;
+		}
+	}
+
+	&.block-horizontal-align-left {
+		.logo-container .inner {
+			justify-content: flex-start;
+		}
+	}
+
+	&.block-horizontal-align-right {
+		.logo-container .inner {
+			justify-content: flex-end;
+		}
+	}
+	
+	&.block-vertical-align-center {
+		.logo-container .inner {
+			align-items: center;
+		}
+	}
+	
+	&.block-vertical-align-top {
+		.logo-container .inner {
+			align-items: start;
+		}
+	}
+	
+	&.block-vertical-align-bottom {
+		.logo-container .inner {
+			align-items: baseline;
+		}
+	}
+
+  position: relative;
+
+  .slick-arrow {
+    width: 2.75rem;
+    height: 2.75rem;
+    overflow: hidden;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-indent: -1000000px;
+    position: absolute;
+    bottom: -2.75rem;
+    right: 0;
+    background-color: transparent;
+
+    &.slick-prev {
+      right: 2.75rem;
+    }
+
+		&.slick-disabled {
+			opacity: .3;
+			filter: grayscale(1);
+		}
+
+    &.slick-prev:before {
+      transform: translateY(-50%) translateX(-50%) rotate(-180deg);
+      background-image: escape-svg(url('data:image/svg+xml,<svg width="28px" height="15px" viewBox="0 0 28 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Tech-Solutions*" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="TECH-SOLUTIONS" transform="translate(-1280.000000, -5612.000000)" fill="#2158F3" fill-rule="nonzero"><g id="Key-Messaging-Carousel" transform="translate(101.000000, 5141.000000)"><g id="Group-14" transform="translate(1179.000000, 478.000000)"><path id="Line" d="M12.5,-6.5 L26.5,0.5 L12.5,7.5 L12.5,1.5 L0.5,1.5 C-0.0522847498,1.5 -0.5,1.05228475 -0.5,0.5 C-0.5,-0.0128358391 -0.11395981,-0.435507161 0.383378875,-0.493272269 L0.5,-0.5 L12.5,-0.5 L12.5,-6.5 Z"></path></g></g></g></g></svg>'));
+    }
+    &.slick-next:before {
+      background-image: escape-svg(url('data:image/svg+xml,<svg width="28px" height="15px" viewBox="0 0 28 15" version="1.1" xmlns="http://www.w3.org/2000/svg"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1227.000000, -5657.000000)" fill="#2158F3" fill-rule="nonzero"><g transform="translate(136.000000, 5121.000000)"><g id="Group-14" transform="translate(1091.000000, 543.000000)"><path id="Line" d="M12.5,-6.5 L26.5,0.5 L12.5,7.5 L12.5,1.5 L0.5,1.5 C-0.0522847498,1.5 -0.5,1.05228475 -0.5,0.5 C-0.5,-0.0128358391 -0.11395981,-0.435507161 0.383378875,-0.493272269 L0.5,-0.5 L12.5,-0.5 L12.5,-6.5 Z"></path></g></g></g></g></svg>'));
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      left: 50%;
+      top: 50%;
+      width: 28px;
+      height: 15px;
+      font-size: 1rem;
+      line-height: 1;
+      text-indent: 0;
+      background-size: contain;
+      transform: translateY(-50%) translateX(-50%);
+    }
+  }
+	
+}

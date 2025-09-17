@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+          xmlns:ns1="urn:relationships_2020_2.lists.webservices.netsuite.com"
+          xmlns:ns2="urn:common_2020_2.platform.webservices.netsuite.com"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:ns3="urn:messages_2020_2.platform.webservices.netsuite.com"
+          xmlns:ns4="urn:core_2020_2.platform.webservices.netsuite.com" xmlns:ns5="ns">
+    <Header>
+        <tokenPassport xsi:type="TokenPassport">
+            <account>7251105_SB2</account>
+            <consumerKey>8883620842f7908e67b372ad7af7cf65afc1ef18b29eec49545c77ab13348e01</consumerKey>
+            <token>547fe90aae964e591208941081a3f76df8d2a761da98100370a619ab47f8f14b</token>
+            <nonce>4cNjQdD42UQRp3b2WhvuCSIFha1RjL6M</nonce>
+            <timestamp>1696523155</timestamp>
+            <signature algorithm="HMAC_SHA256">6H0ssHhRL/Q3hqTyO40uRGUH/3UyHvDGgUR4DvcVU4Q=</signature>
+        </tokenPassport>
+    </Header>
+    <Body>
+        <add>
+            <record xsi:type="Customer">
+                <entityId>vitalii.nikitchyn@eleks.com</entityId>
+                <isPerson>false</isPerson>
+                <companyName>Eleks</companyName>
+                <phone>0977770567</phone>
+                <email>vitalii.nikitchyn@eleks.com</email>
+                <addressbookList>
+                    <addressbook>
+                        <defaultShipping>false</defaultShipping>
+                        <defaultBilling>true</defaultBilling>
+                        <isResidential>true</isResidential>
+                        <label>Customer Address Billing</label>
+                        <addressbookAddress>
+                            <country>_ukraine</country>
+                            <attention>Vitalii Nikitchyn</attention>
+                            <addressee>sdd</addressee>
+                            <addrPhone>0977770567</addrPhone>
+                            <addr1>Dragomanova 10</addr1>
+                            <addr2>255</addr2>
+                            <addr3/>
+                            <city>KYIV</city>
+                            <state>VL</state>
+                            <zip>02068</zip>
+                            <addrText>Dragomanova 10</addrText>
+                            <override>false</override>
+                        </addressbookAddress>
+                    </addressbook>
+                    <addressbook>
+                        <defaultShipping>true</defaultShipping>
+                        <defaultBilling>false</defaultBilling>
+                        <isResidential>false</isResidential>
+                        <label>Customer Address Shipping</label>
+                        <addressbookAddress>
+                            <country>_ukraine</country>
+                            <addrPhone/>
+                            <addr1>Dragomanova 10</addr1>
+                            <addr2>255</addr2>
+                            <addr3/>
+                            <city>KYIV</city>
+                            <state>VL</state>
+                            <zip>02068</zip>
+                            <addrText>Dragomanova 10</addrText>
+                            <override>false</override>
+                        </addressbookAddress>
+                    </addressbook>
+                </addressbookList>
+            </record>
+        </add>
+    </Body>
+</Envelope>

@@ -1,0 +1,17 @@
+{
+	"apiVersion": 2,
+	"name": "crown-blocks/anchor-link",
+	"version": "0.1.0",
+	"title": "Anchor Link",
+	"category": "layout",
+	"icon": "table-row-after",
+	"description": "Anchor Link block",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "crown-blocks",
+	"editorScript": "file:./build/index.js",
+    "script": "file:./build/public.js",
+    "editorStyle": "file:./build/index.css",
+    "style": "file:./build/style-index.css"
+}

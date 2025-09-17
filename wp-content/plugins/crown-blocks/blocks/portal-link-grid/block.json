@@ -1,0 +1,17 @@
+{
+	"apiVersion": 2,
+	"name": "crown-blocks/portal-link-grid",
+	"version": "0.1.0",
+	"title": "Portal Link Grid",
+	"category": "widgets",
+	"icon": "block-default",
+	"description": "Grid of tiles that link to another pages.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "crown-blocks",
+	"editorScript": "file:./build/index.js",
+    "script": "file:./build/public.js",
+    "editorStyle": "file:./build/index.css",
+    "style": "file:./build/style-index.css"
+}

@@ -1,0 +1,26 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@use "sass:math";
+@import '../../../common';
+
+.editor-styles-wrapper .wp-block-crown-blocks-column {
+	max-width: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	display: flex;
+	width: 100%;
+	
+	&.is-empty {
+		> .inner > .column-contents {
+			> .inner {
+				min-height: 20px;
+			}
+		}
+	}
+}

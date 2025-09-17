@@ -1,0 +1,155 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FME Addons: Shop as a Customer for WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 09:25+0000\n"
+"PO-Revision-Date: 2021-04-13 09:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: Malay\n"
+"Language: ms_MY\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.2; wp-5.7\n"
+"X-Domain: shop-as-a-customer-for-woocommerce"
+
+#: shop-as-a-customer-for-woocommerce.php:293
+#: shop-as-a-customer-for-woocommerce.php:361
+msgid "Action"
+msgstr "Tindakan"
+
+#: shop-as-a-customer-for-woocommerce.php:251
+msgid "By Default Order Status During Offline Payment"
+msgstr "Dengan Perintah Lalai Status Dalam Pembayaran Offline"
+
+#: shop-as-a-customer-for-woocommerce.php:957
+msgid "compress to left"
+msgstr "kompres ke kiri"
+
+#: shop-as-a-customer-for-woocommerce.php:930
+#: shop-as-a-customer-for-woocommerce.php:940
+msgid "compress to right"
+msgstr "kompres ke kanan"
+
+#: shop-as-a-customer-for-woocommerce.php:479
+#: shop-as-a-customer-for-woocommerce.php:566
+msgid "Customer"
+msgstr "Pelanggan"
+
+#: shop-as-a-customer-for-woocommerce.php:198
+msgid "Customer Logs"
+msgstr "Pelanggan Log"
+
+#: shop-as-a-customer-for-woocommerce.php:330
+#: shop-as-a-customer-for-woocommerce.php:1332
+msgid "Edit Profile"
+msgstr "Edit Profil"
+
+#: shop-as-a-customer-for-woocommerce.php:288
+#: shop-as-a-customer-for-woocommerce.php:356
+msgid "Email"
+msgstr "E-mel"
+
+#. Name of the plugin
+msgid "FME Addons: Shop as a Customer for WooCommerce"
+msgstr "FME Apakah: Kedai sebagai Pelanggan untuk WooCommerce"
+
+#. Author of the plugin
+msgid "fmeaddons"
+msgstr "fmeaddons"
+
+#: shop-as-a-customer-for-woocommerce.php:276
+#: shop-as-a-customer-for-woocommerce.php:344
+#: shop-as-a-customer-for-woocommerce.php:467
+#: shop-as-a-customer-for-woocommerce.php:554
+msgid "ID"
+msgstr "ID"
+
+#: shop-as-a-customer-for-woocommerce.php:473
+#: shop-as-a-customer-for-woocommerce.php:560
+msgid "Logged in At"
+msgstr "Masuk di dalam"
+
+#: shop-as-a-customer-for-woocommerce.php:489
+#: shop-as-a-customer-for-woocommerce.php:576
+msgid "Message On Whatsapp"
+msgstr "Chat"
+
+#: shop-as-a-customer-for-woocommerce.php:282
+#: shop-as-a-customer-for-woocommerce.php:350
+msgid "Name"
+msgstr "Nama"
+
+#: shop-as-a-customer-for-woocommerce.php:1182
+msgid "next"
+msgstr "seterusnya"
+
+#: shop-as-a-customer-for-woocommerce.php:1181
+msgid "No Records found"
+msgstr "Tiada Rekod yang ditemui"
+
+#: shop-as-a-customer-for-woocommerce.php:206
+msgid ""
+"Only Selected Roles will be allowed to switch & View orders. If no role is "
+"selected all roles will be considered as selected"
+msgstr ""
+"Hanya Dipilih Peranan akan dibenarkan untuk beralih & Melihat perintah. Jika "
+"tidak peranan dipilih semua peranan akan dianggap sebagai dipilih"
+
+#: shop-as-a-customer-for-woocommerce.php:484
+#: shop-as-a-customer-for-woocommerce.php:571
+msgid "Products"
+msgstr "Produk"
+
+#: shop-as-a-customer-for-woocommerce.php:1337
+msgid "Recent Customer:"
+msgstr "Pelanggan Baru-Baru Ini:"
+
+#: shop-as-a-customer-for-woocommerce.php:267
+msgid "Save Settings"
+msgstr "Simpan Setting"
+
+#: shop-as-a-customer-for-woocommerce.php:204
+msgid "Select Role(s)"
+msgstr "Pilih Peranan(s)"
+
+#: shop-as-a-customer-for-woocommerce.php:199
+msgid "Settings"
+msgstr "Setting"
+
+#: shop-as-a-customer-for-woocommerce.php:175
+#: shop-as-a-customer-for-woocommerce.php:1172
+msgid "Shop as Customer"
+msgstr "Kedai sebagai Pelanggan"
+
+#: shop-as-a-customer-for-woocommerce.php:328
+#: shop-as-a-customer-for-woocommerce.php:1327
+msgid "Switch"
+msgstr "Suis"
+
+#: shop-as-a-customer-for-woocommerce.php:955
+msgid "Switch Back "
+msgstr "Tukar Kembali "
+
+#: shop-as-a-customer-for-woocommerce.php:1028
+msgid "Switch Back And View Orders"
+msgstr "Tukar Kembali Dan Melihat Perintah"
+
+#: shop-as-a-customer-for-woocommerce.php:197
+msgid "Switch To Customers"
+msgstr "Beralih Ke Pelanggan"
+
+#: shop-as-a-customer-for-woocommerce.php:329
+#: shop-as-a-customer-for-woocommerce.php:1330
+msgid "View Orders"
+msgstr "Lihat Perintah"
+
+#: shop-as-a-customer-for-woocommerce.php:947
+msgid "You are now login as "
+msgstr "Sekarang anda login sebagai "
+
+#: shop-as-a-customer-for-woocommerce.php:195
+msgid "Your settings has been saved!"
+msgstr "Anda setting telah diselamatkan!"

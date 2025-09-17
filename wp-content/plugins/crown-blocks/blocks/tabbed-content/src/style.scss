@@ -1,0 +1,92 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-crown-blocks-tabbed-content {
+	.slick-slider {
+		user-select: text;
+		.wp-block-crown-blocks-tabbed-content-tab {
+			margin-top: 2rem;
+			@media (min-width: 768px) {
+				margin-top: 4rem;
+			}
+		}
+		.tab-header {
+			display: none;
+		}
+	}
+	.slick-slider-nav {
+		.slick-dots {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			li.slick-active button {
+				color: #000;
+				border-color: #000;
+			}
+			button {
+				border: none;
+				padding: 10px 10px;
+				display: block;
+				background-color: transparent;
+				font-weight: 700;
+				color: #6C7476;
+				font-size: 18px;
+				border-bottom: 3px solid transparent;
+				transition: border-color .15s, color .15s;
+				text-align: center;
+				@media (min-width: 768px) {
+					padding: 16px 24px;
+				}
+				&:hover {
+					color: #000;
+				}
+				span {
+					display: block;
+				}
+				.index {
+					display: none;
+				}
+				.description {
+					font-size: 14px;
+					color: #666;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}
+.wp-block-crown-blocks-tabbed-content.is-style-boxed {
+	.slick-slider-nav {
+		.slick-dots {
+			border: 1px solid #E6E6E6;
+			li {
+				flex: 1 1 0;
+				display: flex;
+				margin-bottom: -1px;
+				+ li {
+					border-left: 1px solid #E6E6E6;
+				}
+			}
+			button {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: stretch;
+				@media (min-width: 992px) {
+					padding: 24px 24px;
+				}
+			}
+		}
+	}
+}

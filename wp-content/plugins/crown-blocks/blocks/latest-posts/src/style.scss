@@ -1,0 +1,45 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-crown-blocks-latest-posts {
+	@include full-width-block;
+
+	position: relative;
+
+	.latest-posts {
+		display: flex;
+
+		.slick-track {
+			margin: 0 -13px;
+		}
+
+		&__title {
+			font-size: 34px;
+			font-weight: 200;
+			letter-spacing: 1px;
+			line-height: 44px;
+			text-align: center;
+		}
+	}
+	
+	.post-teaser.latest-posts {
+		margin: 0;
+		width: 100%;
+
+		@media (min-width: 768px) {
+			width: 33.33%;
+		}
+	}
+
+	.inner .post-feed .inner {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}

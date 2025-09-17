@@ -1,0 +1,133 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./blocks/membership-table/src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+.has-gradient-one-color {
+  background: linear-gradient(90deg, #45b6fa 0%, #2158f3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.has-gradient-two-color {
+  background: linear-gradient(270deg, #ADF2BD 0%, #8BEFF2 47.25%, #BBC7F2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.has-gradient-four-color {
+  background: linear-gradient(298.77deg, #515151 0%, #121924 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.has-gradient-five-color {
+  background: linear-gradient(302.32deg, #EE1E51 0%, #121924 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.bg-color-gradient-two {
+  background: linear-gradient(270deg, #ADF2BD 0%, #8BEFF2 47.25%, #BBC7F2 100%);
+}
+
+.bg-color-gradient-three {
+  background: linear-gradient(302.32deg, #144C3F 0%, #144D6C 49.53%, #2B2C5B 100%);
+}
+
+.bg-color-gradient-four {
+  background: linear-gradient(298.77deg, #515151 0%, #121924 100%);
+}
+
+.bg-color-gradient-five {
+  background: linear-gradient(302.32deg, #EE1E51 0%, #121924 100%);
+}
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-crown-blocks-membership-table > .inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 576px) {
+  .wp-block-crown-blocks-membership-table > .inner {
+    margin: 0 -12px;
+  }
+}
+.wp-block-crown-blocks-membership-table > .inner .column {
+  width: 100%;
+  margin: 12px 0;
+}
+@media (min-width: 576px) {
+  .wp-block-crown-blocks-membership-table > .inner .column {
+    width: calc(50% - 24px);
+    margin: 12px;
+  }
+}
+@media (min-width: 992px) {
+  .wp-block-crown-blocks-membership-table > .inner .column {
+    width: calc(25% - 24px);
+  }
+}
+.wp-block-crown-blocks-membership-table .price-card {
+  border: 1px solid #404040;
+  padding: 24px;
+  margin-bottom: 10px;
+}
+.wp-block-crown-blocks-membership-table .price-card__price {
+  color: #2158F3;
+  font-weight: bold;
+}
+.wp-block-crown-blocks-membership-table .price-card p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+.wp-block-crown-blocks-membership-table .card-header {
+  border: 1px solid #919191;
+  background-color: #2158F3;
+  color: #FFFFFF;
+  padding: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+.wp-block-crown-blocks-membership-table .card-header::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+  transform: rotate(45deg);
+  margin-left: 10px;
+  transition: transform 0.2s;
+}
+.wp-block-crown-blocks-membership-table .card-header.collapsed::after {
+  transform: rotate(-45deg);
+}
+.wp-block-crown-blocks-membership-table .card-body {
+  border: 1px solid #919191;
+  background-color: #F3F0E8;
+  text-align: center;
+}
+.wp-block-crown-blocks-membership-table .card-body ul {
+  text-align: left;
+}
+.wp-block-crown-blocks-membership-table .card-body li {
+  margin-bottom: 10px;
+}
+.wp-block-crown-blocks-membership-table .disclaimer {
+  color: #aaa;
+}
+.wp-block-crown-blocks-membership-table .disclaimer p {
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

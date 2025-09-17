@@ -1,0 +1,16 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-crown-blocks-anchor-link-content {
+	.tab-details {
+        margin-bottom: 40px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+    }
+}

@@ -1,0 +1,59 @@
+<wpml-config>
+  <custom-types>
+    <custom-type translate="1" display-as-translated="1">af_c_fields</custom-type>
+    <custom-type translate="1">def_reg_fields</custom-type>
+  </custom-types>
+  <custom-fields>
+    <custom-field action="ignore">afreg_field_type</custom-field>
+    <custom-field action="ignore">afreg_field_width</custom-field>
+    <custom-field action="translate">afreg_field_placeholder</custom-field>
+    <custom-field action="translate">afreg_field_description</custom-field>
+    <custom-field action="ignore">afreg_field_css</custom-field>
+    <custom-field action="ignore">afreg_field_file_size</custom-field>
+    <custom-field action="ignore">afreg_field_file_type</custom-field>
+    <custom-field action="ignore">afreg_field_option</custom-field>
+    <custom-field action="ignore">af_c_f_field_type</custom-field>
+    <custom-field action="ignore">af_c_f_field_required</custom-field>
+    <custom-field action="ignore">af_c_f_field_read_only</custom-field>
+    <custom-field action="ignore">af_c_f_field_order_details</custom-field>
+    <custom-field action="ignore">af_c_f_field_width</custom-field>
+    <custom-field action="translate">af_c_f_field_placeholder</custom-field>
+    <custom-field action="translate">af_c_f_field_description</custom-field>
+    <custom-field action="ignore">af_c_f_field_css</custom-field>
+    <custom-field action="ignore">af_c_f_field_file_size</custom-field>
+    <custom-field action="ignore">af_c_f_field_file_type</custom-field>
+    <custom-field action="ignore">af_c_f_dependable</custom-field>
+    <custom-field action="ignore">af_c_f_checkout_position</custom-field>
+    <custom-field action="ignore">af_c_f_field_user_roles</custom-field>
+    <custom-field action="ignore">af_c_f_field_pages</custom-field>
+    <custom-field action="ignore">af_c_f_dep_fields</custom-field>
+    <custom-field action="ignore">af_c_f_is_dependable</custom-field>
+    <custom-field action="ignore">af_c_f_heading_tag</custom-field>
+    <custom-field action="translate">af_c_f_field_text</custom-field>
+  </custom-fields>
+  <admin-texts>
+    <key name="af_c_f_user_role_field_text"/>
+    <key name="afreg_billing_address_1"/>
+    <key name="afreg_billing_address_2"/>
+    <key name="afreg_billing_city"/>
+    <key name="afreg_billing_company"/>
+    <key name="afreg_billing_country"/>
+    <key name="afreg_billing_email"/>
+    <key name="afreg_billing_first_name"/>
+    <key name="afreg_billing_last_name"/>
+    <key name="afreg_billing_phone"/>
+    <key name="afreg_billing_postcode"/>
+    <key name="afreg_billing_state"/>
+    <key name="afreg_enable_user_role"/>
+    <key name="afreg_shipping_address_1"/>
+    <key name="afreg_shipping_address_2"/>
+    <key name="afreg_shipping_city"/>
+    <key name="afreg_shipping_company"/>
+    <key name="afreg_shipping_country"/>
+    <key name="afreg_shipping_first_name"/>
+    <key name="afreg_shipping_last_name"/>
+    <key name="afreg_shipping_postcode"/>
+    <key name="afreg_shipping_state"/>
+    <key name="afreg_user_role_field_text"/>
+  </admin-texts>
+</wpml-config>

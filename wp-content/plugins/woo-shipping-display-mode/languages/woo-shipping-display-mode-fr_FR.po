@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Shipping Method Display Style for WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-11 18:29+0530\n"
+"PO-Revision-Date: 2025-08-20 11:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: French (France)\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.3; wp-5.8.1\n"
+"X-Domain: woo-shipping-display-mode\n"
+"X-Poedit-KeywordsList: esc_html_e;esc_html;esc_attr_e;esc_attr;__;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+"Language: fr_FR"
+
+#: admin/partials/woo-shipping-display-mode-admin-display.php:111
+msgid ""
+"<p><span>Note: </span>If there is only one shipping method available in your "
+"cart then it will showcase shipping method as title without radio button or "
+"dropdown. <a href=\"%1$s\" target=\"_blank\">Click Here</a> for detail."
+"</span><p>"
+msgstr ""
+"<p><span>Remarque : </span> S'il n'y a qu'un seul mode d'expédition "
+"disponible dans votre panier, il affichera le mode d'expédition comme titre "
+"sans bouton radio ni liste déroulante. <a href=\"%1$s\" target=\"_blank\">"
+"Cliquez ici</a> pour plus de détails.</span><p>"
+
+#: includes/class-woo-shipping-display-mode-blocks.php:136
+msgid "Available shipping packages with display mode formatting"
+msgstr "Forfaits d'expédition disponibles avec formatage du mode d'affichage"
+
+#: admin/partials/woo-shipping-display-mode-admin-display.php:102
+msgid "Dropdown"
+msgstr "Dérouler"
+
+#: admin/partials/woo-shipping-display-mode-admin-display.php:93
+msgid "Radio Button (Default)"
+msgstr "Bouton radio (par défaut)"
+
+#: admin/partials/woo-shipping-display-mode-admin-display.php:82
+msgid "Select Display Mode"
+msgstr "Sélectionnez le mode d'affichage"
+
+#: includes/class-woo-shipping-display-mode.php:238
+msgid "Settings"
+msgstr "Paramètres"
+
+#: admin/partials/woo-shipping-display-mode-admin-display.php:56
+#: admin/partials/woo-shipping-display-mode-admin-display.php:77
+msgid "Shipping Method Display Mode"
+msgstr "Mode d'affichage de la méthode d'expédition"
+
+#: includes/class-woo-shipping-display-mode-blocks.php:129
+msgid "Shipping method display mode"
+msgstr "Shipping method display mode"
+
+#: public/class-woo-shipping-display-mode-public.php:79
+msgid "Shipping options"
+msgstr "Options d'expédition"
+
+#: admin/class-woo-shipping-display-mode-admin.php:136
+msgid "Support"
+msgstr "Soutien"
+
+#: includes/class-woo-shipping-display-mode.php:238
+msgid "View WooCommerce settings"
+msgstr "Afficher les paramètres de WooCommerce"

@@ -1,0 +1,72 @@
+// @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400&family=Poppins:wght@200;400;500&family=Space+Grotesk:wght@500;600;700&family=Urbanist:wght@600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+// font-family: 'IBM Plex Sans', sans-serif;
+// font-family: 'Space Grotesk', sans-serif;
+// font-family: 'Urbanist', sans-serif;
+
+
+@font-face {
+    font-family: "Artegra Sans Extended";
+    font-display: auto;
+    src: url("../fonts/circular-pro/lineto-circular-pro-book.eot");
+    src: url("../fonts/circular-pro/lineto-circular-pro-book.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/circular-pro/lineto-circular-pro-book.woff") format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Artegra Sans Extended';
+    src: url('../fonts/Artegra_Sans_Extended/ArtegraSansExtended-BlackItalic.woff2') format('woff2'),
+         url('../fonts/Artegra_Sans_Extended/ArtegraSansExtended-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Artegra Sans Extended';
+    src: url('../fonts/Artegra_Sans_Extended/ArtegraSansExtended-ExtraBoldIt.woff2') format('woff2'),
+         url('../fonts/Artegra_Sans_Extended/ArtegraSansExtended-ExtraBoldIt.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Artegra Sans Extended';
+    src: url('../fonts/Artegra_Sans_Extended/ArtegraSansExtended-ExtraBold.woff2') format('woff2'),
+         url('../fonts/Artegra_Sans_Extended/ArtegraSansExtended-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Artegra Sans Extended';
+    src: url('../fonts/Artegra_Sans_Extended/ArtegraSansExtended-BoldItalic.woff2') format('woff2'),
+         url('../fonts/Artegra_Sans_Extended/ArtegraSansExtended-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Artegra Sans Extended';
+    src: url('../fonts/Artegra_Sans_Extended/ArtegraSansExtended-Black.woff2') format('woff2'),
+         url('../fonts/Artegra_Sans_Extended/ArtegraSansExtended-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Artegra Sans Extended';
+    src: url('../fonts/Artegra_Sans_Extended/ArtegraSansExtended-Bold.woff2') format('woff2'),
+         url('../fonts/Artegra_Sans_Extended/ArtegraSansExtended-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+

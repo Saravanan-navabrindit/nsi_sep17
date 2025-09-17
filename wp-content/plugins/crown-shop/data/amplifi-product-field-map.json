@@ -1,0 +1,1798 @@
+{
+	"fields": [
+		{ 
+			"column": "Collection Data",
+			"meta_key": "product_collection_data",
+			"type": "object"
+		},
+		{ 
+			"column": "Collection ID",
+			"meta_key": "product_collection_id"
+		},
+		{ 
+			"column": "Collection Parent ID",
+			"meta_key": "product_collection_parent_id"
+		},
+		{ 
+			"column": "Collection Last Updated",
+			"meta_key": "product_collection_last_updated"
+		},
+		{ 
+			"column": "SKU",
+			"id": "3378d2745c0a456c980ef2e79d3a9641",
+			"meta_key": "product_sku"
+		},
+		{ 
+			"column": "TITLE",
+			"id": "0b1278d250c54dd7850299520d1f6d78",
+			"meta_key": "product_title"
+		},
+		{ 
+			"column": "Additional Title",
+			"meta_key": "product_title_alt"
+		},
+		{ 
+			"column": "SHORT DESCRIPTION",
+			"id": "a9f1f7c691884ebeafeaff52d9af7e30",
+			"meta_key": "product_short_description"
+		},
+		{ 
+			"column": "MARKETING COPY",
+			"id": "807e51d537654ce7af9bd0368ad01828",
+			"meta_key": "product_maketing_copy"
+		},
+		{ 
+			"column": "LONG DESCRIPTION",
+			"id": "f81bf4dce9e54c4485858f3c19ebc83e",
+			"meta_key": "product_long_description"
+		},
+		{ 
+			"column": "Collection Folder",
+			"meta_key": "product_collection_folder"
+		},
+		{ 
+			"column": "PRODUCT CATEGORY",
+			"id": "f81ad8df92234a5590c8b52b937d6105",
+			"meta_key": "product_category",
+			"taxonomy": { "name": "product_cat" }
+		},
+		{ 
+			"column": "PRODUCT LINE",
+			"id": "56ade1cb15484d0694a0d64833c09afd",
+			"meta_key": "product_line",
+			"taxonomy": { "name": "product_cat" }
+		},
+		{ 
+			"column": "PRODUCT GROUP",
+			"id": "b0679c4fa9b8488dbe48c008e3e82e28",
+			"meta_key": "product_group",
+			"taxonomy": { "name": "product_cat" }
+		},
+		{ 
+			"column": "BRAND",
+			"id": "dfa244a1a53b42259b662bac5601ab7a",
+			"meta_key": "product_brand",
+			"taxonomy": { "name": "product_brand" }
+		},
+		{ 
+			"column": "PRODUCT GROUP SUB-BRAND",
+			"id": "e014aa64bf2a40628a0141b1031324c6",
+			"meta_key": "product_sub_brand"
+		},
+		{ 
+			"column": "MODIFIER SUB-BRAND",
+			"id": "853f26671097478d8ab9a62397958c04",
+			"meta_key": "product_sub_brand_modifier"
+		},
+		{ 
+			"column": "Additional Search Tags",
+			"meta_key": "product_additional_search_tags",
+			"type": "array"
+		},
+		{ 
+			"column": "PRODUCT FEATURE 1",
+			"id": "91c1229952094c60ab067b718223e2ad",
+			"meta_key": "product_feature_1"
+		},
+		{ 
+			"column": "PRODUCT FEATURE 2",
+			"id": "97ac3dbff2b64e76aa8498754ef42411",
+			"meta_key": "product_feature_2"
+		},
+		{ 
+			"column": "PRODUCT FEATURE 3",
+			"id": "8b749ec3d0a4466891f725309e34e604",
+			"meta_key": "product_feature_3"
+		},
+		{ 
+			"column": "PRODUCT FEATURE 4",
+			"id": "21885c78e49443398b1bceb848a0fcad",
+			"meta_key": "product_feature_4"
+		},
+		{ 
+			"column": "PRODUCT FEATURE 5",
+			"id": "2832464d20fb49e09c9b5260a29d5fb3",
+			"meta_key": "product_feature_5"
+		},
+		{
+			"column": "Product Feature 06",
+			"id": "d8503e06-887b-46a2-94e8-ed4edb10fbf1",
+			"meta_key": "product_feature_6"
+		},
+		{
+			"column": "Product Feature 07",
+			"id": "2c606141-a5e9-43de-b569-d61a8be42636",
+			"meta_key": "product_feature_7"
+		},
+		{
+			"column": "Product Feature 08",
+			"id": "15797332-9684-4b82-b335-bbe34a3210f3",
+			"meta_key": "product_feature_8"
+		},
+		{
+			"column": "Product Feature 09",
+			"id": "f836d3cf-e4a9-4256-a207-d507fbcbd81b",
+			"meta_key": "product_feature_9"
+		},
+		{
+			"column": "Product Feature 10",
+			"id": "daaf183b-8b9a-4351-ad3a-597920ae915e",
+			"meta_key": "product_feature_10"
+		},
+		{
+			"column": "Product Feature 11",
+			"id": "4400937e-5d92-48b0-a916-9f9d18db0e67",
+			"meta_key": "product_feature_11"
+		},
+		{
+			"column": "Product Feature 12",
+			"id": "0437cfcf-5fe2-44d3-8006-ab91710341d0",
+			"meta_key": "product_feature_12"
+		},
+		{
+			"column": "Product Feature 13",
+			"id": "e21ebf51-0578-4554-b9d3-d48ce547793e",
+			"meta_key": "product_feature_13"
+		},
+		{
+			"column": "Product Feature 14",
+			"id": "39c594aa-dccd-44f3-9a41-e18a70d1e107",
+			"meta_key": "product_feature_14"
+		},
+		{
+			"column": "Product Feature 15",
+			"id": "f7c45e19-f24b-4ca6-a2ba-3bcf5a19228c",
+			"meta_key": "product_feature_15"
+		},
+		{
+			"column": "Product Feature 16",
+			"id": "a8220abe-dae5-4531-85c1-f5b5d276f94e",
+			"meta_key": "product_feature_16"
+		},
+		{
+			"column": "Product Feature 17",
+			"id": "0e70135f-4b22-4c38-b02e-dce1d9ddabb9",
+			"meta_key": "product_feature_17"
+		},
+		{ 
+			"column": "KEYWORDS",
+			"id": "d331d18affca4796bab38d77d90b7673",
+			"meta_key": "product_keywords"
+		},
+		{ 
+			"column": "RELATED PRODUCTS",
+			"id": "d8442a17d9e241e3a286fb659bfe6429",
+			"meta_key": "product_related_products",
+			"type": "array"
+		},
+		{ 
+			"column": "Competitor Data",
+			"meta_key": "product_competitor_data"
+		},
+		{ 
+			"column": "Competitors",
+			"id": "0e47d077b92b4ae9b56af0fb3cfa32b8",
+			"meta_key": "product_competitor_data"
+		},
+		{ 
+			"column": "Additional Notes",
+			"id": "4f8546594bcc4a0fa1a8c77fae1aca56",
+			"meta_key": "product_additional_notes"
+		},
+		{ 
+			"column": "Future Plan",
+			"id": "dfa468dde61b4d64bc1a05f4992f6787",
+			"meta_key": "product_future_plan"
+		},
+		{ 
+			"column": "PACK WEIGHT",
+			"id": "aa477423d17340a49ffd83a3b83abd78",
+			"meta_key": "product_pack_weight",
+			"type": "float",
+			"taxonomy": { "name": "pa_pack_weight", "label": "Pack Weight" }
+		},
+		{ 
+			"column": "PACK WIDTH",
+			"id": "170da06efeb94406b429dacdd0c3132d",
+			"meta_key": "product_pack_width",
+			"type": "float",
+			"taxonomy": { "name": "pa_pack_width", "label": "Pack Width" }
+		},
+		{ 
+			"column": "PACK LENGTH",
+			"id": "2db1adefb1f74461a58d46edb3e34dd1",
+			"meta_key": "product_pack_length",
+			"type": "float",
+			"taxonomy": { "name": "pa_pack_length", "label": "Pack Length" }
+		},
+		{ 
+			"column": "PACK HEIGHT",
+			"id": "936268a2f2e74b03851481ce69f93cbe",
+			"meta_key": "product_pack_height",
+			"type": "float",
+			"taxonomy": { "name": "pa_pack_height", "label": "Pack Height" }
+		},
+		{ 
+			"column": "PRODUCT WEIGHT (LBS)",
+			"id": "d63750f2139c4dae8df0cfa7578955e9",
+			"meta_key": "product_weight",
+			"type": "float",
+			"taxonomy": { "name": "pa_weight", "label": "Product Weight" }
+		},
+		{ 
+			"column": "PRODUCT WIDTH (IN)",
+			"id": "e746b8c662614e5bb772a3bd8a8322f4",
+			"meta_key": "product_width",
+			"type": "float",
+			"taxonomy": { "name": "pa_width", "label": "Width" }
+		},
+		{ 
+			"column": "PRODUCT LENGTH (IN)",
+			"id": "7583aacf8f624eac81e7f8da47a690ea",
+			"meta_key": "product_length",
+			"type": "float",
+			"taxonomy": { "name": "pa_length", "label": "Length" }
+		},
+		{ 
+			"column": "PRODUCT HEIGHT (IN)",
+			"id": "bddee3c767504731a96cc26a11974caf",
+			"meta_key": "product_height",
+			"type": "float",
+			"taxonomy": { "name": "pa_height", "label": "Height" }
+		},
+		{ 
+			"column": "PRODUCT DEPTH or THICKNESS (IN)",
+			"id": "02898fb7dec242c99d3fd7eae3c0d373",
+			"meta_key": "product_depth",
+			"type": "float",
+			"taxonomy": { "name": "pa_depth", "label": "Depth" }
+		},
+		{ 
+			"column": "CASE WEIGHT",
+			"id": "624104da00994dd8b23c2ab7b0004717",
+			"meta_key": "product_case_weight",
+			"type": "float",
+			"taxonomy": { "name": "pa_case_weight", "label": "case_weight" }
+		},
+		{ 
+			"column": "CASE WIDTH",
+			"id": "87e53b83743342ce95458e018eb0cbe2",
+			"meta_key": "product_case_width",
+			"type": "float",
+			"taxonomy": { "name": "pa_case_width", "label": "case_width" }
+		},
+		{ 
+			"column": "CASE LENGTH",
+			"id": "9faab461281f4cd09b844c1b6f1a0182",
+			"meta_key": "product_case_length",
+			"type": "float",
+			"taxonomy": { "name": "pa_case_length", "label": "case_length" }
+		},
+		{ 
+			"column": "CASE HEIGHT",
+			"id": "f90fe3f4b8704c1195624de777bda6af",
+			"meta_key": "product_case_height",
+			"type": "float",
+			"taxonomy": { "name": "pa_case_height", "label": "case_height" }
+		},
+		{ 
+			"column": "INNER WEIGHT",
+			"id": "cef454df0e7049fa8a354afc149b4a16",
+			"meta_key": "product_inner_weight",
+			"type": "float",
+			"taxonomy": { "name": "pa_inner_weight", "label": "inner_weight" }
+		},
+		{ 
+			"column": "INNER WIDTH",
+			"id": "f1c90af2e08943b490ae6d0a745c4dcd",
+			"meta_key": "product_inner_width",
+			"type": "float",
+			"taxonomy": { "name": "pa_inner_width", "label": "inner_width" }
+		},
+		{ 
+			"column": "INNER LENGTH",
+			"id": "b1e05d6173db43eb87c5c72fcc9c7f43",
+			"meta_key": "product_inner_length",
+			"type": "float",
+			"taxonomy": { "name": "pa_inner_length", "label": "inner_length" }
+		},
+		{ 
+			"column": "INNER HEIGHT",
+			"id": "c66a9c6f99974a2d96497bac4361bcbd",
+			"meta_key": "product_inner_height",
+			"type": "float",
+			"taxonomy": { "name": "pa_inner_height", "label": "inner_height" }
+		},
+		{ 
+			"column": "WARRANTY",
+			"id": "0fa211e67b16484a8136e7d6a201b0da",
+			"meta_key": "product_warranty",
+			"taxonomy": { "name": "pa_warranty", "label": "warranty" }
+		},
+		{ 
+			"column": "Is Custom?",
+			"id": "6958bacad7614b4d93ec7783607a07d2",
+			"meta_key": "product_is_custom",
+			"taxonomy": { "name": "pa_is_custom", "label": "is_custom" }
+		},
+		{ 
+			"column": "Unit of Measure",
+			"id": "f04466331eac44ed8dff29915e15d3a7",
+			"meta_key": "product_unit_measure",
+			"taxonomy": { "name": "pa_unit_measure", "label": "unit_measure" }
+		},
+		{ 
+			"column": "VOLTAGE RATING",
+			"id": "6a0206ca8f5846b9addbdb59fc871235",
+			"meta_key": "product_voltage_rating",
+			"taxonomy": { "name": "pa_voltage_rating", "label": "voltage_rating" }
+		},
+		{ 
+			"column": "Pack Type",
+			"id": "76ad507892464c1b93016dbae09e9d6a",
+			"meta_key": "product_pack_type",
+			"taxonomy": { "name": "pa_pack_type", "label": "pack_type" }
+		},
+		{ 
+			"column": "MATERIAL",
+			"id": "43ec8f838e914d4296821649cd8cebcd",
+			"meta_key": "product_material",
+			"taxonomy": { "name": "pa_material", "label": "Material" }
+		},
+		{ 
+			"column": "FINISH",
+			"id": "92db6cea41514ac18deb6bdbd550805b",
+			"meta_key": "product_finish",
+			"taxonomy": { "name": "pa_finish", "label": "finish" }
+		},
+		{ 
+			"column": "COLOR",
+			"id": "dc1a18d5ab284f9d817d9087ba45c6f4",
+			"meta_key": "product_color",
+			"taxonomy": { "name": "pa_color", "label": "Color" },
+			"type": "array"
+		},
+		{ 
+			"column": "MANUFACTURER",
+			"id": "32da8913fddd45ee800657e27efa0c22",
+			"meta_key": "product_manufacturer",
+			"taxonomy": { "name": "pa_manufacturer", "label": "manufacturer" }
+		},
+		{ 
+			"column": "PACK QTY",
+			"id": "ec24b7e5e8564b2490d390ef4ec43238",
+			"meta_key": "product_pack_qty",
+			"type": "float",
+			"taxonomy": { "name": "pa_pack_qty", "label": "pack_qty" }
+		},
+		{ 
+			"column": "CASE QTY",
+			"id": "e2e790c5032741778e1a4d6b521dc12f",
+			"meta_key": "product_case_qty",
+			"type": "float",
+			"taxonomy": { "name": "pa_case_qty", "label": "case_qty" }
+		},
+		{ 
+			"column": "MIN ORDER QTY",
+			"id": "3d6506dd072546879488f2f5da5c3ae5",
+			"meta_key": "product_min_qty",
+			"type": "float",
+			"taxonomy": { "name": "pa_min_qty", "label": "min_qty" }
+		},
+		{ 
+			"column": "GTIN",
+			"id": "398f7dab3cf443538dc950c6a26245de",
+			"meta_key": "product_gtin"
+		},
+		{ 
+			"column": "UPC",
+			"id": "4b0b07a1954c473e9516358595af25c1",
+			"meta_key": "product_upc"
+		},
+		{ 
+			"column": "EAN",
+			"id": "1b835c15600040d88072b9bcc9fee516",
+			"meta_key": "product_ean"
+		},
+		{ 
+			"column": "UNSPSC",
+			"id": "31ebad0ebac84d47a99b15c31f2e4d87",
+			"meta_key": "product_unspsc",
+			"taxonomy": { "name": "pa_unspsc", "label": "unspsc" }
+		},
+		{ 
+			"column": "COUNTRY OF ORIGIN",
+			"id": "c49846f09d3847c396f0d30fa23b50b1",
+			"meta_key": "product_origin_country",
+			"taxonomy": { "name": "pa_origin_country", "label": "origin_country" }
+		},
+		{ 
+			"column": "Codes",
+			"id": "56a181b191084bdcb295528cb9f131e5",
+			"meta_key": "product_codes",
+			"taxonomy": { "name": "pa_codes", "label": "codes" }
+		},
+		{ 
+			"column": "CERTIFICATIONS & STANDARDS",
+			"id": "dfd69f85f6b34fbbba3f5e02ab011d7f",
+			"meta_key": "product_certifications",
+			"taxonomy": { "name": "pa_certifications", "label": "certifications" }
+		},
+		{ 
+			"column": "Ampacity",
+			"id": "2f57091e239e401dbc82b593e208f792",
+			"meta_key": "product_ampacity",
+			"taxonomy": { "name": "pa_ampacity", "label": "ampacity" }
+		},
+		{ 
+			"column": "UL Standard",
+			"id": "b397db3b86a549a3b2eb1649f690a66c",
+			"meta_key": "product_ul_standard",
+			"taxonomy": { "name": "pa_ul_standard", "label": "ul_standard" }
+		},
+		{ 
+			"column": "CE Certification",
+			"id": "987b39be3be14f3a93e98964b22d3910",
+			"meta_key": "product_ce_cert",
+			"taxonomy": { "name": "pa_ce_cert", "label": "ce_cert" }
+		},
+		{ 
+			"column": "ISO Rating",
+			"id": "31c012b4304a4cf181c60ce601d9c728",
+			"meta_key": "product_iso_rating",
+			"taxonomy": { "name": "pa_iso_rating", "label": "iso_rating" }
+		},
+		{ 
+			"column": "Apparel Size",
+			"id": "9cbd0e08eba54e7d9baec14579743b78",
+			"meta_key": "product_apparel_size",
+			"taxonomy": { "name": "pa_apparel_size", "label": "apparel_size" }
+		},
+		{ 
+			"column": "Cut Level",
+			"id": "28256b2f930848f49708d1ee6b4f6326",
+			"meta_key": "product_cut_level",
+			"taxonomy": { "name": "pa_cut_level", "label": "cut_level" }
+		},
+		{ 
+			"column": "CSA Standard",
+			"id": "47f7e87429a0492285db9dab8fdb7a2f",
+			"meta_key": "product_csa_standard",
+			"taxonomy": { "name": "pa_csa_standard", "label": "csa_standard" }
+		},
+		{ 
+			"column": "Min Installation Temperature",
+			"id": "7aa2a66ecda544a98d960ba322e224d3",
+			"meta_key": "product_min_install_temp",
+			"taxonomy": { "name": "pa_min_install_temp", "label": "min_install_temp" }
+		},
+		{ 
+			"column": "Conductor Range",
+			"id": "96251256142b444094b0767492ece748",
+			"meta_key": "product_conductor_range",
+			"taxonomy": { "name": "pa_conductor_range", "label": "conductor_range" }
+		},
+		{ 
+			"column": "Cable/Conduit Type",
+			"id": "b8b37eddab99416d9921ee7f5d9e40ca",
+			"meta_key": "product_cable_conduit_type",
+			"taxonomy": { "name": "pa_cable_conduit_type", "label": "cable_conduit_type" }
+		},
+		{ 
+			"column": "Trade Size",
+			"id": "d0893125866f4c0e91f1c7ac4debee7d",
+			"meta_key": "product_trade_size",
+			"taxonomy": { "name": "pa_trade_size", "label": "trade_size" }
+		},
+		{ 
+			"column": "Huskie Die (# of crimps)",
+			"id": "bda1c8b8f35c43198f617101d7acdeb4",
+			"meta_key": "product_huskie_die",
+			"type": "float",
+			"taxonomy": { "name": "pa_huskie_die", "label": "huskie_die" }
+		},
+		{ 
+			"column": "Huskie Tools",
+			"id": "735343cbdbbe4bc2b8411361eb33491c",
+			"meta_key": "product_huskie_tools",
+			"taxonomy": { "name": "pa_huskie_tools", "label": "huskie_tools" }
+		},
+		{ 
+			"column": "T&B Die (# of crimps)",
+			"id": "6879e0e8fbff46a78c3c13bf28f7ae7e",
+			"meta_key": "product_tb_die",
+			"type": "float",
+			"taxonomy": { "name": "pa_tb_die", "label": "tb_die" }
+		},
+		{ 
+			"column": "T&B Tools",
+			"id": "26613008eb6b4d118966713e8045ed4f",
+			"meta_key": "product_tb_tools",
+			"taxonomy": { "name": "pa_tb_tools", "label": "tb_tools" }
+		},
+		{ 
+			"column": "BURNDY Die (# of crimps)",
+			"id": "8055af4f69cd4f3d8861901713dcd17e",
+			"meta_key": "product_burndy_die",
+			"type": "float",
+			"taxonomy": { "name": "pa_burndy_die", "label": "burndy_die" }
+		},
+		{ 
+			"column": "BURNDY Tools",
+			"id": "c371412cf6a94c18a9f2072f404e94c3",
+			"meta_key": "product_burndy_tools",
+			"taxonomy": { "name": "pa_burndy_tools", "label": "burndy_tools" }
+		},
+		{ 
+			"column": "ILSCO Die (# of crimps)",
+			"id": "f4f3498f1a7e42598bc980fdb5a8c726",
+			"meta_key": "product_ilsco_die",
+			"type": "float",
+			"taxonomy": { "name": "pa_ilsco_die", "label": "ilsco_die" }
+		},
+		{ 
+			"column": "ILSCO Tools",
+			"id": "f5f9e534c3e246c9bf13f39a460aeac8",
+			"meta_key": "product_ilsco_tools",
+			"taxonomy": { "name": "pa_ilsco_tools", "label": "ilsco_tools" }
+		},
+		{ 
+			"column": "Greenlee Die (# of crimps)",
+			"id": "70b15bfd1e7e4c90b2bca667b99e469d",
+			"meta_key": "product_greenlee_die",
+			"type": "float",
+			"taxonomy": { "name": "pa_greenlee_die", "label": "greenlee_die" }
+		},
+		{ 
+			"column": "Greenlee Tools",
+			"id": "19fed7bd535044aa9d2f3dbe3296e6ae",
+			"meta_key": "product_greenlee_tools",
+			"taxonomy": { "name": "pa_greenlee_tools", "label": "greenlee_tools" }
+		},
+		{ 
+			"column": "NSI Die (# of crimps)",
+			"id": "eef1e10978174cc583a2a1b20453e1f6",
+			"meta_key": "product_nsi_die",
+			"type": "float",
+			"taxonomy": { "name": "pa_nsi_die", "label": "nsi_die" }
+		},
+		{ 
+			"column": "NSI Tools",
+			"id": "0a95ad6fbdcb47578ddfd4dd0528729b",
+			"meta_key": "product_nsi_tools",
+			"taxonomy": { "name": "pa_nsi_tools", "label": "nsi_tools" }
+		},
+		{ 
+			"column": "Barrel Inside Diameter (IN)",
+			"id": "5996dfa07d824d15bfdb7ad12f782107",
+			"meta_key": "product_barrel_inside_diameter",
+			"type": "float",
+			"taxonomy": { "name": "pa_barrel_inside_diameter", "label": "barrel_inside_diameter" }
+		},
+		{ 
+			"column": "Barrel Outside Diameter (IN)",
+			"id": "847dd1538384435eb8673db0a2ec3e5d",
+			"meta_key": "product_barrel_outside_diameter",
+			"type": "float",
+			"taxonomy": { "name": "pa_barrel_outside_diameter", "label": "barrel_outside_diameter" }
+		},
+		{ 
+			"column": "UL File #",
+			"id": "cb8b8e91841c49a5bf2be85b22fa457d",
+			"meta_key": "product_ul_file_no",
+			"taxonomy": { "name": "pa_ul_file_no", "label": "ul_file_no" }
+		},
+		{ 
+			"column": "Actuator",
+			"id": "a3321001adc64739bf1234c798eea136",
+			"meta_key": "product_actuator",
+			"taxonomy": { "name": "pa_actuator", "label": "Actuator" }
+		},
+		{ 
+			"column": "Contact Rating",
+			"id": "d33749232acc4b1b8ac10dccba8f6494",
+			"meta_key": "product_contact_rating",
+			"taxonomy": { "name": "pa_contact_rating", "label": "contact_rating" }
+		},
+		{ 
+			"column": "Contact Configuration",
+			"id": "b175ad1586b042da94ff1623bc91e572",
+			"meta_key": "product_contact_config",
+			"taxonomy": { "name": "pa_contact_config", "label": "contact_config" }
+		},
+		{ 
+			"column": "Water Absorption",
+			"id": "384c95b89cb24f0dbc6d1c8bb1a4ffce",
+			"meta_key": "product_water_absorbtion",
+			"taxonomy": { "name": "pa_water_absorbtion", "label": "water_absorbtion" }
+		},
+		{ 
+			"column": "Decibels (dB)",
+			"id": "63dd051646b74bc38d1523231088fb45",
+			"meta_key": "product_decibels",
+			"type": "float",
+			"taxonomy": { "name": "pa_decibels", "label": "decibels" }
+		},
+		{ 
+			"column": "Input Current (AMPS)",
+			"id": "c57d6fcd542f45a89856bf3d71ff68c2",
+			"meta_key": "product_input_current",
+			"type": "float",
+			"taxonomy": { "name": "pa_input_current", "label": "input_current" }
+		},
+		{ 
+			"column": "Number of Lamps",
+			"id": "405854efa803438db71c5b65a61375c0",
+			"meta_key": "product_lamp_count",
+			"type": "float",
+			"taxonomy": { "name": "pa_lamp_count", "label": "lamp_count" }
+		},
+		{ 
+			"column": "Wattage",
+			"id": "04c2c9eba5d742b291fcb35a29f60086",
+			"meta_key": "product_wattage",
+			"taxonomy": { "name": "pa_wattage", "label": "wattage" }
+		},
+		{ 
+			"column": "Mounting",
+			"id": "801ff6cd4cad4fe395357386ab39f511",
+			"meta_key": "product_mounting",
+			"taxonomy": { "name": "pa_mounting", "label": "mounting" }
+		},
+		{ 
+			"column": "Wire Type",
+			"id": "c155325de29a422594c37948624408f5",
+			"meta_key": "product_wire_type",
+			"taxonomy": { "name": "pa_wire_type", "label": "wire_type" }
+		},
+		{ 
+			"column": "Body Length",
+			"id": "883ebb781c4549d79c111b6035c2adf0",
+			"meta_key": "product_body_length",
+			"taxonomy": { "name": "pa_body_length", "label": "body_length" }
+		},
+		{ 
+			"column": "Pin Length",
+			"id": "f5baa3f3a2be4188a39a1cc6d62bbf3b",
+			"meta_key": "product_pin_length",
+			"taxonomy": { "name": "pa_pin_length", "label": "pin_length" }
+		},
+		{ 
+			"column": "Pin Size",
+			"id": "61af962859bb46d38213ab03ae9eb2f7",
+			"meta_key": "product_pin_size",
+			"taxonomy": { "name": "pa_pin_size", "label": "pin_size" }
+		},
+		{ 
+			"column": "Stud/Terminal Size",
+			"id": "8ceada7693a24e66990da06275bd63e4",
+			"meta_key": "product_stud_terminal_size",
+			"taxonomy": { "name": "pa_stud_terminal_size", "label": "stud_terminal_size" }
+		},
+		{ 
+			"column": "Wire/Cable Class",
+			"id": "466feb7bb8d74df382cf8039a604886d",
+			"meta_key": "product_wire_cable_class",
+			"taxonomy": { "name": "pa_wire_cable_class", "label": "wire_cable_class" }
+		},
+		{ 
+			"column": "ANSI",
+			"id": "7b880f86b31040d9b91dccf3b9881213",
+			"meta_key": "product_ansi",
+			"taxonomy": { "name": "pa_ansi", "label": "ansi" }
+		},
+		{ 
+			"column": "Aluminum Conductor Max AMP",
+			"id": "5211347464ea4298b1f497a6472d6946",
+			"meta_key": "product_al_conductor_max_amp",
+			"taxonomy": { "name": "pa_al_conductor_max_amp", "label": "al_conductor_max_amp" }
+		},
+		{ 
+			"column": "Copper Conductor Max AMP",
+			"id": "f3d64a2901704fe19f1b4f107081dc69",
+			"meta_key": "product_cu_conductor_max_amp",
+			"taxonomy": { "name": "pa_cu_conductor_max_amp", "label": "cu_conductor_max_amp" }
+		},
+		{ 
+			"column": "Conductor - CU Size Range",
+			"id": "3d8737e089eb4554b2f879eb04311d7d",
+			"meta_key": "product_conductor_cu_size_range",
+			"taxonomy": { "name": "pa_conductor_cu_size_range", "label": "conductor_cu_size_range" }
+		},
+		{ 
+			"column": "Conductor - AL Size Range",
+			"id": "c4647a40a3f849809c9d5aac9aec776c",
+			"meta_key": "product_conductor_al_size_range",
+			"taxonomy": { "name": "pa_conductor_al_size_range", "label": "conductor_al_size_range" }
+		},
+		{ 
+			"column": "Conductor Type",
+			"id": "143543e36128406faccff98e9d026768",
+			"meta_key": "product_conductor_type",
+			"taxonomy": { "name": "pa_conductor_type", "label": "conductor_type" }
+		},
+		{ 
+			"column": "Tang Thickness",
+			"id": "fb9cea2b75c24eb3ad018987cc714c51",
+			"meta_key": "product_tang_thickness",
+			"taxonomy": { "name": "pa_tang_thickness", "label": "tang_thickness" }
+		},
+		{ 
+			"column": "Tang Length",
+			"id": "2240cf692508465396f665635a26ac9f",
+			"meta_key": "product_tang_length",
+			"taxonomy": { "name": "pa_tang_length", "label": "tang_length" }
+		},
+		{ 
+			"column": "Temperature Rating",
+			"id": "7476b974f40f49f69fbaa73b671602c0",
+			"meta_key": "product_temp_rating",
+			"taxonomy": { "name": "pa_temp_rating", "label": "temp_rating" }
+		},
+		{ 
+			"column": "Mounting Hole Position",
+			"id": "bea4b039b6be4a0e8f72d23f1b31e5df",
+			"meta_key": "product_mounting_hole_pos",
+			"taxonomy": { "name": "pa_mounting_hole_pos", "label": "mounting_hole_pos" }
+		},
+		{ 
+			"column": "Hole Spacing",
+			"meta_key": "product_hole_spacing",
+			"taxonomy": { "name": "pa_hole_spacing", "label": "hole_spacing" }
+		},
+		{ 
+			"column": "Number of Holes",
+			"id": "662919b310294b0bad21421e7b527fa9",
+			"meta_key": "product_hole_count",
+			"taxonomy": { "name": "pa_hole_count", "label": "hole_count" }
+		},
+		{ 
+			"column": "Number of Conductors/Circuits/Terminals",
+			"id": "0595dd1a98a24ea3ace0a240746db149",
+			"meta_key": "product_conductors_count",
+			"taxonomy": { "name": "pa_conductors_count", "label": "conductors_count" }
+		},
+		{ 
+			"column": "Pipe Size",
+			"id": "0a036eb44b294d82b5079ac7d539f318",
+			"meta_key": "product_pipe_size",
+			"taxonomy": { "name": "pa_pipe_size", "label": "pipe_size" }
+		},
+		{ 
+			"column": "Dielectric",
+			"id": "927f2f06d217413483d811496257a10d",
+			"meta_key": "product_dielectric",
+			"taxonomy": { "name": "pa_dielectric", "label": "dielectric" }
+		},
+		{ 
+			"column": "Tensile Strength",
+			"id": "821ab079aef6484c9b075bfce249f217",
+			"meta_key": "product_tensile_strength",
+			"taxonomy": { "name": "pa_tensile_strength", "label": "tensile_strength" }
+		},
+		{ 
+			"column": "Max Bundle Diameter (IN)",
+			"id": "fd882594a5ee4a4dafdc8ac8719ead6f",
+			"meta_key": "product_max_bundle_diameter",
+			"taxonomy": { "name": "pa_max_bundle_diameter", "label": "max_bundle_diameter" }
+		},
+		{ 
+			"column": "Hex Wrench Size (IN)",
+			"id": "4079f4ff00f846e491e0fa3db3956c51",
+			"meta_key": "product_hex_wrengh_size",
+			"taxonomy": { "name": "pa_hex_wrengh_size", "label": "hex_wrench_size" }
+		},
+		{ 
+			"column": "Die Size (IN)",
+			"id": "ae0359ffe98d4238982aae41880f77e6",
+			"meta_key": "product_die_size",
+			"taxonomy": { "name": "pa_die_size", "label": "die_size" }
+		},
+		{ 
+			"column": "Tap Color Code",
+			"id": "b1983b8fd932484dabc7aeb82d0ba6b2",
+			"meta_key": "product_tap_color_code",
+			"taxonomy": { "name": "pa_tap_color_code", "label": "tap_color_code" }
+		},
+		{ 
+			"column": "Tap Wire Size",
+			"id": "e1351050f8424a92a24f95d70b4623aa",
+			"meta_key": "product_tap_wire_size",
+			"taxonomy": { "name": "pa_tap_wire_size", "label": "tap_wire_size" }
+		},
+		{ 
+			"column": "Tap ACSR",
+			"id": "931bdb583d844ba599c266821d5f79fd",
+			"meta_key": "product_tap_acsr",
+			"taxonomy": { "name": "pa_tap_acsr", "label": "tap_acsr" }
+		},
+		{ 
+			"column": "Main Color Code",
+			"id": "6f15bc3752de42779170aec642e785fd",
+			"meta_key": "product_main_color_code",
+			"taxonomy": { "name": "pa_main_color_code", "label": "main_color_code" }
+		},
+		{ 
+			"column": "Main Wire Size",
+			"id": "69190f1ee7c3432c94915686b347d06b",
+			"meta_key": "product_main_wire_size",
+			"taxonomy": { "name": "pa_main_wire_size", "label": "main_wire_size" }
+		},
+		{ 
+			"column": "Main ACSR",
+			"id": "077532f86d2349bcbd6150dc711350e6",
+			"meta_key": "product_main_ascr",
+			"taxonomy": { "name": "pa_main_ascr", "label": "main_ascr" }
+		},
+		{ 
+			"column": "Product Series",
+			"id": "052b42d73c4743f188cf0bf49baedfdd",
+			"meta_key": "product_product_series",
+			"taxonomy": { "name": "pa_product_series", "label": "product_series" }
+		},
+		{ 
+			"column": "Wire Range",
+			"id": "6e62a05f81604337b3a87e84c330ee2d",
+			"meta_key": "product_wire_range",
+			"taxonomy": { "name": "pa_wire_range", "label": "wire_range" }
+		},
+		{ 
+			"column": "Environmental Temperature",
+			"id": "a495bb6f7af74153984feff746c85415",
+			"meta_key": "product_env_temp",
+			"taxonomy": { "name": "pa_env_temp", "label": "env_temp" }
+		},
+		{ 
+			"column": "Product Assortment",
+			"id": "53b0663295b442d485ae9622b70900ff",
+			"meta_key": "product_assortment",
+			"taxonomy": { "name": "pa_assortment", "label": "assortment" }
+		},
+		{ 
+			"column": "Style",
+			"id": "da3aab76a0bd4bd5841e0db93cb30718",
+			"meta_key": "product_style",
+			"taxonomy": { "name": "pa_style", "label": "style" }
+		},
+		{ 
+			"column": "Type",
+			"id": "d53ffa0d63b6466c901aaa4b3109c22f",
+			"meta_key": "product_type",
+			"taxonomy": { "name": "pa_type", "label": "type" }
+		},
+		{ 
+			"column": "Trade Name",
+			"id": "a19d62694dfc45dcb912c65734662df3",
+			"meta_key": "product_trade_name",
+			"taxonomy": { "name": "pa_trade_name", "label": "trade_name" }
+		},
+		{ 
+			"column": "Specification",
+			"id": "149d00ec4b3147729be79ae094f333fa",
+			"meta_key": "product_spec",
+			"taxonomy": { "name": "pa_spec", "label": "spec" }
+		},
+		{ 
+			"column": "Overall Length(Inches)",
+			"meta_key": "product_overall_length",
+			"taxonomy": { "name": "pa_overall_length", "label": "overall_length" }
+		},
+		{ 
+			"column": "Jaw Thickness",
+			"meta_key": "product_jaw_thickness",
+			"taxonomy": { "name": "pa_jaw_thickness", "label": "jaw_thickness" }
+		},
+		{ 
+			"column": "Jaw Length(Inches)",
+			"meta_key": "product_jaw_length",
+			"taxonomy": { "name": "pa_jaw_length", "label": "jaw_length" }
+		},
+		{ 
+			"column": "Jaw Width",
+			"meta_key": "product_jaw_width",
+			"taxonomy": { "name": "pa_jaw_width", "label": "jaw_width" }
+		},
+		{ 
+			"column": "Jaw Positions",
+			"meta_key": "product_jaw_pos",
+			"taxonomy": { "name": "pa_jaw_pos", "label": "jaw_pos" }
+		},
+		{ 
+			"column": "Jaw Opening",
+			"meta_key": "product_jaw_opening",
+			"taxonomy": { "name": "pa_jaw_opening", "label": "jaw_opening" }
+		},
+		{ 
+			"column": "Tip Size",
+			"meta_key": "product_tip_size",
+			"taxonomy": { "name": "pa_tip_size", "label": "tip_size" }
+		},
+		{ 
+			"column": "Handle Type",
+			"id": "1a8cb6a167bc40d4b8b505bdd8d282a8",
+			"meta_key": "product_handle_type",
+			"taxonomy": { "name": "pa_handle_type", "label": "handle_type" }
+		},
+		{ 
+			"column": "Thread Size",
+			"id": "34566a1e7d0a49f6a11e28a4b58a1874",
+			"meta_key": "product_thread_size",
+			"taxonomy": { "name": "pa_thread_size", "label": "thread_size" }
+		},
+		{ 
+			"column": "Application",
+			"meta_key": "product_application",
+			"taxonomy": { "name": "pa_application", "label": "application" }
+		},
+		{ 
+			"column": "Diameter",
+			"id": "f8f3a6d9c723471e91efab3002797d91",
+			"meta_key": "product_diameter",
+			"taxonomy": { "name": "pa_diameter", "label": "diameter" }
+		},
+		{ 
+			"column": "Ring Diameter",
+			"id": "99d91b7f471b4c7db567fbd8c03c9584",
+			"meta_key": "product_ring_diameter",
+			"taxonomy": { "name": "pa_ring_diameter", "label": "ring_diameter" }
+		},
+		{ 
+			"column": "Handle Color",
+			"id": "5fdcb912cb574cf985068f72c2c418a0",
+			"meta_key": "product_handle_color",
+			"taxonomy": { "name": "pa_handle_color", "label": "handle_color" }
+		},
+		{ 
+			"column": "Wire Diameter",
+			"id": "f30f9a178e3942218e6ede0375e70c69",
+			"meta_key": "product_wire_diameter",
+			"taxonomy": { "name": "pa_wire_diameter", "label": "wire_diameter" }
+		},
+		{ 
+			"column": "Shearing Size",
+			"id": "6c2afb060d5e465e9e24591e133cc0af",
+			"meta_key": "product_shearing_size",
+			"taxonomy": { "name": "pa_shearing_size", "label": "shearing_size" }
+		},
+		{ 
+			"column": "Blade Length(Inches)",
+			"meta_key": "product_blade_length",
+			"taxonomy": { "name": "pa_blade_length", "label": "blade_length" }
+		},
+		{ 
+			"column": "Model Compatibility",
+			"meta_key": "product_model_compatibility",
+			"taxonomy": { "name": "pa_model_compatibility", "label": "model_compatibility" }
+		},
+		{ 
+			"column": "Connection Type",
+			"meta_key": "product_connection_type",
+			"taxonomy": { "name": "pa_connection_type", "label": "connection_type" }
+		},
+		{ 
+			"column": "Handle Material",
+			"meta_key": "product_handle_material",
+			"taxonomy": { "name": "pa_handle_material", "label": "handle_material" }
+		},
+		{ 
+			"column": "Capacity",
+			"id": "3e99b4cc-b7bc-470c-a4d9-6e361d62e1cb",
+			"meta_key": "product_capacity",
+			"taxonomy": { "name": "pa_capacity", "label": "capacity" }
+		},
+		{ 
+			"column": "Blade Type",
+			"meta_key": "product_blade_type",
+			"taxonomy": { "name": "pa_blade_type", "label": "blade_type" }
+		},
+		{ 
+			"column": "Contents",
+			"meta_key": "product_contents",
+			"taxonomy": { "name": "pa_contents", "label": "contents" }
+		},
+		{ 
+			"column": "Body Material",
+			"meta_key": "product_body_material",
+			"taxonomy": { "name": "pa_body_material", "label": "body_material" }
+		},
+		{ 
+			"column": "Power Supply",
+			"meta_key": "product_power_supply",
+			"taxonomy": { "name": "pa_power_supply", "label": "power_supply" }
+		},
+		{ 
+			"column": "Display Type",
+			"meta_key": "product_display_type",
+			"taxonomy": { "name": "pa_display_type", "label": "display_type" }
+		},
+		{ 
+			"column": "Expanded Wire Range",
+			"id": "20d65e208731460d8bd32fd6402b4391",
+			"meta_key": "product_expanded_wire_range",
+			"taxonomy": { "name": "pa_expanded_wire_range", "label": "expanded_wire_range" }
+		},
+		{ 
+			"column": "OD",
+			"id": "5c5031829acd455b9c7212419bc381b1",
+			"meta_key": "product_outside_diameter",
+			"taxonomy": { "name": "pa_outside_diameter", "label": "outside_diameter" }
+		},
+		{ 
+			"column": "ID",
+			"id": "f90035046fe74906b047c4322b2d8eec",
+			"meta_key": "product_inside_diameter",
+			"taxonomy": { "name": "pa_inside_diameter", "label": "inside_diameter" }
+		},
+		{ 
+			"column": "Cable Diameter",
+			"meta_key": "product_cable_diameter",
+			"taxonomy": { "name": "pa_cable_diameter", "label": "cable_diameter" }
+		},
+		{ 
+			"column": "Die Color Code",
+			"id": "7929971cc9da407185636b909da8171d",
+			"meta_key": "product_die_color_code",
+			"taxonomy": { "name": "pa_die_color_code", "label": "die_color_code" }
+		},
+		{ 
+			"column": "Mounting Bolt Size",
+			"id": "f5f2f5850c2b44fa9270ee7b3155e4df",
+			"meta_key": "product_mounting_bolt_size",
+			"taxonomy": { "name": "pa_mounting_bolt_size", "label": "mounting_bolt_size" }
+		},
+		{ 
+			"column": "Mounting Hole Diameter",
+			"meta_key": "product_mounting_hole_diameter",
+			"taxonomy": { "name": "pa_mounting_hole_diameter", "label": "mounting_hole_diameter" }
+		},
+		{ 
+			"column": "Max Torque Value (IN/LBS)",
+			"id": "95f362e509814ad9a02191651cc17a95",
+			"meta_key": "product_max_torque",
+			"taxonomy": { "name": "pa_max_torque", "label": "max_torque" }
+		},
+		{ 
+			"column": "Resistive Rating",
+			"id": "43e0a934b0494a2b85caed27b82a772b",
+			"meta_key": "product_resistive_rating",
+			"taxonomy": { "name": "pa_resistive_rating", "label": "resistive_rating" }
+		},
+		{ 
+			"column": "Tungsten Rating",
+			"id": "644d5b380c6044e0974f3881dd2aab1c",
+			"meta_key": "product_tungsten_rating",
+			"taxonomy": { "name": "pa_tungsten_rating", "label": "tungsten_rating" }
+		},
+		{ 
+			"column": "LED/Electronic Ballast",
+			"id": "8a2855b06b094fb2b3fd06d5653880f1",
+			"meta_key": "product_led_ballast",
+			"taxonomy": { "name": "pa_led_ballast", "label": "led_ballast" }
+		},
+		{ 
+			"column": "Motor Rating",
+			"id": "10156897205b4407b96b71f428306177",
+			"meta_key": "product_motor_rating",
+			"taxonomy": { "name": "pa_motor_rating", "label": "motor_rating" }
+		},
+		{ 
+			"column": "Power Consumption",
+			"id": "d1fb2a2d6ac54e7f91cb48cde5a56382",
+			"meta_key": "product_power_consumption",
+			"taxonomy": { "name": "pa_power_consumption", "label": "power_consumption" }
+		},
+		{ 
+			"column": "Ballast Rating",
+			"id": "dbd89fa152ae446c9df75de78e694681",
+			"meta_key": "product_ballast_rating",
+			"taxonomy": { "name": "pa_ballast_rating", "label": "ballast_rating" }
+		},
+		{ 
+			"column": "Insulation Type",
+			"id": "f32805cddd054ba78b461dded89dc2c2",
+			"meta_key": "product_insulation_type",
+			"taxonomy": { "name": "pa_insulation_type", "label": "insulation_type" }
+		},
+		{ 
+			"column": "Pin Diameter",
+			"id": "2e48723549604e0d829141143d7b22e1",
+			"meta_key": "product_pin_diameter",
+			"taxonomy": { "name": "pa_pin_diameter", "label": "pin_diameter" }
+		},
+		{ 
+			"column": "Elongation",
+			"id": "a3da00ad8886498888b942051add4512",
+			"meta_key": "product_elongation",
+			"taxonomy": { "name": "pa_elongation", "label": "elongation" }
+		},
+		{ 
+			"column": "Frequency Rating",
+			"id": "cc661333d0094dafbb460d42c3fd0da2",
+			"meta_key": "product_frequency_rating",
+			"taxonomy": { "name": "pa_frequency_rating", "label": "frequency_rating" }
+		},
+		{ 
+			"column": "Nominal Size",
+			"id": "339c0f6a366e434c950257fb5b91b0cf",
+			"meta_key": "product_nominal_size",
+			"taxonomy": { "name": "pa_nominal_size", "label": "nominal_size" }
+		},
+		{ 
+			"column": "Care",
+			"id": "1fcaa3a0e9e74b2a88fb3043310a0536",
+			"meta_key": "product_care",
+			"taxonomy": { "name": "pa_care", "label": "care" }
+		},
+		{ 
+			"column": "Construction",
+			"id": "803009468b5b498eb5b3ec94106b7fba",
+			"meta_key": "product_construction",
+			"taxonomy": { "name": "pa_construction", "label": "construction" }
+		},
+		{ 
+			"column": "Barrel Length (IN)",
+			"id": "55d2003a771e488a9c69719b980f15c8",
+			"meta_key": "product_barrel_length",
+			"taxonomy": { "name": "pa_barrel_length", "label": "barrel_length" }
+		},
+		{ 
+			"column": "Max Insulated Wire Diameter",
+			"id": "d4330d40d75c4a44bcddcbfd98cd6b79",
+			"meta_key": "product_max_insulated_wire_diameter",
+			"taxonomy": { "name": "pa_max_insulated_wire_diameter", "label": "max_insulated_wire_diameter" }
+		},
+		{ 
+			"column": "Max Cable Outer Diameter",
+			"id": "d4bf3ded85864ec6a5bffa4c29e9d6d0",
+			"meta_key": "product_max_cable_outer_diameter",
+			"taxonomy": { "name": "pa_max_cable_outer_diameter", "label": "max_cable_outer_diameter" }
+		},
+		{ 
+			"column": "Image Master File 1",
+			"meta_key": "product_image_1_src"
+		},
+		{ 
+			"column": "Image Master File 2",
+			"meta_key": "product_image_2_src"
+		},
+		{ 
+			"column": "Image Master File 3",
+			"meta_key": "product_image_3_src"
+		},
+		{ 
+			"column": "Image Master File 4",
+			"meta_key": "product_image_4_src"
+		},
+		{ 
+			"column": "Image Master File 5",
+			"meta_key": "product_image_5_src"
+		},
+		{ 
+			"column": "Image Master File 6",
+			"meta_key": "product_image_6_src"
+		},
+		{ 
+			"column": "Image Master File 7",
+			"meta_key": "product_image_7_src"
+		},
+		{ 
+			"column": "Image Master File 8",
+			"meta_key": "product_image_8_src"
+		},
+		{ 
+			"column": "Image Master File 9",
+			"meta_key": "product_image_9_src"
+		},
+		{ 
+			"column": "Image Master File 10",
+			"meta_key": "product_image_10_src"
+		},
+		{ 
+			"column": "Image Master File 11",
+			"meta_key": "product_image_11_src"
+		},
+		{ 
+			"column": "Image Master File 12",
+			"meta_key": "product_image_12_src"
+		},
+		{ 
+			"column": "Image Master File 13",
+			"meta_key": "product_image_13_src"
+		},
+		{ 
+			"column": "Image Master File 14",
+			"meta_key": "product_image_14_src"
+		},
+		{ 
+			"column": "Image Master File 15",
+			"meta_key": "product_image_15_src"
+		},
+		{ 
+			"column": "Image Master File 16",
+			"meta_key": "product_image_16_src"
+		},
+		{ 
+			"column": "Image Master File 17",
+			"meta_key": "product_image_17_src"
+		},
+		{ 
+			"column": "Image Master File 18",
+			"meta_key": "product_image_18_src"
+		},
+		{ 
+			"column": "Image Master File 19",
+			"meta_key": "product_image_19_src"
+		},
+		{ 
+			"column": "Image Master File 20",
+			"meta_key": "product_image_20_src"
+		},
+		{ 
+			"column": "Filename 1",
+			"meta_key": "product_image_1_name"
+		},
+		{ 
+			"column": "Filename 2",
+			"meta_key": "product_image_2_name"
+		},
+		{ 
+			"column": "Filename 3",
+			"meta_key": "product_image_3_name"
+		},
+		{ 
+			"column": "Filename 4",
+			"meta_key": "product_image_4_name"
+		},
+		{ 
+			"column": "Filename 5",
+			"meta_key": "product_image_5_name"
+		},
+		{ 
+			"column": "Filename 6",
+			"meta_key": "product_image_6_name"
+		},
+		{ 
+			"column": "Filename 7",
+			"meta_key": "product_image_7_name"
+		},
+		{ 
+			"column": "Filename 8",
+			"meta_key": "product_image_8_name"
+		},
+		{ 
+			"column": "Filename 9",
+			"meta_key": "product_image_9_name"
+		},
+		{ 
+			"column": "Filename 10",
+			"meta_key": "product_image_10_name"
+		},
+		{ 
+			"column": "Filename 11",
+			"meta_key": "product_image_11_name"
+		},
+		{ 
+			"column": "Filename 12",
+			"meta_key": "product_image_12_name"
+		},
+		{ 
+			"column": "Filename 13",
+			"meta_key": "product_image_13_name"
+		},
+		{ 
+			"column": "Filename 14",
+			"meta_key": "product_image_14_name"
+		},
+		{ 
+			"column": "Filename 15",
+			"meta_key": "product_image_15_name"
+		},
+		{ 
+			"column": "Filename 16",
+			"meta_key": "product_image_16_name"
+		},
+		{ 
+			"column": "Filename 17",
+			"meta_key": "product_image_17_name"
+		},
+		{ 
+			"column": "Filename 18",
+			"meta_key": "product_image_18_name"
+		},
+		{ 
+			"column": "Filename 19",
+			"meta_key": "product_image_19_name"
+		},
+		{ 
+			"column": "Filename 20",
+			"meta_key": "product_image_20_name"
+		},
+		{ 
+			"column": "Document Master File 1",
+			"meta_key": "product_doc_1_src"
+		},
+		{ 
+			"column": "Document Master File 2",
+			"meta_key": "product_doc_2_src"
+		},
+		{ 
+			"column": "Document Master File 3",
+			"meta_key": "product_doc_3_src"
+		},
+		{ 
+			"column": "Document Master File 4",
+			"meta_key": "product_doc_4_src"
+		},
+		{ 
+			"column": "Document Master File 5",
+			"meta_key": "product_doc_5_src"
+		},
+		{ 
+			"column": "Document Master File 6",
+			"meta_key": "product_doc_6_src"
+		},
+		{ 
+			"column": "Document Master File 7",
+			"meta_key": "product_doc_7_src"
+		},
+		{ 
+			"column": "Document Master File 8",
+			"meta_key": "product_doc_8_src"
+		},
+		{ 
+			"column": "Document Master File 9",
+			"meta_key": "product_doc_9_src"
+		},
+		{ 
+			"column": "Document Master File 10",
+			"meta_key": "product_doc_10_src"
+		},
+		{ 
+			"column": "Document Filename 1",
+			"meta_key": "product_doc_1_name"
+		},
+		{ 
+			"column": "Document Filename 2",
+			"meta_key": "product_doc_2_name"
+		},
+		{ 
+			"column": "Document Filename 3",
+			"meta_key": "product_doc_3_name"
+		},
+		{ 
+			"column": "Document Filename 4",
+			"meta_key": "product_doc_4_name"
+		},
+		{ 
+			"column": "Document Filename 5",
+			"meta_key": "product_doc_5_name"
+		},
+		{ 
+			"column": "Document Filename 6",
+			"meta_key": "product_doc_6_name"
+		},
+		{ 
+			"column": "Document Filename 7",
+			"meta_key": "product_doc_7_name"
+		},
+		{ 
+			"column": "Document Filename 8",
+			"meta_key": "product_doc_8_name"
+		},
+		{ 
+			"column": "Document Filename 9",
+			"meta_key": "product_doc_9_name"
+		},
+		{ 
+			"column": "Document Filename 10",
+			"meta_key": "product_doc_10_name"
+		},
+		{ 
+			"column": "Video Master File 1",
+			"meta_key": "product_video_1_src"
+		},
+		{
+			"column": "Video Master File 2",
+			"meta_key": "product_video_2_src"
+		},
+		{
+			"column": "Video Master File 3",
+			"meta_key": "product_video_3_src"
+		},
+		{
+			"column": "Video Master File 4",
+			"meta_key": "product_video_4_src"
+		},
+		{
+			"column": "Video Master File 5",
+			"meta_key": "product_video_5_src"
+		},
+		{
+			"column": "Video Master File 6",
+			"meta_key": "product_video_6_src"
+		},
+		{
+			"column": "Video Master File 7",
+			"meta_key": "product_video_7_src"
+		},
+		{
+			"column": "Video Master File 8",
+			"meta_key": "product_video_8_src"
+		},
+		{
+			"column": "Video Master File 9",
+			"meta_key": "product_video_9_src"
+		},
+		{
+			"column": "Video Master File 10",
+			"meta_key": "product_video_10_src"
+		},
+		{ 
+			"column": "Video Filename 1",
+			"meta_key": "product_video_1_name"
+		},
+		{
+			"column": "Video Filename 2",
+			"meta_key": "product_video_2_name"
+		},
+		{
+			"column": "Video Filename 3",
+			"meta_key": "product_video_3_name"
+		},
+		{
+			"column": "Video Filename 4",
+			"meta_key": "product_video_4_name"
+		},
+		{
+			"column": "Video Filename 5",
+			"meta_key": "product_video_5_name"
+		},
+		{
+			"column": "Video Filename 6",
+			"meta_key": "product_video_6_name"
+		},
+		{
+			"column": "Video Filename 7",
+			"meta_key": "product_video_7_name"
+		},
+		{
+			"column": "Video Filename 8",
+			"meta_key": "product_video_8_name"
+		},
+		{
+			"column": "Video Filename 9",
+			"meta_key": "product_video_9_name"
+		},
+		{
+			"column": "Video Filename 10",
+			"meta_key": "product_video_10_name"
+		},
+		{
+			"column": "Video Thumb 1",
+			"meta_key": "product_video_1_thumb"
+		},
+		{
+			"column": "Video Thumb 2",
+			"meta_key": "product_video_2_thumb"
+		},
+		{
+			"column": "Video Thumb 3",
+			"meta_key": "product_video_3_thumb"
+		},
+		{
+			"column": "Video Thumb 4",
+			"meta_key": "product_video_4_thumb"
+		},
+		{
+			"column": "Video Thumb 5",
+			"meta_key": "product_video_5_thumb"
+		},
+		{
+			"column": "Video Thumb 6",
+			"meta_key": "product_video_6_thumb"
+		},
+		{
+			"column": "Video Thumb 7",
+			"meta_key": "product_video_7_thumb"
+		},
+		{
+			"column": "Video Thumb 8",
+			"meta_key": "product_video_8_thumb"
+		},
+		{
+			"column": "Video Thumb 9",
+			"meta_key": "product_video_9_thumb"
+		},
+		{
+			"column": "Video Thumb 10",
+			"meta_key": "product_video_10_thumb"
+		},
+		{ 
+			"column": "Video Caption 1",
+			"meta_key": "product_video_1_caption"
+		},
+		{
+			"column": "Video Caption 2",
+			"meta_key": "product_video_2_caption"
+		},
+		{
+			"column": "Video Caption 3",
+			"meta_key": "product_video_3_caption"
+		},
+		{
+			"column": "Video Caption 4",
+			"meta_key": "product_video_4_caption"
+		},
+		{
+			"column": "Video Caption 5",
+			"meta_key": "product_video_5_caption"
+		},
+		{
+			"column": "Video Caption 6",
+			"meta_key": "product_video_6_caption"
+		},
+		{
+			"column": "Video Caption 7",
+			"meta_key": "product_video_7_caption"
+		},
+		{
+			"column": "Video Caption 8",
+			"meta_key": "product_video_8_caption"
+		},
+		{
+			"column": "Video Caption 9",
+			"meta_key": "product_video_9_caption"
+		},
+		{
+			"column": "Video Caption 10",
+			"meta_key": "product_video_10_caption"
+		},
+		{
+			"column": "Attenuation",
+			"id": "cfcb62a3-7214-45c2-9c67-b0bd0abc334a",
+			"meta_key": "product_attenuation",
+			"taxonomy": { "name": "pa_attenuation", "label": "attenuation" }
+		},
+		{
+			"column": "Cable Connectors (Side A)",
+			"id": "e9252980-ba79-4c4f-a111-083bd5f34ba0",
+			"meta_key": "product_cable_connectors_side_a",
+			"taxonomy": { "name": "pa_cable_connectors_side_a", "label": "cable_connectors_side_a" }
+		},
+		{
+			"column": "Cable Connectors (Side B)",
+			"id": "59515985-1809-4a48-8049-ca518580d023",
+			"meta_key": "product_cable_connectors_side_b",
+			"taxonomy": { "name": "pa_cable_connectors_side_b", "label": "cable_connectors_side_b" }
+		},
+		{
+			"column": "Cable Jacket Construction",
+			"id": "1d5baca0-42f2-4c64-9778-c77ee936c459",
+			"meta_key": "product_cable_jacket_construction",
+			"taxonomy": { "name": "pa_cable_jacket_construction", "label": "cable_jacket_construction" }
+		},
+		{
+			"column": "Cable Shielding",
+			"id": "5fe7486c-fd61-4816-a976-5719a997c91a",
+			"meta_key": "product_cable_shielding",
+			"taxonomy": { "name": "pa_cable_shielding", "label": "cable_shielding" }
+		},
+		{
+			"column": "Cable Type",
+			"id": "ac7c94d5-56e0-4fd8-9f6e-e4d336c29b72",
+			"meta_key": "product_cable_type",
+			"taxonomy": { "name": "pa_cable_type", "label": "cable_type" }
+		},
+		{
+			"column": "Chipset",
+			"id": "89fc3393-7e7f-4c85-9be6-36d28c6b3944",
+			"meta_key": "product_chipset",
+			"taxonomy": { "name": "pa_chipset", "label": "chipset" }
+		},
+		{
+			"column": "Connector Style",
+			"id": "4c1302c1-ed4d-4e03-9ef2-c0a6f1d4dc14",
+			"meta_key": "product_connector_style",
+			"taxonomy": { "name": "pa_connector_style", "label": "connector_style" }
+		},
+		{
+			"column": "Connector Termination",
+			"id": "843a330a-5ca8-4bb3-ada4-33d1db2e3cbb",
+			"meta_key": "product_connector_termination",
+			"taxonomy": { "name": "pa_connector_termination", "label": "connector_termination" }
+		},
+		{
+			"column": "Connector Type",
+			"id": "c800156a-3d43-4744-8f9f-89c9f82c2ccd",
+			"meta_key": "product_connector_type",
+			"taxonomy": { "name": "pa_connector_type", "label": "connector_type" }
+		},
+		{
+			"column": "Data Interface",
+			"id": "d47dd857-7ac9-4d20-a28a-5fca434d5f72",
+			"meta_key": "product_data_interface",
+			"taxonomy": { "name": "pa_data_interface", "label": "data_interface" }
+		},
+		{
+			"column": "Data Rate",
+			"id": "11893d7a-e7e5-413f-bcf5-7ec2c23558d3",
+			"meta_key": "product_data_rate",
+			"taxonomy": { "name": "pa_data_rate", "label": "data_rate" }
+		},
+		{
+			"column": "Digital Optical Monitoring",
+			"id": "95d51a28-575c-400e-b02d-4ebecdc64b23",
+			"meta_key": "product_digital_optical_monitoring",
+			"taxonomy": { "name": "pa_digital_optical_monitoring", "label": "digital_optical_monitoring" }
+		},
+		{
+			"column": "Fiber Optic Cable Type",
+			"id": "6bda8007-ef41-434c-81d5-2e5b899705d6",
+			"meta_key": "product_fiber_optic_cable_type",
+			"taxonomy": { "name": "pa_fiber_optic_cable_type", "label": "fiber_optic_cable_type" }
+		},
+		{
+			"column": "Hook Size (In)",
+			"id": "d0e4de93-24ea-44e0-9ab1-4911ed829674",
+			"meta_key": "product_hook_size_in",
+			"taxonomy": { "name": "pa_hook_size_in", "label": "hook_size_in" }
+		},
+		{
+			"column": "Locking",
+			"id": "db368d5f-31f4-4fd7-bd1d-06c1b61cc30f",
+			"meta_key": "product_locking",
+			"taxonomy": { "name": "pa_locking", "label": "locking" }
+		},
+		{
+			"column": "Max Resolution",
+			"id": "3df2dd62-0d31-499e-aa28-ddbd6c54af0d",
+			"meta_key": "product_max_resolution",
+			"taxonomy": { "name": "pa_max_resolution", "label": "max_resolution" }
+		},
+		{
+			"column": "Memory Dimm Type",
+			"id": "856617f9-fa1a-4e68-a828-4e6c65dc99c4",
+			"meta_key": "product_memory_dimm_type",
+			"taxonomy": { "name": "pa_memory_dimm_type", "label": "memory_dimm_type" }
+		},
+		{
+			"column": "Memory Ranking",
+			"id": "0a944a00-7efa-48a0-90f7-505b6e6f01c1",
+			"meta_key": "product_memory_ranking",
+			"taxonomy": { "name": "pa_memory_ranking", "label": "memory_ranking" }
+		},
+		{
+			"column": "Memory Size",
+			"id": "5d4c5a25-1421-4654-ada9-da25e05bb3df",
+			"meta_key": "product_memory_size",
+			"taxonomy": { "name": "pa_memory_size", "label": "memory_size" }
+		},
+		{
+			"column": "Memory Speed",
+			"id": "a1cbaec2-f11c-4bb7-9f07-8aa5b31429b2",
+			"meta_key": "product_memory_speed",
+			"taxonomy": { "name": "pa_memory_speed", "label": "memory_speed" }
+		},
+		{
+			"column": "Mperge",
+			"id": "13fac332-f854-4d46-8970-0394f4f67cf3",
+			"meta_key": "product_mperge",
+			"taxonomy": { "name": "pa_mperge", "label": "mperge" }
+		},
+		{
+			"column": "Number Of Ports",
+			"id": "b306d929-3f52-49dd-a00c-e75938560487",
+			"meta_key": "product_number_of_ports",
+			"taxonomy": { "name": "pa_number_of_ports", "label": "number_of_ports" }
+		},
+		{
+			"column": "Panel/Insert Slots",
+			"id": "1030761f-5a19-404c-b95c-0aeb4e1267b0",
+			"meta_key": "product_panel_insert_slots",
+			"taxonomy": { "name": "pa_panel_insert_slots", "label": "panel_insert_slots" }
+		},
+		{
+			"column": "Panel/Insert Type",
+			"id": "0053eb7e-d92d-4daa-bae8-e60b56fce5f5",
+			"meta_key": "product_panel_insert_type",
+			"taxonomy": { "name": "pa_panel_insert_type", "label": "panel_insert_type" }
+		},
+		{
+			"column": "POE",
+			"id": "c5071ea5-81a3-4da7-928f-ad9957e9d3b2",
+			"meta_key": "product_poe",
+			"taxonomy": { "name": "pa_poe", "label": "poe" }
+		},
+		{
+			"column": "Port Type",
+			"id": "5b24f878-e401-4c9e-beff-d04caaf48eb4",
+			"meta_key": "product_port_type",
+			"taxonomy": { "name": "pa_port_type", "label": "port_type" }
+		},
+		{
+			"column": "Rack Spaces",
+			"id": "2ea4c5a2-ac59-49f7-bdd1-0af8010526f3",
+			"meta_key": "product_rack_spaces",
+			"taxonomy": { "name": "pa_rack_spaces", "label": "rack_spaces" }
+		},
+		{
+			"column": "Rg Type",
+			"id": "0fcead30-21f9-4e71-9036-efc08119c1d8",
+			"meta_key": "product_rg_type",
+			"taxonomy": { "name": "pa_rg_type", "label": "rg_type" }
+		},
+		{
+			"column": "Split Ratio",
+			"id": "abcc174d-fbb2-4d89-bc26-e06b6029168e",
+			"meta_key": "product_split_ratio",
+			"taxonomy": { "name": "pa_split_ratio", "label": "split_ratio" }
+		},
+		{
+			"column": "Splitter In/Out",
+			"id": "c9494231-aa9e-4f54-9e8b-a170a2bd9070",
+			"meta_key": "product_splitter_in_out",
+			"taxonomy": { "name": "pa_splitter_in_out", "label": "splitter_in_out" }
+		},
+		{
+			"column": "Strand / Conductor Count",
+			"id": "323852be-d16d-4373-99b7-5ba2149af4a1",
+			"meta_key": "product_strand_conductor_count",
+			"taxonomy": { "name": "pa_strand_conductor_count", "label": "strand_conductor_count" }
+		},
+		{
+			"column": "USB Type",
+			"id": "20d3102a-b4d2-418d-90fe-8b806a657878",
+			"meta_key": "product_usb_type",
+			"taxonomy": { "name": "pa_usb_type", "label": "usb_type" }
+		},
+		{
+			"column": "Voltage",
+			"id": "f38544ad-45b5-4c07-b222-dd12dade374b",
+			"meta_key": "product_voltage",
+			"taxonomy": { "name": "pa_voltage", "label": "voltage" }
+		},
+		{
+			"column": "Wavelength",
+			"id": "9f9f9cd8-d3f4-4078-a12f-d9fd8a6ce353",
+			"meta_key": "product_wavelength",
+			"taxonomy": { "name": "pa_wavelength", "label": "wavelength" }
+		},
+		{
+			"column": "Cable Length",
+			"id": "482d281b-475e-41bf-8be8-9ef1443a134c",
+			"meta_key": "product_cable_length",
+			"taxonomy": { "name": "pa_cable_length", "label": "cable_length" }
+		},
+		{
+			"column": "Compatibility",
+			"id": "550898f4-2a32-49a0-999a-f6594e9ba151",
+			"meta_key": "product_compatibility",
+			"taxonomy": { "name": "pa_compatibility", "label": "compatibility" }
+		},
+		{
+			"column": "Original Web Link",
+			"id": "b5070ccb-7cb0-4fcf-bb6e-e3f99f6ddb00",
+			"meta_key": "product_original_web_link"
+		}
+	]
+}

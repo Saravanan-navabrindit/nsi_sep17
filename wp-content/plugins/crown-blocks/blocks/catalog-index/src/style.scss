@@ -1,0 +1,95 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+
+.wp-block-crown-blocks-catalog-index {
+	@include post-feed-block();
+	&.layout-simple .post-feed-header {
+		display: block;
+		margin-bottom: 2rem;
+	}
+	&.layout-simple .post-feed-filters {
+		background-color: #e6e6e6;
+		padding: 20px;
+		@media (min-width: 768px) {
+			padding: 30px;
+		}
+		> .inner {
+			display: flex;
+			flex-direction: column;
+			margin: -10px;
+			width: auto;
+			@media (min-width: 768px) {
+				flex-direction: row;
+				flex-wrap: nowrap;
+			}
+		}
+		input,
+		select {
+			background-color: #fff;
+			border: 1px solid #000;
+		}
+		.filter,
+		.filters-footer {
+			padding: 10px;
+			flex: 0 0 100%;
+			@media (min-width: 768px) {
+				flex: 1 1 100%;
+			}
+		}
+		.filter {
+			@media (min-width: 768px) {
+				align-self: center;
+			}
+		}
+		.filters-footer {
+			display: block;
+			@media (min-width: 768px) {
+				flex: 0 1 auto;
+			}
+			button {
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+	.post-feed {
+		article {
+			@media (min-width: $screen-md) {
+				width: 50%;
+			}
+			@media (min-width: $screen-lg) {
+				width: 33.333333%;
+			}
+			a {
+				text-decoration: none;
+			}
+			.featured-image {
+				padding-top: 60%;
+				position: relative;
+				background-color: #e6e6e6;
+				margin-bottom: 1rem;
+				img {
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: center;
+				}
+			}
+			.entry-date {
+				font-size: 14px;
+				font-weight: 600;
+			}
+		}
+	}
+}

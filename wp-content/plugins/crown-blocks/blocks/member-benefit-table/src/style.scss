@@ -1,0 +1,82 @@
+@import '../../../common';
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .wp-block-crown-blocks-member-benefit-table {
+	> .inner {
+    display: flex;
+    flex-wrap: wrap;
+    
+    @media (min-width: $screen-sm) {
+      margin: 0 -12px;
+    }
+
+    .column {
+      width: 100%;
+      margin: 12px 0;
+
+      @media (min-width: $screen-sm) {
+        width: calc(50% - 24px);
+        margin: 12px;
+      }
+
+    }
+  }
+
+  .price-card {
+    border: 1px solid $black;
+    padding: 24px;
+    margin-bottom: 10px;
+
+    &__price {
+      color: $blue;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    }
+  }
+
+  .card-header {
+    border: 1px solid #919191;
+    background-color: $blue;
+    color: $white;
+    padding: 24px;
+    text-align: center;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-right: 2px solid $white;
+      border-bottom: 2px solid $white;
+      transform: rotate(45deg);
+      margin-left: 10px;
+      transition: transform 0.2s;
+    }
+
+    &.collapsed::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .card-body {
+    border: 1px solid #919191;
+    background-color: $light-gray;
+    text-align: center;
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+}

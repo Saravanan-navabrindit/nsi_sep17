@@ -1,0 +1,79 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-crown-blocks-cross-reference-search {
+	@include post-feed-block();
+	position: relative;
+	color: #fff;
+	&::before {
+		content: '';
+		position: absolute;
+		left: -100vw;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background-color: #000;
+		@media (min-width: 992px) {
+			clip-path: polygon(0 0, calc(100% - 100px) 0, 100% 60px, 100% calc(100% - 60px), calc(100% - 100px) 100%, 0 100%);
+		}
+	}
+	> .inner {
+		position: relative;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-right: 15px;
+		@media (min-width: 992px) {
+			padding-top: 80px;
+			padding-bottom: 80px;
+			padding-right: 40px;
+		}
+		@media (min-width: 1200px) {
+			padding-top: 120px;
+			padding-bottom: 120px;
+			padding-right: 60px;
+		}
+	}
+	.post-feed-header {
+		margin: 0;
+	}
+	.post-feed-filters {
+		.filters-header {
+			display: none;
+		}
+		.filter {
+			.filter-title {
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 1.4;
+				margin-left: 20px;
+			}
+			input[type=text] {
+				background-color: #fff;
+				border-radius: 1000px;
+				border: none;
+				padding-left: 1.5rem;
+				padding-right: 1.5rem;
+			}
+		}
+		.filters-footer {
+			display: block;
+			text-align: right;
+			margin-right: 20px;
+			button {
+				background-color: #fff;
+				color: #000;
+				border-color: #fff;
+			}
+		}
+	}
+}
+#main-content .wp-block-crown-blocks-cross-reference-search {
+	// @include full-width-block;
+}

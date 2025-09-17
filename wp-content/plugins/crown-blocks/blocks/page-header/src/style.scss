@@ -1,0 +1,140 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .wp-block-crown-blocks-page-header {
+    position: relative;
+	font-size: 20px;
+
+	&.text-color-light {
+		color: #fff;
+
+		p {
+			color: #F3F0E8;
+		}
+	}
+	&.text-color-dark {
+		color: $black;
+	}
+
+	&.text-align-left { text-align: left; }
+	&.text-align-center { text-align: center; }
+	&.text-align-right { text-align: right; }
+
+	&.content-align-left,
+	&.content-align-center {
+		.container > .inner {
+			margin-right: auto;
+		}
+	}
+	&.content-align-right,
+	&.content-align-center {
+		.container > .inner {
+			margin-left: auto;
+		}
+	}
+
+    > .section-bg {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		overflow: hidden;
+
+		.bg-image {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+
+			.gradient-overlay {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.bg-gradient {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			max-height: 300px;
+		}
+	}
+
+	> .inner {
+		position: relative;
+
+		@media (min-width: $screen-md) {
+            min-height: 400px;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+        }
+        @media (min-width: $screen-lg) {
+            min-height: 500px;
+        }
+        @media (min-width: $screen-xl) {
+            min-height: 600px;
+        }
+	}
+	@media (min-width: $screen-md) {
+		&.content-align-vertical-top > .inner { justify-content: flex-start; }
+		&.content-align-vertical-center > .inner { justify-content: center; }
+		&.content-align-vertical-bottom > .inner { justify-content: flex-end; }
+	}
+    
+	.container {
+        padding: 30px 15px;
+        
+        @media (min-width: $screen-md) {
+            padding: 40px 20px;
+        }
+        @media (min-width: $screen-lg) {
+            padding: 60px 30px;
+        }
+        @media (min-width: $screen-xl) {
+            padding: 80px 40px;
+        }
+    }
+}
+#main-content .wp-block-crown-blocks-page-header.full-width {
+	margin-left: -#{map-get($container-padding-x, xs)};
+	margin-right: -#{map-get($container-padding-x, xs)};
+
+	@media (min-width: $screen-sm) {
+		margin-left: -#{map-get($container-padding-x, sm)};
+		margin-right: -#{map-get($container-padding-x, sm)};
+	}
+	@media (min-width: $screen-md) {
+		margin-left: -#{map-get($container-padding-x, md)};
+		margin-right: -#{map-get($container-padding-x, md)};
+	}
+	@media (min-width: $screen-lg) {
+		margin-left: -#{map-get($container-padding-x, lg)};
+		margin-right: -#{map-get($container-padding-x, lg)};
+	}
+	@media (min-width: $screen-xl) {
+		margin-left: -#{map-get($container-padding-x, xl)};
+		margin-right: -#{map-get($container-padding-x, xl)};
+	}
+	@media ( min-width: #{$container-effective-max-width + (map-get($container-padding-x, xl) * 2)} ) {
+		margin-left: calc((100vw - ( #{$container-effective-max-width} )) / -2);
+		margin-right: calc((100vw - ( #{$container-effective-max-width} )) / -2);
+	}
+}

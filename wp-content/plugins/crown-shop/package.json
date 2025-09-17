@@ -1,0 +1,33 @@
+{
+	"scripts": {
+		"build": "webpack",
+		"watch": "webpack --watch"
+	},
+	"postcss": {
+		"plugins": {
+			"autoprefixer": {}
+		}
+	},
+	"browserslist": [
+		"last 2 version",
+		"not dead",
+		"iOS >= 9"
+	],
+	"devDependencies": {
+		"autoprefixer": "^10.4.2",
+		"@babel/core": "^7.17.5",
+		"babel-loader": "^8.2.3",
+		"babel-preset-env": "^1.7.0",
+		"css-loader": "^6.3.0",
+		"css-minimizer-webpack-plugin": "^3.0.2",
+		"mini-css-extract-plugin": "^2.3.0",
+		"node-sass": "^6.0.1",
+		"postcss": "^8.3.8",
+		"postcss-loader": "^6.1.1",
+		"sass-loader": "^12.1.0",
+		"style-loader": "^3.3.0",
+		"webpack": "^5.55.1",
+		"webpack-cli": "^4.8.0",
+		"webpack-notifier": "^1.13.0"
+	}
+}

@@ -1,0 +1,24 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block[data-type="crown-blocks/tabbed-content"] {
+	border: 1px dashed fade-out(#000, .8);
+	padding: 20px;
+	.text-color-light & {
+		border-color: fade-out(#fff, .8);
+	}
+	.text-color-dark & {
+		border-color: fade-out(#000, .8);
+	}
+    .wp-block-crown-blocks-tabbed-content-tab {
+        + .wp-block-crown-blocks-tabbed-content-tab {
+            margin-top: 1rem;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+
+.search-form {
+	label {
+		display: block;
+		margin: 0;
+		position: relative;
+		cursor: pointer;
+		.icon {
+			position: absolute;
+			display: block;
+			left: 1rem;
+			top: 50%;
+			margin-top: -.6rem;
+			z-index: 1;
+			cursor: pointer;
+			svg {
+				display: block;
+				width: 1.2rem;
+				height: 1.2rem;
+			}
+		}
+	}
+	input[type=search] {
+		padding-left: 2.8rem;
+	}
+	.search-submit {
+		display: none;
+	}
+}

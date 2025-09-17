@@ -1,0 +1,43 @@
+** FME Addons: Shop as a Customer for WooCommerce **
+
+2021-09-06 - version 1.1.0
+* moved plugin setting into woocommerce setting
+* added extra tab of(switch to guest) to setting tabs
+* switch back will redirect to Plugin setting page
+* Whatsapp button will be disable for users with no phone number
+* Changed table styles to WooCommerce table styles
+* Added options to Switch Role in New Tab or Same Tab
+
+
+2021-08-27 - version 1.0.9
+* resolved User roles value was not saved in database correctly
+
+2021-04-14 - version 1.0.8
+* resolved compatibility issue with multilanguages 
+
+2020-11-09 - version 1.0.7
+* add new feature of offline payment method.
+
+2020-09-23 - version 1.0.6
+* add new features of switch/view orders/edit profile from custom page.
+* add functionality to search customers by name/email/id on custom page.
+* Change interface of pop-up.
+* Add new feature to assign switch to customer authority to specific user roles.
+
+2020-09-17 - version 1.0.5
+* add new features of loader for slow ajax response and resolve ajax secuirity issues.
+
+2020-09-09 - version 1.0.4
+* add new features of customer search at run time and solve security issues.
+
+2020-08-05 - version 1.0.3
+* add new features of customer logs, export logs, shop as guest, shop as all customer roles
+
+2020-07-13 - version 1.0.2
+* add functionality of search box of customers
+
+2020-05-28 - version 1.0.1
+* change css for theme compatibility and update some deprecated functions
+
+2020-02-24 - version 1.0.0
+* Initial Release

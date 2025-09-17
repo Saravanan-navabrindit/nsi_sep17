@@ -1,0 +1,96 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-crown-blocks-image-cta {
+    position: relative;
+
+	> .section-bg {
+		overflow: hidden;
+
+		&, .bg-image {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+		}
+
+		.bg-image {
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+	}
+
+	> .inner {
+		position: relative;
+		padding: 40px;
+		border-radius: 5px;
+	}
+
+	&.text-color-light {
+		color: #fff;
+
+		p {
+			color: #F3F0E8;
+		}
+	}
+	&.text-color-dark {
+		color: $black;
+	}
+
+	&.text-align-left { text-align: left; }
+	&.text-align-center { text-align: center; }
+	&.text-align-right { text-align: right; }
+
+	&.content-align-left,
+	&.content-align-center {
+		.inner {
+			margin-right: auto;
+		}
+	}
+	&.content-align-right,
+	&.content-align-center {
+		.inner {
+			margin-left: auto;
+		}
+	}
+
+	@media (min-width: $screen-lg) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		
+		> .inner {
+			max-width: 500px;
+		}
+
+		.section-bg .bg-image {
+			width: calc(100% - 320px);
+			left: auto;
+			border-radius: 5px;
+		}
+
+		&.content-align-right {
+			> .inner {
+				margin-left: auto;
+			}
+
+			.section-bg .bg-image {
+				left: 0;
+				right: auto;
+			}
+		}
+	}
+	@media (max-width: $screen-md-max) {
+		&.has-bg-image {
+			padding: 60px 20px;
+		}
+	}
+}

@@ -1,0 +1,177 @@
+/*Settings page*/
+
+.rma-settings {
+    background: #fff;
+}
+
+.rma-settings * {
+    box-sizing: border-box;
+}
+
+.setting-row {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000;
+}
+
+.setting-row.setting-row-header {
+    background: #ccc;
+}
+
+.setting-row.setting-row-header .setting-header {
+    width: 50%;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.setting-row.setting-row-header .setting-header:last-child {
+    border-left: 1px solid #000;
+}
+
+.setting-row .label {
+    width: 50%;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.setting-row .input {
+    width: 50%;
+    border-left: 1px solid #000;
+    padding: 5px;
+}
+
+.setting-row.input-multiple .input input {
+    width: calc(100% - 40px);
+    display: inline-block;
+}
+
+.setting-row .input input,
+.setting-row .input textarea {
+    display: block;
+    width: 100%;
+}
+
+.setting-row.input-multiple {
+
+}
+
+.setting-row .row-reason {
+    margin-bottom: 5px;
+}
+
+.setting-row .setting-reasons-add,
+.setting-row .setting-reasons-remove {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    line-height: 15px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.setting-row .setting-reasons-add {
+    background: green;
+}
+
+.setting-row .setting-reasons-remove {
+    background: red;
+}
+
+.page--rma-settings .save-rma-settings {
+    margin-top: 25px;
+}
+
+.settings-returns-group-holder .settings-returns-group {
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.settings-returns-group-holder .settings-returns-group input {
+    margin-right: 10px;
+}
+
+.wp-admin.post-type-rma #post-body #authordiv .inside select {
+    pointer-events: none;
+}
+
+.wp-admin.post-type-rma #tsf-inpost-box,
+.wp-admin.post-type-rma .wp-list-table .column-tsf-seo-bar-wrap,
+.wp-admin.post-type-rma .wp-list-table th.column-tsf-seo-bar-wrap,
+.wp-admin.post-type-rma .wp-list-table td.column-tsf-seo-bar-wrap {
+    display: none !important;
+}
+
+.wp-admin.post-type-rma #titlediv,
+.wp-admin.post-type-rma #postdivrich,
+.wp-admin.post-type-rma #submitdiv,
+.wp-admin.post-type-rma #edit-slug-box,
+.wp-admin.post-type-rma .inline-edit-save,
+.wp-admin.post-type-rma .postbox .handle-actions,
+.wp-admin.post-type-rma .misc-pub-section,
+.wp-admin.post-type-rma .acf-postbox .acf-actions,
+.wp-admin.post-type-rma #postcustom,
+.wp-admin.post-type-rma #taxonomy-post_tag,
+.wp-admin.post-type-rma .editor-post-publish-panel__toggle,
+.wp-admin.post-type-rma .components-button.editor-post-publish-button,
+.wp-admin.post-type-rma .edit-post-sidebar,
+.wp-admin.post-type-rma .page-title-action,
+.wp-admin.post-type-rma .edit-post-meta-boxes-area input,
+.wp-admin.post-type-rma .edit-post-meta-boxes-area textarea,
+.wp-admin.post-type-rma .edit-post-meta-boxes-area select {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.wp-admin.post-type-rma .page-title-action,
+.wp-admin.post-type-rma #publishing-action,
+.wp-admin.post-type-rma .postbox .submitbox,
+.wp-admin.post-type-rma .components-button.editor-post-publish-button {
+    display: none !important;
+}
+
+.settings-returns-group-holder .settings-returns-group.settings-disclaimers-group label {
+    width: 130px;
+}
+
+.settings-returns-group-holder .settings-returns-group.settings-disclaimers-group input.text,
+.returns-settings-no-returns-available-notice input.text{
+    width: 50%;
+}
+
+.admin-return-details .rma-details {
+    margin-bottom: 20px;
+}
+
+.admin-return-details .rma-details th {
+    text-align: left;
+    padding-right: 20px;
+}
+
+.wp-admin.post-type-rma #RetryNsReturnSync.loading {
+    opacity: .4;
+    pointer-events: none;
+}
+
+.wp-admin.post-type-rma #NSReturnSyncResponse {
+    display: none;
+}
+
+.wp-admin.post-type-rma #NSReturnSyncResponse.show {
+    display: block;
+}
+
+.wp-admin.post-type-rma #NSReturnSyncResponse.success span {
+    color: #008000;
+}
+
+.wp-admin.post-type-rma #NSReturnSyncResponse.error span {
+    color: #ff0000;
+}

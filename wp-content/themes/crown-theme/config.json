@@ -1,0 +1,46 @@
+{
+
+	"font_sizes": [
+		{ "name": "Extra-Small", "slug": "extra-small", "short_name": "XS", "size": 12 },
+		{ "name": "Small", "slug": "small", "short_name": "S", "size": 14 },
+		{ "name": "Normal", "slug": "normal", "short_name": "M", "size": 16 },
+		{ "name": "Large", "slug": "large", "short_name": "L", "size": 18 },
+		{ "name": "Extra-Large", "slug": "extra-large", "short_name": "XL", "size": 21 }
+	],
+
+	"site_logo_size": { "width": 250, "height": 40, "flex_width": true, "flex_height": true },
+
+	"post_thumbnail_size": { "width": 200, "height": 200, "crop": true },
+
+	"image_sizes": [
+		{ "slug": "small_thumbnail", "width": 100, "height": 100, "crop": true },
+		{ "slug": "small", "width": 150, "height": 150, "crop": false },
+		{ "slug": "extra_large", "width": 1200, "height": 1200 },
+		{ "slug": "fullscreen", "width": 2000 }
+	],
+
+	"grid_breakpoints": [
+		{ "name": "xs", "width": 0 },
+		{ "name": "sm", "width": 576 },
+		{ "name": "md", "width": 768 },
+		{ "name": "lg", "width": 992 },
+		{ "name": "xl", "width": 1200 }
+	],
+
+	"nav_menu_locations": [
+		{ "name": "Header: Primary Navigation", "slug": "header_primary" },
+		{ "name": "Header: Secondary Navigation", "slug": "header_secondary" },
+		{ "name": "Mobile Menu: Primary Navigation", "slug": "mobile_menu_primary" },
+		{ "name": "Footer: Legal Links", "slug": "footer_legal_links" }
+	],
+
+	"widget_locations": [
+		{ "name": "Footer #1", "slug": "footer-1", "description": "Widgets in this area will be displayed in the first column in the footer." },
+		{ "name": "Footer #2", "slug": "footer-2", "description": "Widgets in this area will be displayed in the second column in the footer." },
+		{ "name": "Footer #3", "slug": "footer-3", "description": "Widgets in this area will be displayed in the third column in the footer." },
+		{ "name": "Footer #4", "slug": "footer-4", "description": "Widgets in this area will be displayed in the third column in the footer." },
+		{ "name": "Insights Sidebar", "slug": "insights", "description": "Widgets in this area will be displayed in the sidebar of the insights index." },
+		{ "name": "Products Sidebar", "slug": "products", "description": "Widgets in this area will be displayed in the sidebar of the products post." }
+	]
+	
+}

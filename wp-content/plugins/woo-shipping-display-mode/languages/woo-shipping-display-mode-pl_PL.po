@@ -1,0 +1,73 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Shipping Method Display Style for WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-11 18:29+0530\n"
+"PO-Revision-Date: 2025-08-20 11:54+0000\n"
+"Last-Translator: \n"
+"Language-Team: Polish\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10 >= 2 && n%10<=4 "
+"&&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.3; wp-5.8.1\n"
+"X-Domain: woo-shipping-display-mode\n"
+"X-Poedit-KeywordsList: esc_html_e;esc_html;esc_attr_e;esc_attr;__;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+"Language: pl_PL"
+
+#: admin/partials/woo-shipping-display-mode-admin-display.php:111
+msgid ""
+"<p><span>Note: </span>If there is only one shipping method available in your "
+"cart then it will showcase shipping method as title without radio button or "
+"dropdown. <a href=\"%1$s\" target=\"_blank\">Click Here</a> for detail."
+"</span><p>"
+msgstr ""
+"<p><span>Uwaga: </span>Jeśli w koszyku dostępna jest tylko jedna metoda "
+"wysyłki, zostanie ona wyświetlona jako tytuł bez przycisku opcji lub menu "
+"rozwijanego. <a href=\"%1$s\" target=\"_blank\">Kliknij tutaj</a>, aby "
+"uzyskać szczegółowe informacje.</span><p>"
+
+#: includes/class-woo-shipping-display-mode-blocks.php:136
+msgid "Available shipping packages with display mode formatting"
+msgstr "Dostępne pakiety wysyłkowe z formatowaniem trybu wyświetlania"
+
+#: admin/partials/woo-shipping-display-mode-admin-display.php:102
+msgid "Dropdown"
+msgstr "Lista rozwijana"
+
+#: admin/partials/woo-shipping-display-mode-admin-display.php:93
+msgid "Radio Button (Default)"
+msgstr "Przycisk radiowy (domyślny)"
+
+#: admin/partials/woo-shipping-display-mode-admin-display.php:82
+msgid "Select Display Mode"
+msgstr "Wybierz tryb wyświetlania"
+
+#: includes/class-woo-shipping-display-mode.php:238
+msgid "Settings"
+msgstr "Ustawienia"
+
+#: admin/partials/woo-shipping-display-mode-admin-display.php:56
+#: admin/partials/woo-shipping-display-mode-admin-display.php:77
+msgid "Shipping Method Display Mode"
+msgstr "Tryb wyświetlania metody wysyłki"
+
+#: includes/class-woo-shipping-display-mode-blocks.php:129
+msgid "Shipping method display mode"
+msgstr "Shipping method display mode"
+
+#: public/class-woo-shipping-display-mode-public.php:79
+msgid "Shipping options"
+msgstr "Opcje wysyłki"
+
+#: admin/class-woo-shipping-display-mode-admin.php:136
+msgid "Support"
+msgstr "Wspierać się"
+
+#: includes/class-woo-shipping-display-mode.php:238
+msgid "View WooCommerce settings"
+msgstr "Wyświetl ustawienia WooCommerce"

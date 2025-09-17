@@ -1,0 +1,37 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-crown-blocks-anchor-link-content {
+	// #main-content & > .inner {
+	// 	> .wp-block-crown-blocks-page-section.full-width,
+	// 	> .wp-block-crown-blocks-two-panel,
+	// 	> .wp-block-crown-blocks-featured-image,
+	// 	> .wp-block-crown-blocks-tabbed-content,
+	// 	> .wp-block-crown-blocks-latest-news {
+	// 		margin-left: 0;
+	// 		margin-right: 0;
+	// 	}
+	// }
+	> .inner {
+		margin-left: auto;
+		margin-right: auto;
+		@each $breakpoint, $padding-x in $container-padding-x {
+			@media (min-width: #{map-get($grid-breakpoints, $breakpoint)}) {
+				padding-left: $padding-x;
+				padding-right: $padding-x;
+			}
+		}
+		@each $breakpoint, $max-width in $container-max-widths {
+			@media (min-width: #{map-get($grid-breakpoints, $breakpoint)}) {
+				max-width: $max-width;
+			}
+		}
+	}
+}

@@ -1,0 +1,5 @@
+{
+    "require": {
+        "ph-7/eu-vat-validator": "^3.0"
+    }
+}

@@ -1,0 +1,109 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./blocks/breadcrumbs/src/style.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************/
+.has-gradient-one-color {
+  background: linear-gradient(90deg, #45b6fa 0%, #2158f3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.has-gradient-two-color {
+  background: linear-gradient(270deg, #ADF2BD 0%, #8BEFF2 47.25%, #BBC7F2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.has-gradient-four-color {
+  background: linear-gradient(298.77deg, #515151 0%, #121924 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.has-gradient-five-color {
+  background: linear-gradient(302.32deg, #EE1E51 0%, #121924 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.bg-color-gradient-two {
+  background: linear-gradient(270deg, #ADF2BD 0%, #8BEFF2 47.25%, #BBC7F2 100%);
+}
+
+.bg-color-gradient-three {
+  background: linear-gradient(302.32deg, #144C3F 0%, #144D6C 49.53%, #2B2C5B 100%);
+}
+
+.bg-color-gradient-four {
+  background: linear-gradient(298.77deg, #515151 0%, #121924 100%);
+}
+
+.bg-color-gradient-five {
+  background: linear-gradient(302.32deg, #EE1E51 0%, #121924 100%);
+}
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-crown-blocks-breadcrumbs {
+  padding: 26px 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .wp-block-crown-blocks-breadcrumbs {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .wp-block-crown-blocks-breadcrumbs {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+.wp-block-crown-blocks-breadcrumbs a {
+  text-decoration: none;
+}
+
+#main-content .wp-block-crown-blocks-breadcrumbs {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+@media (min-width: 576px) {
+  #main-content .wp-block-crown-blocks-breadcrumbs {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+@media (min-width: 768px) {
+  #main-content .wp-block-crown-blocks-breadcrumbs {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+@media (min-width: 992px) {
+  #main-content .wp-block-crown-blocks-breadcrumbs {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+}
+@media (min-width: 1200px) {
+  #main-content .wp-block-crown-blocks-breadcrumbs {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+}
+@media (min-width: 1340px) {
+  #main-content .wp-block-crown-blocks-breadcrumbs {
+    margin-left: calc((100vw - ( 1260px )) / -2);
+    margin-right: calc((100vw - ( 1260px )) / -2);
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

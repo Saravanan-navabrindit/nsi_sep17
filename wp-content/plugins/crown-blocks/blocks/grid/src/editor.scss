@@ -1,0 +1,117 @@
+
+@use "sass:math";
+@import '../../../common';
+
+.editor-styles-wrapper .wp-block[data-type="crown-blocks/grid"] {
+    
+    > .inner {
+        @include admin-border;
+        
+        > .grid-cells {
+            > .inner {
+                display: block;
+                margin-left: 0;
+                margin-bottom: 0;
+                > .block-editor-inner-blocks {
+                    > .block-editor-block-list__layout {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-left: -30px;
+                        margin-bottom: -30px;
+
+                        > .wp-block,
+                        > .block-list-appender {
+                            margin: 0;
+                            flex: 0 0 percentage(1);
+                            min-width: 0;
+                            padding-left: 30px;
+                            padding-bottom: 30px;
+                        }
+
+                        > .wp-block {
+                            > .inner {
+                                @include admin-border;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    $column-container-selector: '> .inner > .grid-cells > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout';
+    $column-cell-selector: '> .inner > .grid-cells > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block';
+
+    &.cell-vertical-align-top #{$column-cell-selector} > .crown-block-editor-container > .wp-block-crown-blocks-grid-cell > .inner { align-items: flex-start; }
+    &.cell-vertical-align-center #{$column-cell-selector} > .crown-block-editor-container > .wp-block-crown-blocks-grid-cell > .inner { align-items: center; }
+    &.cell-vertical-align-bottom #{$column-cell-selector} > .crown-block-editor-container > .wp-block-crown-blocks-grid-cell > .inner { align-items: flex-end; }
+
+    &.cell-horizontal-align-left #{$column-container-selector} { justify-content: flex-start; }
+    &.cell-horizontal-align-center #{$column-container-selector} { justify-content: center; }
+    &.cell-horizontal-align-right #{$column-container-selector} { justify-content: flex-end; }
+
+    &.column-breakpoint-xs {
+        @for $i from 1 through 12 {
+            &.column-count-xs-#{$i} #{$column-cell-selector} { flex: 0 0 percentage(math.div(1, $i)); }
+        }
+        @for $i from 0 through 12 {
+            &.column-spacing-xs-#{($i * 10)} #{$column-container-selector} { margin-left: $i * -10px; margin-bottom: $i * -10px; }
+            &.column-spacing-xs-#{($i * 10)} #{$column-cell-selector} { padding-left: $i * 10px; padding-bottom: $i * 10px; }
+            &.column-spacing-xs-#{($i * 10)} #{$column-container-selector} > .block-list-appender { padding-left: $i * 10px; padding-bottom: $i * 10px; }
+        }
+    }
+    
+    @media (min-width: 576px) {
+        &.column-breakpoint-xs, &.column-breakpoint-sm {
+            @for $i from 1 through 12 {
+                &.column-count-sm-#{$i} #{$column-cell-selector} { flex: 0 0 percentage(math.div(1, $i)); }
+            }
+            @for $i from 0 through 12 {
+                &.column-spacing-sm-#{($i * 10)} #{$column-container-selector} { margin-left: $i * -10px; margin-bottom: $i * -10px; }
+                &.column-spacing-sm-#{($i * 10)} #{$column-cell-selector} { padding-left: $i * 10px; padding-bottom: $i * 10px; }
+                &.column-spacing-sm-#{($i * 10)} #{$column-container-selector} > .block-list-appender { padding-left: $i * 10px; padding-bottom: $i * 10px; }
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        &.column-breakpoint-xs, &.column-breakpoint-sm, &.column-breakpoint-md {
+            @for $i from 1 through 12 {
+                &.column-count-md-#{$i} #{$column-cell-selector} { flex: 0 0 percentage(math.div(1, $i)); }
+            }
+            @for $i from 0 through 12 {
+                &.column-spacing-md-#{($i * 10)} #{$column-container-selector} { margin-left: $i * -10px; margin-bottom: $i * -10px; }
+                &.column-spacing-md-#{($i * 10)} #{$column-cell-selector} { padding-left: $i * 10px; padding-bottom: $i * 10px; }
+                &.column-spacing-md-#{($i * 10)} #{$column-container-selector} > .block-list-appender { padding-left: $i * 10px; padding-bottom: $i * 10px; }
+            }
+        }
+    }
+
+    @media (min-width: 992px) {
+        &.column-breakpoint-xs, &.column-breakpoint-sm, &.column-breakpoint-md, &.column-breakpoint-lg {
+            @for $i from 1 through 12 {
+                &.column-count-lg-#{$i} #{$column-cell-selector} { flex: 0 0 percentage(math.div(1, $i)); }
+            }
+            @for $i from 0 through 12 {
+                &.column-spacing-lg-#{($i * 10)} #{$column-container-selector} { margin-left: $i * -10px; margin-bottom: $i * -10px; }
+                &.column-spacing-lg-#{($i * 10)} #{$column-cell-selector} { padding-left: $i * 10px; padding-bottom: $i * 10px; }
+                &.column-spacing-lg-#{($i * 10)} #{$column-container-selector} > .block-list-appender { padding-left: $i * 10px; padding-bottom: $i * 10px; }
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        &.column-breakpoint-xs, &.column-breakpoint-sm, &.column-breakpoint-md, &.column-breakpoint-lg, &.column-breakpoint-xl {
+            @for $i from 1 through 12 {
+                &.column-count-xl-#{$i} #{$column-cell-selector} { flex: 0 0 percentage(math.div(1, $i)); }
+            }
+            @for $i from 0 through 12 {
+                &.column-spacing-xl-#{($i * 10)} #{$column-container-selector} { margin-left: $i * -10px; margin-bottom: $i * -10px; }
+                &.column-spacing-xl-#{($i * 10)} #{$column-cell-selector} { padding-left: $i * 10px; padding-bottom: $i * 10px; }
+                &.column-spacing-xl-#{($i * 10)} #{$column-container-selector} > .block-list-appender { padding-left: $i * 10px; padding-bottom: $i * 10px; }
+            }
+        }
+    }
+
+}
+ 

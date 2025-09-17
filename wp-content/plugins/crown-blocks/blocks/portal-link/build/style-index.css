@@ -1,0 +1,149 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./blocks/portal-link/src/style.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-crown-blocks-portal-link {
+  display: flex;
+}
+.wp-block-crown-blocks-portal-link.text-color-light {
+  color: #fff;
+}
+.wp-block-crown-blocks-portal-link.text-color-light > .link > .link-bg:after {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.wp-block-crown-blocks-portal-link.text-color-dark {
+  color: #222;
+}
+.wp-block-crown-blocks-portal-link.text-color-dark > .link > .link-bg:after {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.wp-block-crown-blocks-portal-link > .link {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  color: inherit;
+  overflow: hidden;
+  text-decoration: none;
+}
+.wp-block-crown-blocks-portal-link > .link:hover {
+  color: inherit;
+}
+.wp-block-crown-blocks-portal-link > .link:hover > .inner::before {
+  opacity: 1;
+  transform: skewY(20deg);
+}
+@media (min-width: 1200px) {
+  .wp-block-crown-blocks-portal-link > .link:hover > .inner::before {
+    transform: skewY(50deg);
+  }
+}
+.wp-block-crown-blocks-portal-link > .link:hover .link-contents {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.1s;
+}
+.wp-block-crown-blocks-portal-link > .link:before {
+  content: "";
+  width: 0;
+  height: 0;
+  padding-top: 80%;
+}
+@media (min-width: 992px) {
+  .wp-block-crown-blocks-portal-link > .link:before {
+    padding-top: 120%;
+  }
+}
+@media (min-width: 1200px) {
+  .wp-block-crown-blocks-portal-link > .link:before {
+    padding-top: 200%;
+  }
+}
+.wp-block-crown-blocks-portal-link > .link > .link-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.wp-block-crown-blocks-portal-link > .link > .link-bg .bg-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wp-block-crown-blocks-portal-link > .link > .inner {
+  width: 100%;
+  padding: 15px;
+  position: relative;
+}
+@media (min-width: 500px) {
+  .wp-block-crown-blocks-portal-link > .link > .inner {
+    padding: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .wp-block-crown-blocks-portal-link > .link > .inner {
+    padding-right: 25%;
+  }
+}
+.wp-block-crown-blocks-portal-link > .link > .inner::before {
+  content: "";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  position: absolute;
+  left: 0;
+  top: 24px;
+  width: 100%;
+  height: 10000%;
+  transform: skewY(20deg);
+  transform-origin: 100% 0;
+  transition: transform 0.2s ease-out, opacity 0.2s;
+}
+@media (min-width: 992px) {
+  .wp-block-crown-blocks-portal-link > .link > .inner::before {
+    transform: skewY(20deg) translate3d(0, 40px, 0);
+    opacity: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .wp-block-crown-blocks-portal-link > .link > .inner::before {
+    transform: skewY(50deg) translate3d(0, 40px, 0);
+    top: 100%;
+  }
+}
+.wp-block-crown-blocks-portal-link .link-contents {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.2s ease-out, opacity 0.2s;
+}
+@media (min-width: 992px) {
+  .wp-block-crown-blocks-portal-link .link-contents {
+    transform: translate3d(0, 40px, 0);
+    opacity: 0;
+  }
+}
+.wp-block-crown-blocks-portal-link .link-title {
+  margin-bottom: 0;
+  font-family: "Artegra Sans Extended", "Source Sans Pro", -apple-system, BlinkMacSystemFont, Arial, sans-serif, "Apple Color Emoji";
+  font-size: 18px;
+}
+@media (min-width: 500px) {
+  .wp-block-crown-blocks-portal-link .link-title {
+    font-size: 24px;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

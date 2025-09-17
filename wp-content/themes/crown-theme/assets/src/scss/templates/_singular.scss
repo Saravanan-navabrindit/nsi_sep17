@@ -1,0 +1,114 @@
+
+
+body.single-post {
+	#main-content {
+		padding-bottom: 30px;
+		@include media-breakpoint-up(md) {
+			padding-bottom: 40px;
+		}
+		@include media-breakpoint-up(lg) {
+			padding-bottom: 80px;
+		}
+		> .entry-header {
+			padding-top: 30px;
+			margin-bottom: 30px;
+			@include media-breakpoint-up(md) {
+				padding-top: 40px;
+				margin-bottom: 40px;
+			}
+			@include media-breakpoint-up(lg) {
+				padding-top: 80px;
+				margin-bottom: 80px;
+			}
+			.entry-title {
+				text-align: center;
+				max-width: 920px;
+				margin: 0 auto 40px;
+				@include media-breakpoint-up(lg) {
+					margin-bottom: 60px;
+				}
+			}
+			.entry-featured-image {
+				margin-bottom: 30px;
+				img {
+					margin: 0 auto;
+				}
+			}
+			.social-sharing-links {
+				display: flex;
+				align-items: center;
+				h4 {
+					margin: 0;
+					margin-right: 16px;
+					font-size: 16px;
+				}
+				ul {
+					margin: -6px;
+					display: flex;
+					list-style: none;
+					padding: 0;
+					li {
+						margin: 6px;
+					}
+					a {
+						display: block;
+					}
+					.icon {
+						display: block;
+						svg {
+							display: block;
+							height: 20px;
+							width: auto;
+							stroke-width: 24;
+							stroke: #000;
+							fill: transparent;
+						}
+					}
+					.label {
+						display: none;
+					}
+				}
+			}
+			.entry-tags {
+				list-style: none;
+				padding: 0;
+				margin: -4px;
+				margin-top: (20px - 4px);
+				display: flex;
+				flex-wrap: wrap;
+				li {
+					margin: 4px;
+					background-color: #E6E6E6;
+					font-size: 16px;
+					line-height: 1.2;
+					padding: .4em .8em;
+					border-radius: 100rem;
+					font-weight: 600;
+				}
+			}
+		}
+		> .content-sidebar-container {
+			@include media-breakpoint-up(lg) {
+				display: flex;
+				margin-left: -15px;
+				margin-right: -15px;
+				justify-content: space-between;
+			}
+			> .entry-content {
+				@include media-breakpoint-up(lg) {
+					flex: 0 0 58.333333%;
+					padding: 0 15px;
+				}
+			}
+		}
+		#main-sidebar {
+			@include media-breakpoint-up(lg) {
+				padding: 0 15px;
+				flex: 0 0 33.333333%;
+			}
+			@include media-breakpoint-up(xl) {
+				flex: 0 0 33.333333%;
+			}
+		}
+	}
+}

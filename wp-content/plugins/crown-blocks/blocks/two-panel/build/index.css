@@ -1,0 +1,327 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./blocks/two-panel/src/editor.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************/
+.has-gradient-one-color {
+  background: linear-gradient(90deg, #45b6fa 0%, #2158f3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.has-gradient-two-color {
+  background: linear-gradient(270deg, #ADF2BD 0%, #8BEFF2 47.25%, #BBC7F2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.has-gradient-four-color {
+  background: linear-gradient(298.77deg, #515151 0%, #121924 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.has-gradient-five-color {
+  background: linear-gradient(302.32deg, #EE1E51 0%, #121924 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.bg-color-gradient-two {
+  background: linear-gradient(270deg, #ADF2BD 0%, #8BEFF2 47.25%, #BBC7F2 100%);
+}
+
+.bg-color-gradient-three {
+  background: linear-gradient(302.32deg, #144C3F 0%, #144D6C 49.53%, #2B2C5B 100%);
+}
+
+.bg-color-gradient-four {
+  background: linear-gradient(298.77deg, #515151 0%, #121924 100%);
+}
+
+.bg-color-gradient-five {
+  background: linear-gradient(302.32deg, #EE1E51 0%, #121924 100%);
+}
+
+.editor-styles-wrapper .wp-block-crown-blocks-two-panel > .inner {
+  padding: 10px;
+  border: 1px dashed #F3F0E8;
+}
+.editor-styles-wrapper .wp-block-crown-blocks-two-panel > .inner > .panels > .inner {
+  display: block;
+}
+.editor-styles-wrapper .wp-block-crown-blocks-two-panel > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  grid-gap: 0;
+  -ms-grid-columns: 1fr 0 1fr;
+  grid-template-columns: 1fr 1fr;
+      grid-template-areas: "column1 column2";
+}
+.editor-styles-wrapper .wp-block-crown-blocks-two-panel > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block {
+  margin: 0;
+  min-width: 0;
+}
+.editor-styles-wrapper .wp-block-crown-blocks-two-panel > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block > .inner {
+  padding: 10px;
+  border: 1px dashed #F3F0E8;
+}
+.editor-styles-wrapper .wp-block-crown-blocks-two-panel > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: column1;
+}
+.editor-styles-wrapper .wp-block-crown-blocks-two-panel > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: column2;
+}
+.editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs > > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  display: -ms-grid;
+  display: grid;
+}
+.editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-xs-1 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  -ms-grid-columns: 1fr 11fr;
+  grid-template-columns: 1fr 11fr;
+}
+.editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-xs-2 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  -ms-grid-columns: 2fr 10fr;
+  grid-template-columns: 2fr 10fr;
+}
+.editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-xs-3 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  -ms-grid-columns: 3fr 9fr;
+  grid-template-columns: 3fr 9fr;
+}
+.editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-xs-4 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  -ms-grid-columns: 4fr 8fr;
+  grid-template-columns: 4fr 8fr;
+}
+.editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-xs-5 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  -ms-grid-columns: 5fr 7fr;
+  grid-template-columns: 5fr 7fr;
+}
+.editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-xs-6 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  -ms-grid-columns: 6fr 6fr;
+  grid-template-columns: 6fr 6fr;
+}
+.editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-xs-7 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  -ms-grid-columns: 7fr 5fr;
+  grid-template-columns: 7fr 5fr;
+}
+.editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-xs-8 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  -ms-grid-columns: 8fr 4fr;
+  grid-template-columns: 8fr 4fr;
+}
+.editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-xs-9 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  -ms-grid-columns: 9fr 3fr;
+  grid-template-columns: 9fr 3fr;
+}
+.editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-xs-10 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  -ms-grid-columns: 10fr 2fr;
+  grid-template-columns: 10fr 2fr;
+}
+.editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-xs-11 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  -ms-grid-columns: 11fr 1fr;
+  grid-template-columns: 11fr 1fr;
+}
+@media (min-width: 576px) {
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    display: -ms-grid;
+    display: grid;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-sm-1 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-sm-1 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 1fr 11fr;
+    grid-template-columns: 1fr 11fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-sm-2 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-sm-2 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 2fr 10fr;
+    grid-template-columns: 2fr 10fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-sm-3 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-sm-3 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 3fr 9fr;
+    grid-template-columns: 3fr 9fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-sm-4 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-sm-4 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 4fr 8fr;
+    grid-template-columns: 4fr 8fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-sm-5 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-sm-5 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 5fr 7fr;
+    grid-template-columns: 5fr 7fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-sm-6 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-sm-6 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 6fr 6fr;
+    grid-template-columns: 6fr 6fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-sm-7 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-sm-7 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 7fr 5fr;
+    grid-template-columns: 7fr 5fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-sm-8 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-sm-8 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 8fr 4fr;
+    grid-template-columns: 8fr 4fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-sm-9 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-sm-9 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 9fr 3fr;
+    grid-template-columns: 9fr 3fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-sm-10 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-sm-10 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 10fr 2fr;
+    grid-template-columns: 10fr 2fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-sm-11 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-sm-11 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 11fr 1fr;
+    grid-template-columns: 11fr 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    display: -ms-grid;
+    display: grid;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-md-1 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-md-1 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-md-1 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 1fr 11fr;
+    grid-template-columns: 1fr 11fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-md-2 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-md-2 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-md-2 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 2fr 10fr;
+    grid-template-columns: 2fr 10fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-md-3 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-md-3 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-md-3 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 3fr 9fr;
+    grid-template-columns: 3fr 9fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-md-4 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-md-4 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-md-4 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 4fr 8fr;
+    grid-template-columns: 4fr 8fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-md-5 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-md-5 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-md-5 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 5fr 7fr;
+    grid-template-columns: 5fr 7fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-md-6 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-md-6 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-md-6 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 6fr 6fr;
+    grid-template-columns: 6fr 6fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-md-7 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-md-7 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-md-7 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 7fr 5fr;
+    grid-template-columns: 7fr 5fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-md-8 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-md-8 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-md-8 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 8fr 4fr;
+    grid-template-columns: 8fr 4fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-md-9 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-md-9 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-md-9 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 9fr 3fr;
+    grid-template-columns: 9fr 3fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-md-10 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-md-10 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-md-10 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 10fr 2fr;
+    grid-template-columns: 10fr 2fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-md-11 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-md-11 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-md-11 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 11fr 1fr;
+    grid-template-columns: 11fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-lg > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    display: -ms-grid;
+    display: grid;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-lg-1 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-lg-1 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-lg-1 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-lg.panel-layout-lg-1 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 1fr 11fr;
+    grid-template-columns: 1fr 11fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-lg-2 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-lg-2 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-lg-2 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-lg.panel-layout-lg-2 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 2fr 10fr;
+    grid-template-columns: 2fr 10fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-lg-3 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-lg-3 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-lg-3 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-lg.panel-layout-lg-3 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 3fr 9fr;
+    grid-template-columns: 3fr 9fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-lg-4 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-lg-4 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-lg-4 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-lg.panel-layout-lg-4 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 4fr 8fr;
+    grid-template-columns: 4fr 8fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-lg-5 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-lg-5 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-lg-5 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-lg.panel-layout-lg-5 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 5fr 7fr;
+    grid-template-columns: 5fr 7fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-lg-6 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-lg-6 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-lg-6 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-lg.panel-layout-lg-6 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 6fr 6fr;
+    grid-template-columns: 6fr 6fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-lg-7 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-lg-7 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-lg-7 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-lg.panel-layout-lg-7 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 7fr 5fr;
+    grid-template-columns: 7fr 5fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-lg-8 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-lg-8 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-lg-8 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-lg.panel-layout-lg-8 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 8fr 4fr;
+    grid-template-columns: 8fr 4fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-lg-9 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-lg-9 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-lg-9 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-lg.panel-layout-lg-9 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 9fr 3fr;
+    grid-template-columns: 9fr 3fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-lg-10 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-lg-10 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-lg-10 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-lg.panel-layout-lg-10 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 10fr 2fr;
+    grid-template-columns: 10fr 2fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-lg-11 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-lg-11 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-lg-11 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-lg.panel-layout-lg-11 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 11fr 1fr;
+    grid-template-columns: 11fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xl > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    display: -ms-grid;
+    display: grid;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-xl-1 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-xl-1 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-xl-1 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-lg.panel-layout-xl-1 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xl.panel-layout-xl-1 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 1fr 11fr;
+    grid-template-columns: 1fr 11fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-xl-2 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-xl-2 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-xl-2 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-lg.panel-layout-xl-2 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xl.panel-layout-xl-2 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 2fr 10fr;
+    grid-template-columns: 2fr 10fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-xl-3 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-xl-3 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-xl-3 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-lg.panel-layout-xl-3 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xl.panel-layout-xl-3 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 3fr 9fr;
+    grid-template-columns: 3fr 9fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-xl-4 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-xl-4 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-xl-4 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-lg.panel-layout-xl-4 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xl.panel-layout-xl-4 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 4fr 8fr;
+    grid-template-columns: 4fr 8fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-xl-5 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-xl-5 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-xl-5 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-lg.panel-layout-xl-5 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xl.panel-layout-xl-5 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 5fr 7fr;
+    grid-template-columns: 5fr 7fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-xl-6 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-xl-6 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-xl-6 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-lg.panel-layout-xl-6 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xl.panel-layout-xl-6 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 6fr 6fr;
+    grid-template-columns: 6fr 6fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-xl-7 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-xl-7 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-xl-7 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-lg.panel-layout-xl-7 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xl.panel-layout-xl-7 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 7fr 5fr;
+    grid-template-columns: 7fr 5fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-xl-8 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-xl-8 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-xl-8 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-lg.panel-layout-xl-8 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xl.panel-layout-xl-8 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 8fr 4fr;
+    grid-template-columns: 8fr 4fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-xl-9 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-xl-9 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-xl-9 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-lg.panel-layout-xl-9 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xl.panel-layout-xl-9 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 9fr 3fr;
+    grid-template-columns: 9fr 3fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-xl-10 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-xl-10 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-xl-10 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-lg.panel-layout-xl-10 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xl.panel-layout-xl-10 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 10fr 2fr;
+    grid-template-columns: 10fr 2fr;
+  }
+  .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xs.panel-layout-xl-11 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-sm.panel-layout-xl-11 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-md.panel-layout-xl-11 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-lg.panel-layout-xl-11 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout, .editor-styles-wrapper .wp-block-crown-blocks-two-panel.panel-breakpoint-xl.panel-layout-xl-11 > .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    -ms-grid-columns: 11fr 1fr;
+    grid-template-columns: 11fr 1fr;
+  }
+}
+
+/*# sourceMappingURL=index.css.map*/

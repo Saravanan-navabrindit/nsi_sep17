@@ -1,0 +1,16 @@
+{
+	"apiVersion": 2,
+	"name": "crown-blocks/testimonial",
+	"version": "0.1.0",
+	"title": "Testimonial",
+	"category": "layout",
+	"icon": "format-quote",
+	"description": "Testimonial block",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "crown-blocks",
+	"editorScript": "file:./build/index.js",
+    "editorStyle": "file:./build/index.css",
+    "style": "file:./build/style-index.css"
+}

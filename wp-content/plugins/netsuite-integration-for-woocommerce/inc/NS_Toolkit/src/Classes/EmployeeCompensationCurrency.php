@@ -1,0 +1,220 @@
+<?php
+/**
+ * This file is part of the netsuitephp/netsuite-php library
+ * AND originally from the NetSuite PHP Toolkit.
+ *
+ * New content:
+ * Package    ryanwinchester/netsuite-php
+ * Copyright  Copyright (c) Ryan Winchester
+ * License    http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
+ * Link       https://github.com/netsuitephp/netsuite-php
+ *
+ * Original content:
+ * Copyright  Copyright (c) NetSuite Inc.
+ * License    https://raw.githubusercontent.com/netsuitephp/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
+ * Link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
+ */
+
+namespace NetSuite\Classes;
+
+class EmployeeCompensationCurrency {
+	public static $paramtypesmap = array(
+	);
+	const _AED = '_aed';
+	const _AFA = '_afa';
+	const _AFN = '_afn';
+	const _ALL = '_all';
+	const _AMD = '_amd';
+	const _ANG = '_ang';
+	const _AOA = '_aoa';
+	const _ARS = '_ars';
+	const _AUD = '_aud';
+	const _AWG = '_awg';
+	const _AZN = '_azn';
+	const _BAM = '_bam';
+	const _BBD = '_bbd';
+	const _BDT = '_bdt';
+	const _BGN = '_bgn';
+	const _BHD = '_bhd';
+	const _BIF = '_bif';
+	const _BMD = '_bmd';
+	const _BND = '_bnd';
+	const _BOB = '_bob';
+	const _BRL = '_brl';
+	const _BSD = '_bsd';
+	const _BTN = '_btn';
+	const _BWP = '_bwp';
+	const _BYN = '_byn';
+	const _BYR = '_byr';
+	const _BZD = '_bzd';
+	const _CAD = '_cad';
+	const _CDF = '_cdf';
+	const _CHF = '_chf';
+	const _CLP = '_clp';
+	const _CNY = '_cny';
+	const _COP = '_cop';
+	const _CRC = '_crc';
+	const _CSD = '_csd';
+	const _CUC = '_cuc';
+	const _CUP = '_cup';
+	const _CVE = '_cve';
+	const _CYP = '_cyp';
+	const _CZK = '_czk';
+	const _DJF = '_djf';
+	const _DKK = '_dkk';
+	const _DOP = '_dop';
+	const _DZD = '_dzd';
+	const _ECS = '_ecs';
+	const _EEK = '_eek';
+	const _EGP = '_egp';
+	const _ERN = '_ern';
+	const _ETB = '_etb';
+	const _EUR = '_eur';
+	const _FJD = '_fjd';
+	const _FKP = '_fkp';
+	const _GBP = '_gbp';
+	const _GEL = '_gel';
+	const _GGP = '_ggp';
+	const _GHC = '_ghc';
+	const _GHS = '_ghs';
+	const _GIP = '_gip';
+	const _GMD = '_gmd';
+	const _GNF = '_gnf';
+	const _GTQ = '_gtq';
+	const _GYD = '_gyd';
+	const _HKD = '_hkd';
+	const _HNL = '_hnl';
+	const _HRK = '_hrk';
+	const _HTG = '_htg';
+	const _HUF = '_huf';
+	const _IDR = '_idr';
+	const _ILS = '_ils';
+	const _IMP = '_imp';
+	const _INR = '_inr';
+	const _IQD = '_iqd';
+	const _IRR = '_irr';
+	const _ISK = '_isk';
+	const _JEP = '_jep';
+	const _JMD = '_jmd';
+	const _JOD = '_jod';
+	const _JPY = '_jpy';
+	const _KES = '_kes';
+	const _KGS = '_kgs';
+	const _KHR = '_khr';
+	const _KMF = '_kmf';
+	const _KPW = '_kpw';
+	const _KRW = '_krw';
+	const _KWD = '_kwd';
+	const _KYD = '_kyd';
+	const _KZT = '_kzt';
+	const _LAK = '_lak';
+	const _LBP = '_lbp';
+	const _LKR = '_lkr';
+	const _LRD = '_lrd';
+	const _LSL = '_lsl';
+	const _LTL = '_ltl';
+	const _LVL = '_lvl';
+	const _LYD = '_lyd';
+	const _MAD = '_mad';
+	const _MDL = '_mdl';
+	const _MFG = '_mfg';
+	const _MGA = '_mga';
+	const _MKD = '_mkd';
+	const _MMK = '_mmk';
+	const _MNT = '_mnt';
+	const _MOP = '_mop';
+	const _MRO = '_mro';
+	const _MRU = '_mru';
+	const _MTL = '_mtl';
+	const _MUR = '_mur';
+	const _MVR = '_mvr';
+	const _MWK = '_mwk';
+	const _MXN = '_mxn';
+	const _MYR = '_myr';
+	const _MZM = '_mzm';
+	const _MZN = '_mzn';
+	const _NAD = '_nad';
+	const _NGN = '_ngn';
+	const _NIO = '_nio';
+	const _NOK = '_nok';
+	const _NPR = '_npr';
+	const _NZD = '_nzd';
+	const _OMR = '_omr';
+	const _PAB = '_pab';
+	const _PEN = '_pen';
+	const _PGK = '_pgk';
+	const _PHP = '_php';
+	const _PKR = '_pkr';
+	const _PLN = '_pln';
+	const _PYG = '_pyg';
+	const _QAR = '_qar';
+	const _ROL = '_rol';
+	const _RON = '_ron';
+	const _RSD = '_rsd';
+	const _RUB = '_rub';
+	const _RUR = '_rur';
+	const _RWF = '_rwf';
+	const _SAR = '_sar';
+	const _SBD = '_sbd';
+	const _SCR = '_scr';
+	const _SDD = '_sdd';
+	const _SDG = '_sdg';
+	const _SEK = '_sek';
+	const _SGD = '_sgd';
+	const _SHP = '_shp';
+	const _SIT = '_sit';
+	const _SKK = '_skk';
+	const _SLL = '_sll';
+	const _SOS = '_sos';
+	const _SPL = '_spl';
+	const _SRD = '_srd';
+	const _SRG = '_srg';
+	const _SSP = '_ssp';
+	const _STD = '_std';
+	const _STN = '_stn';
+	const _SVC = '_svc';
+	const _SYP = '_syp';
+	const _SZL = '_szl';
+	const _THB = '_thb';
+	const _TJS = '_tjs';
+	const _TMM = '_tmm';
+	const _TMT = '_tmt';
+	const _TND = '_tnd';
+	const _TOP = '_top';
+	const _TRL = '_trl';
+	const _TRY = '_try';
+	const _TTD = '_ttd';
+	const _TVD = '_tvd';
+	const _TWD = '_twd';
+	const _TZS = '_tzs';
+	const _UAH = '_uah';
+	const _UGX = '_ugx';
+	const _USD = '_usd';
+	const _UYU = '_uyu';
+	const _UZS = '_uzs';
+	const _VEB = '_veb';
+	const _VEF = '_vef';
+	const _VES = '_ves';
+	const _VND = '_vnd';
+	const _VUV = '_vuv';
+	const _WST = '_wst';
+	const _WSX = '_wsx';
+	const _XAF = '_xaf';
+	const _XAG = '_xag';
+	const _XAU = '_xau';
+	const _XCD = '_xcd';
+	const _XDR = '_xdr';
+	const _XOF = '_xof';
+	const _XOP = '_xop';
+	const _XPD = '_xpd';
+	const _XPF = '_xpf';
+	const _XPT = '_xpt';
+	const _YER = '_yer';
+	const _YUM = '_yum';
+	const _ZAR = '_zar';
+	const _ZMK = '_zmk';
+	const _ZMW = '_zmw';
+	const _ZRN = '_zrn';
+	const _ZWD = '_zwd';
+	const _ZWL = '_zwl';
+}

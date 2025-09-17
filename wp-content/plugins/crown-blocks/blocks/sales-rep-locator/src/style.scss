@@ -1,0 +1,143 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-crown-blocks-sales-rep-locator {
+	.tabs {
+		display: flex;
+		border: 1px solid #E6E6E6;
+		button {
+			margin-bottom: -1px;
+			border: none;
+			background-color: transparent;
+			padding: 24px 24px;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: stretch;
+			font-weight: 700;
+			font-size: 18px;
+			border-bottom: 3px solid transparent;
+			transition: border-color 0.15s, color 0.15s;
+			text-align: center;
+			&.active {
+				color: #000;
+				border-bottom-color: #000;
+			}
+			+ button {
+				border-left: 1px solid #E6E6E6;
+			}
+		}
+	}
+	.instructions {
+		font-size: 22px;
+		font-weight: 600;
+		margin-top: 40px;
+		text-align: center;
+	}
+	.location-search-form {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -4px;
+		justify-content: center;
+		.field,
+		.form-footer {
+			padding: 4px;
+		}
+		input {
+			border-radius: 1000px;
+			border-bottom: none;
+			padding: 0.9rem 1.4rem
+		}
+	}
+	.map-container {
+		margin-top: 40px;
+		.map {
+			position: relative;
+			display: none;
+			&.active {
+				display: block;
+			}
+			&::before {
+				content: '';
+				display: block;
+				padding-top: 60%;
+			}
+			svg {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+		svg {
+			#us,
+			#ca {
+				> * {
+					stroke: #fff;
+					fill: #ccc;
+					&.has-sales-reps {
+						fill: #000;
+						cursor: pointer;
+						transition: fill .2s;
+						&:hover {
+							fill: #444;
+						}
+					}
+				}
+			}
+		}
+	}
+	.modal.sales-rep-region {
+		max-width: none;
+		background-color: transparent;
+		padding: 0;
+		border-radius: 0;
+		box-shadow: none;
+		.modal-content {
+			background-color: #000;
+			color: #fff;
+			border: none;
+			a {
+				color: inherit;
+			}
+		}
+		.modal-header {
+			border-bottom: none;
+			padding-bottom: 0;
+			.close {
+				color: #fff;
+			}
+		}
+		.sales-rep {
+			.territory {
+				font-size: 32px;
+				margin-bottom: 10px;
+			}
+			.name {
+				font-size: 24px;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			.phone {
+				margin-bottom: 0;
+				a {
+					text-decoration: none;
+				}
+			}
+			+ .sales-rep {
+				border-top: 1px solid #ccc;
+				margin-top: 18px;
+				padding-top: 18px;
+			}
+		}
+	}
+}

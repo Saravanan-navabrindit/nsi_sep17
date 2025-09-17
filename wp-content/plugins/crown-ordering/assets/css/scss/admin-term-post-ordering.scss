@@ -1,0 +1,51 @@
+
+
+.sortable-taxonomy-posts-list {
+	margin: 0;
+	ol {
+		&, .form-table .crown-field & {
+			padding-left: 0;
+			margin: 0;
+			list-style: none;
+		}
+	}
+	li {
+		margin-bottom: 4px;
+		&.ui-sortable-helper {
+			.sortable-post {
+				box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+				border: 1px solid #aaa;
+				cursor: -moz-grabbing;
+				cursor: -webkit-grabbing;
+				cursor: grabbing;
+			}
+		}
+		&.ui-sortable-placeholder {
+			visibility: visible !important;
+			.outline {
+				border: 1px dashed #ccc;
+				width: 300px;
+				height: 16px;
+				padding: 0px 8px;
+			}
+		}
+		.sortable-post {
+			width: 282px;
+			padding: 8px 10px;
+			background: #fff;
+			border: 1px solid #ccc;
+			line-height: 16px;
+			font-size: 12px;
+			text-decoration: none;
+			position: relative;
+			cursor: move;
+			cursor: -moz-grab;
+			cursor: -webkit-grab;
+			cursor: grab;
+			box-shadow: 0 1px 1px rgba(0,0,0,.1);
+			&:hover {
+				border-color: #aaa;
+			}
+		}
+	}
+}

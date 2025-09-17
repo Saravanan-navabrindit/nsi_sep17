@@ -1,0 +1,80 @@
+
+@use "sass:math";
+@import '../../../common';
+
+.editor-styles-wrapper .wp-block-crown-blocks-two-panel {
+	
+	> .inner {
+		@include admin-border;
+		
+		> .panels {
+			> .inner {
+				display: block;
+				> .block-editor-inner-blocks {
+					> .block-editor-block-list__layout {
+						grid-gap: 0;
+						grid-template-columns: 1fr 1fr;
+						grid-template-areas: 'column1 column2';
+						> .wp-block {
+							margin: 0;
+							min-width: 0;
+
+							> .inner {
+                                @include admin-border;
+                            }
+						}
+						> .wp-block:nth-child(1) { grid-area: column1; }
+						> .wp-block:nth-child(2) { grid-area: column2; }
+					}
+				}
+			}
+		}
+	}
+
+	$panel-container-selector: '> .inner > .panels > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout';
+
+	&.panel-breakpoint-xs > #{$panel-container-selector} { display: grid; }
+	&.panel-breakpoint-xs {
+		@for $i from 1 through 11 {
+			&.panel-layout-xs-#{$i} #{$panel-container-selector} { grid-template-columns: ($i * 1fr) (12fr - $i * 1fr); }
+		}
+	}
+	
+	@media (min-width: 576px) {
+		&.panel-breakpoint-sm #{$panel-container-selector} { display: grid; }
+		&.panel-breakpoint-xs, &.panel-breakpoint-sm {
+			@for $i from 1 through 11 {
+				&.panel-layout-sm-#{$i} #{$panel-container-selector} { grid-template-columns: ($i * 1fr) (12fr - $i * 1fr); }
+			}
+		}
+	}
+
+	@media (min-width: 768px) {
+		&.panel-breakpoint-md #{$panel-container-selector} { display: grid; }
+		&.panel-breakpoint-xs, &.panel-breakpoint-sm, &.panel-breakpoint-md {
+			@for $i from 1 through 11 {
+				&.panel-layout-md-#{$i} #{$panel-container-selector} { grid-template-columns: ($i * 1fr) (12fr - $i * 1fr); }
+			}
+		}
+	}
+
+	@media (min-width: 992px) {
+		&.panel-breakpoint-lg #{$panel-container-selector} { display: grid; }
+		&.panel-breakpoint-xs, &.panel-breakpoint-sm, &.panel-breakpoint-md, &.panel-breakpoint-lg {
+			@for $i from 1 through 11 {
+				&.panel-layout-lg-#{$i} #{$panel-container-selector} { grid-template-columns: ($i * 1fr) (12fr - $i * 1fr); }
+			}
+		}
+	}
+
+	@media (min-width: 1200px) {
+		&.panel-breakpoint-xl #{$panel-container-selector} { display: grid; }
+		&.panel-breakpoint-xs, &.panel-breakpoint-sm, &.panel-breakpoint-md, &.panel-breakpoint-lg, &.panel-breakpoint-xl {
+			@for $i from 1 through 11 {
+				&.panel-layout-xl-#{$i} #{$panel-container-selector} { grid-template-columns: ($i * 1fr) (12fr - $i * 1fr); }
+			}
+		}
+	}
+
+}
+ 

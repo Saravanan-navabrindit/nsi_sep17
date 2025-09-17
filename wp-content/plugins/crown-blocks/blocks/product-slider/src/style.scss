@@ -1,0 +1,67 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-crown-blocks-product-slider {
+	.product-teasers.slick-slider {
+		display: block;
+		margin-bottom: -30px;
+		&:hover {
+			.slick-arrow {
+				opacity: 1;
+			}
+			.slick-arrow + .slick-list {
+				&::before,
+				&::after {
+					opacity: 1;
+				}
+			}
+		}
+		.product {
+			padding-bottom: 30px;
+		}
+		.slick-arrow {
+			top: 15px;
+			bottom: 30px;
+			height: auto;
+			right: 15px;
+			opacity: 0;
+			transition: opacity .2s;
+			&.slick-prev {
+				right: auto;
+				left: 15px;
+			}
+		}
+		.slick-arrow + .slick-list {
+			&::before,
+			&::after {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 15px;
+				bottom: 30px;
+				width: 200px;
+				z-index: 8;
+				pointer-events: none;
+				opacity: 0;
+				transition: opacity .2s;
+			}
+			&::before {
+				left: 15px;
+				background-image: linear-gradient(to right, rgba(#fff, .75), rgba(#fff, 0));
+				box-shadow: -200px 0 0 rgba(#fff, .75);
+			}
+			&::after {
+				right: 15px;
+				background-image: linear-gradient(to left, rgba(#fff, .75), rgba(#fff, 0));
+				box-shadow: 200px 0 0 rgba(#fff, .75);
+			}
+		}
+	}
+}

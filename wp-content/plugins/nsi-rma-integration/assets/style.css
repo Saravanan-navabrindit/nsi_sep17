@@ -1,0 +1,107 @@
+.wc-returns.btn-wrapper{
+    margin-bottom: 40px;
+}
+.woocommerce-button.wc-returns.button {
+    width: 35%;
+    text-align: center;
+    color: var(--black-button);
+    margin-bottom: 40px;
+}
+
+.woocommerce-button.wc-returns.btn-primary {
+    transition: background-color 500ms linear, border-color 500ms linear;
+}
+
+div.wc-add-rma {
+    text-align: right;
+}
+
+div.wc-add-rma a.back-button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.618em 1em;
+    height: calc(1.2em + 1.8rem + 2px);
+    margin-right: 0.618em;
+}
+
+.rma-tooltip {
+    position: relative;
+}
+
+.rma-tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -20%;
+    left: 50px;
+    background-color: #333;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 999;
+}
+
+.rma-tooltip:hover::after {
+    opacity: 1;
+}
+
+.woocommerce form .form-row p > label.agree-policy {
+    font-size: 1.125rem;
+}
+
+.item-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.rma--archive-holder {
+    display: block;
+    position: relative;
+}
+
+.rma--archive-holder .rma--form-search {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.rma--archive-holder .rma--form-search input {
+    z-index: 9;
+    border-bottom: none;
+}
+
+.rma--archive-holder .rma--form-search select {
+    z-index: 9;
+    border-bottom: none;
+}
+
+.rma--archive-holder .rma--form-search .rma--form-seach__btn {
+    border-radius: 0;
+    background-color: #eee;
+}
+
+.rma--archive-holder .rma--form-search .rma--form-seach__btn.reset-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.woocommerce-order-details .return-details {
+    margin-bottom: 20px;
+}
+
+.woocommerce-order-details .return-details th {
+    padding-right: 20px;
+}
+
+.woocommerce-order-details .return-document-holder {
+    margin-bottom: 20px;
+}

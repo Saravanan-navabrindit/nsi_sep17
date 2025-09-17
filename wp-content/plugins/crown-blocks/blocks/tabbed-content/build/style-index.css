@@ -1,0 +1,138 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./blocks/tabbed-content/src/style.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+.has-gradient-one-color {
+  background: linear-gradient(90deg, #45b6fa 0%, #2158f3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.has-gradient-two-color {
+  background: linear-gradient(270deg, #ADF2BD 0%, #8BEFF2 47.25%, #BBC7F2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.has-gradient-four-color {
+  background: linear-gradient(298.77deg, #515151 0%, #121924 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.has-gradient-five-color {
+  background: linear-gradient(302.32deg, #EE1E51 0%, #121924 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.bg-color-gradient-two {
+  background: linear-gradient(270deg, #ADF2BD 0%, #8BEFF2 47.25%, #BBC7F2 100%);
+}
+
+.bg-color-gradient-three {
+  background: linear-gradient(302.32deg, #144C3F 0%, #144D6C 49.53%, #2B2C5B 100%);
+}
+
+.bg-color-gradient-four {
+  background: linear-gradient(298.77deg, #515151 0%, #121924 100%);
+}
+
+.bg-color-gradient-five {
+  background: linear-gradient(302.32deg, #EE1E51 0%, #121924 100%);
+}
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-crown-blocks-tabbed-content .slick-slider {
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+}
+.wp-block-crown-blocks-tabbed-content .slick-slider .wp-block-crown-blocks-tabbed-content-tab {
+  margin-top: 2rem;
+}
+@media (min-width: 768px) {
+  .wp-block-crown-blocks-tabbed-content .slick-slider .wp-block-crown-blocks-tabbed-content-tab {
+    margin-top: 4rem;
+  }
+}
+.wp-block-crown-blocks-tabbed-content .slick-slider .tab-header {
+  display: none;
+}
+.wp-block-crown-blocks-tabbed-content .slick-slider-nav .slick-dots {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.wp-block-crown-blocks-tabbed-content .slick-slider-nav .slick-dots li.slick-active button {
+  color: #000;
+  border-color: #000;
+}
+.wp-block-crown-blocks-tabbed-content .slick-slider-nav .slick-dots button {
+  border: none;
+  padding: 10px 10px;
+  display: block;
+  background-color: transparent;
+  font-weight: 700;
+  color: #6C7476;
+  font-size: 18px;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.15s, color 0.15s;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .wp-block-crown-blocks-tabbed-content .slick-slider-nav .slick-dots button {
+    padding: 16px 24px;
+  }
+}
+.wp-block-crown-blocks-tabbed-content .slick-slider-nav .slick-dots button:hover {
+  color: #000;
+}
+.wp-block-crown-blocks-tabbed-content .slick-slider-nav .slick-dots button span {
+  display: block;
+}
+.wp-block-crown-blocks-tabbed-content .slick-slider-nav .slick-dots button .index {
+  display: none;
+}
+.wp-block-crown-blocks-tabbed-content .slick-slider-nav .slick-dots button .description {
+  font-size: 14px;
+  color: #666;
+  font-weight: 600;
+}
+
+.wp-block-crown-blocks-tabbed-content.is-style-boxed .slick-slider-nav .slick-dots {
+  border: 1px solid #E6E6E6;
+}
+.wp-block-crown-blocks-tabbed-content.is-style-boxed .slick-slider-nav .slick-dots li {
+  flex: 1 1 0;
+  display: flex;
+  margin-bottom: -1px;
+}
+.wp-block-crown-blocks-tabbed-content.is-style-boxed .slick-slider-nav .slick-dots li + li {
+  border-left: 1px solid #E6E6E6;
+}
+.wp-block-crown-blocks-tabbed-content.is-style-boxed .slick-slider-nav .slick-dots button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+@media (min-width: 992px) {
+  .wp-block-crown-blocks-tabbed-content.is-style-boxed .slick-slider-nav .slick-dots button {
+    padding: 24px 24px;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

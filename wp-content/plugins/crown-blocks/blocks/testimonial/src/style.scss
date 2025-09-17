@@ -1,0 +1,46 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@import '../../../common';
+
+.wp-block-crown-blocks-testimonial {
+	text-align: center;
+	> .inner {
+		max-width: 56rem;
+		margin: 0 auto;
+	}
+	.testimonial__headshot {
+		margin-bottom: 2rem;
+		img {
+			margin: 0 auto;
+			width: 8rem;
+			height: 8rem;
+			object-fit: cover;
+			object-position: center;
+			border-radius: 100rem;
+		}
+	}
+	.testimonial__quote {
+		font-size: 1.625rem;
+		font-weight: 600;
+	}
+	.testimonial__source {
+		margin-top: 2rem;
+		font-size: 1rem;
+		opacity: .5;
+		font-weight: 600;
+		p {
+			margin: 0;
+			display: inline;
+			+ p {
+				&:before {
+					content: ', ';
+				}
+			}
+		}
+	}
+}

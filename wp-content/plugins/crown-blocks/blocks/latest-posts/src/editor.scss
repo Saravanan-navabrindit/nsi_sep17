@@ -1,0 +1,30 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-crown-blocks-latest-posts {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  .post-slider {
+    &__slider {
+      display: flex;
+    }
+  }
+  .post-slide {
+    width: 50%;
+
+    &:nth-child(1n+3) {
+      display: none !important;
+    }
+  }
+
+  .post-teaser__post {
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "require": {
+        "guzzlehttp/oauth-subscriber": "^0.6",
+        "phpoffice/phpspreadsheet": "^3.3"
+    }
+}

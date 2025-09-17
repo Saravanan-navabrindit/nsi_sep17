@@ -1,0 +1,53 @@
+
+@import '../../../common';
+
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-crown-blocks-tabbed-content-tab {
+    > .inner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .tab-header {
+        color: #fff;
+        background-color: fade-out(#000, .2);
+        padding: 10px 16px;
+        line-height: 1.2;
+        font-size: 20px;
+        min-height: 44px;
+        min-width: 60px;
+        position: relative;
+        margin: 0;
+        z-index: 1;
+        display: block;
+        .text-color-light & {
+            background-color: fade-out(#fff, .2);
+        }
+        .text-color-dark & {
+            background-color: fade-out(#000, .2);
+        }
+    }
+    .tab-title {
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+    .tab-description {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .tab-contents {
+        flex: 0 0 100%;
+        border: 1px solid fade-out(#000, .6);
+        padding: 20px;
+        .text-color-light & {
+            border-color: fade-out(#fff, .6);
+        }
+        .text-color-dark & {
+            border-color: fade-out(#000, .6);
+        }
+	}
+}

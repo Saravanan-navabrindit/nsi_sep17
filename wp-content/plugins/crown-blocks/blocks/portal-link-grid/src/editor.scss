@@ -1,0 +1,142 @@
+@import '../../../common';
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.editor-styles-wrapper .wp-block[data-type="crown-blocks/portal-link-grid"] {
+	&.is-selected,
+	&.has-child-selected {
+		> .inner > .grid-columns > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout > .block-list-appender {
+			display: flex;
+		}
+	}
+		
+	> .inner > .grid-columns {
+		> .inner {
+			display: block;
+			margin-left: 0;
+			margin-bottom: 0;
+			> .block-editor-inner-blocks {
+				> .block-editor-block-list__layout {
+					display: flex;
+					flex-wrap: wrap;
+					margin-left: -2rem;
+					margin-bottom: -2rem;
+					> .wp-block,
+					> .block-list-appender {
+						margin: 0;
+						flex: 0 0 percentage(1);
+						min-width: 0;
+						padding-left: 2rem;
+						padding-bottom: 2rem;
+						.wp-block-crown-blocks-portal-link {
+							margin-bottom: 0;
+						}
+					}
+					> .wp-block {
+						&:after {
+							left: calc(2rem + 1px);
+							bottom: calc(2rem + 1px);
+						}
+					}
+					> .block-list-appender {
+						display: none;
+						.block-editor-button-block-appender.block-list-appender__toggle {
+							margin: 0;
+							width: 100%;
+							height: auto;
+							min-height: 100px;
+							border-radius: 1px;
+							box-shadow: 0 0 0 1.5px rgba(#007cba, 0.4);
+							transition: background-color .2s, box-shadow .2s;
+							&:hover {
+								box-shadow: 0 0 0 1.5px #007cba;
+								background-color: rgba(#007cba, .2);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	$column-container-selector: '> .inner > .grid-columns > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout';
+	$column-cell-selector: '> .inner > .grid-columns > .inner > .block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block';
+	$spacing-unit: .25rem;
+
+	&.column-breakpoint-xs {
+		@for $i from 1 through 6 {
+			&.column-count-xs-#{$i} #{$column-cell-selector} { flex: 0 0 percentage(1 / $i); }
+			&.column-count-xs-#{$i} #{$column-container-selector} > .block-list-appender { flex: 0 0 percentage(1 / $i); }
+		}
+	}
+	@for $i from 0 through 16 {
+		&.column-spacing-xs-#{$i} #{$column-container-selector} { margin-left: $i * -$spacing-unit; margin-bottom: $i * -$spacing-unit; }
+		&.column-spacing-xs-#{$i} #{$column-cell-selector} { padding-left: $i * $spacing-unit; padding-bottom: $i * $spacing-unit; }
+		&.column-spacing-xs-#{$i} #{$column-cell-selector}:after { left: calc(#{$i} * #{$spacing-unit} + 1px); bottom: calc(#{$i} * #{$spacing-unit} + 1px); }
+		&.column-spacing-xs-#{$i} #{$column-container-selector} > .block-list-appender { padding-left: $i * $spacing-unit; padding-bottom: $i * $spacing-unit; }
+	}
+	
+	@media (min-width: 576px) {
+		&.column-breakpoint-xs, &.column-breakpoint-sm {
+			@for $i from 1 through 6 {
+				&.column-count-sm-#{$i} #{$column-cell-selector} { flex: 0 0 percentage(1 / $i); }
+				&.column-count-sm-#{$i} #{$column-container-selector} > .block-list-appender { flex: 0 0 percentage(1 / $i); }
+			}
+			@for $i from 0 through 16 {
+				&.column-spacing-sm-#{$i} #{$column-container-selector} { margin-left: $i * -$spacing-unit; margin-bottom: $i * -$spacing-unit; }
+				&.column-spacing-sm-#{$i} #{$column-cell-selector} { padding-left: $i * $spacing-unit; padding-bottom: $i * $spacing-unit; }
+				&.column-spacing-sm-#{$i} #{$column-cell-selector}:after { left: calc(#{$i} * #{$spacing-unit} + 1px); bottom: calc(#{$i} * #{$spacing-unit} + 1px); }
+				&.column-spacing-sm-#{$i} #{$column-container-selector} > .block-list-appender { padding-left: $i * $spacing-unit; padding-bottom: $i * $spacing-unit; }
+			}
+		}
+	}
+
+	@media (min-width: 768px) {
+		&.column-breakpoint-xs, &.column-breakpoint-sm, &.column-breakpoint-md {
+			@for $i from 1 through 6 {
+				&.column-count-md-#{$i} #{$column-cell-selector} { flex: 0 0 percentage(1 / $i); }
+				&.column-count-md-#{$i} #{$column-container-selector} > .block-list-appender { flex: 0 0 percentage(1 / $i); }
+			}
+			@for $i from 0 through 16 {
+				&.column-spacing-md-#{$i} #{$column-container-selector} { margin-left: $i * -$spacing-unit; margin-bottom: $i * -$spacing-unit; }
+				&.column-spacing-md-#{$i} #{$column-cell-selector} { padding-left: $i * $spacing-unit; padding-bottom: $i * $spacing-unit; }
+				&.column-spacing-md-#{$i} #{$column-cell-selector}:after { left: calc(#{$i} * #{$spacing-unit} + 1px); bottom: calc(#{$i} * #{$spacing-unit} + 1px); }
+				&.column-spacing-md-#{$i} #{$column-container-selector} > .block-list-appender { padding-left: $i * $spacing-unit; padding-bottom: $i * $spacing-unit; }
+			}
+		}
+	}
+
+	@media (min-width: 992px) {
+		&.column-breakpoint-xs, &.column-breakpoint-sm, &.column-breakpoint-md, &.column-breakpoint-lg {
+			@for $i from 1 through 6 {
+				&.column-count-lg-#{$i} #{$column-cell-selector} { flex: 0 0 percentage(1 / $i); }
+				&.column-count-lg-#{$i} #{$column-container-selector} > .block-list-appender { flex: 0 0 percentage(1 / $i); }
+			}
+			@for $i from 0 through 16 {
+				&.column-spacing-lg-#{$i} #{$column-container-selector} { margin-left: $i * -$spacing-unit; margin-bottom: $i * -$spacing-unit; }
+				&.column-spacing-lg-#{$i} #{$column-cell-selector} { padding-left: $i * $spacing-unit; padding-bottom: $i * $spacing-unit; }
+				&.column-spacing-lg-#{$i} #{$column-cell-selector}:after { left: calc(#{$i} * #{$spacing-unit} + 1px); bottom: calc(#{$i} * #{$spacing-unit} + 1px); }
+				&.column-spacing-lg-#{$i} #{$column-container-selector} > .block-list-appender { padding-left: $i * $spacing-unit; padding-bottom: $i * $spacing-unit; }
+			}
+		}
+	}
+
+	@media (min-width: 1200px) {
+		&.column-breakpoint-xs, &.column-breakpoint-sm, &.column-breakpoint-md, &.column-breakpoint-lg, &.column-breakpoint-xl {
+			@for $i from 1 through 6 {
+				&.column-count-xl-#{$i} #{$column-cell-selector} { flex: 0 0 percentage(1 / $i); }
+				&.column-count-xl-#{$i} #{$column-container-selector} > .block-list-appender { flex: 0 0 percentage(1 / $i); }
+			}
+			@for $i from 0 through 16 {
+				&.column-spacing-xl-#{$i} #{$column-container-selector} { margin-left: $i * -$spacing-unit; margin-bottom: $i * -$spacing-unit; }
+				&.column-spacing-xl-#{$i} #{$column-cell-selector} { padding-left: $i * $spacing-unit; padding-bottom: $i * $spacing-unit; }
+				&.column-spacing-xl-#{$i} #{$column-cell-selector}:after { left: calc(#{$i} * #{$spacing-unit} + 1px); bottom: calc(#{$i} * #{$spacing-unit} + 1px); }
+				&.column-spacing-xl-#{$i} #{$column-container-selector} > .block-list-appender { padding-left: $i * $spacing-unit; padding-bottom: $i * $spacing-unit; }
+			}
+		}
+	}
+
+}

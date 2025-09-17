@@ -1,0 +1,16 @@
+{
+	"apiVersion": 2,
+	"name": "crown-blocks/cta",
+	"version": "0.1.0",
+	"title": "Call to Action",
+	"category": "layout",
+	"icon": "align-right",
+	"description": "Call to Action block",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "crown-blocks",
+	"editorScript": "file:./build/index.js",
+    "editorStyle": "file:./build/index.css",
+    "style": "file:./build/style-index.css"
+}

@@ -1,0 +1,155 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@use "sass:math";
+@import '../../../common';
+
+.wp-block-crown-blocks-process-step {
+	position: relative;
+
+	> .inner {
+		position: relative;
+	}
+
+  $column-container-selector: '> .inner > .grid-cells > .inner';
+	$column-cell-selector: '> .inner > .grid-cells > .inner > .wp-block-crown-blocks-process-step-cell';
+    
+	#{$column-container-selector} {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -30px;
+		margin-bottom: -30px;
+	}
+    #{$column-cell-selector} {
+			flex: 0 0 1;
+			@media (min-width: 576px) {
+        flex: 0 0 percentage(0.5);
+			}
+
+			@media (min-width: 768px) {
+        flex: 0 0 percentage(0.25);
+			}
+        min-width: 0;
+        padding-left: 30px;
+        padding-bottom: 30px;
+
+				h4 {
+					font-family: "Space Grotesk";
+					font-size: 28px;
+					font-weight: bold;
+					letter-spacing: 0.5px;
+					line-height: 34px;
+					background: $gradient1;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+
+				.step-heading__title {
+					font-size: 28px;
+					font-weight: bold;
+					letter-spacing: 0.5px;
+					line-height: 34px;
+				}
+    }
+
+	&.cell-vertical-align-top #{$column-cell-selector} > .inner { align-items: flex-start; }
+	&.cell-vertical-align-center #{$column-cell-selector} > .inner { align-items: center; }
+	&.cell-vertical-align-bottom #{$column-cell-selector} > .inner { align-items: flex-end; }
+
+	&.cell-horizontal-align-left #{$column-container-selector} { justify-content: flex-start; }
+	&.cell-horizontal-align-center #{$column-container-selector} { justify-content: center; }
+	&.cell-horizontal-align-right #{$column-container-selector} { justify-content: flex-end; }
+
+	&.column-breakpoint-xs {
+		@for $i from 1 through 12 {
+			&.column-count-xs-#{$i} #{$column-cell-selector} { flex: 0 0 percentage(math.div(1, $i)); }
+		}
+		@for $i from 0 through 12 {
+			&.column-spacing-xs-#{($i * 10)} #{$column-container-selector} { margin-left: $i * -10px; margin-bottom: $i * -10px; }
+			&.column-spacing-xs-#{($i * 10)} #{$column-cell-selector} { padding-left: $i * 10px; padding-bottom: $i * 10px; }
+		}
+	}
+	
+	@media (min-width: 576px) {
+		&.column-breakpoint-xs, &.column-breakpoint-sm {
+			@for $i from 1 through 12 {
+				&.column-count-sm-#{$i} #{$column-cell-selector} { flex: 0 0 percentage(math.div(1, $i)); }
+			}
+			@for $i from 0 through 12 {
+				&.column-spacing-sm-#{($i * 10)} #{$column-container-selector} { margin-left: $i * -10px; margin-bottom: $i * -10px; }
+				&.column-spacing-sm-#{($i * 10)} #{$column-cell-selector} { padding-left: $i * 10px; padding-bottom: $i * 10px; }
+			}
+		}
+	}
+
+	@media (min-width: 768px) {
+		&.column-breakpoint-xs, &.column-breakpoint-sm, &.column-breakpoint-md {
+			@for $i from 1 through 12 {
+				&.column-count-md-#{$i} #{$column-cell-selector} { flex: 0 0 percentage(math.div(1, $i)); }
+			}
+			@for $i from 0 through 12 {
+				&.column-spacing-md-#{($i * 10)} #{$column-container-selector} { margin-left: $i * -10px; margin-bottom: $i * -10px; }
+				&.column-spacing-md-#{($i * 10)} #{$column-cell-selector} { padding-left: $i * 10px; padding-bottom: $i * 10px; }
+			}
+		}
+	}
+
+	@media (min-width: 992px) {
+		&.column-breakpoint-xs, &.column-breakpoint-sm, &.column-breakpoint-md, &.column-breakpoint-lg {
+			@for $i from 1 through 12 {
+				&.column-count-lg-#{$i} #{$column-cell-selector} { flex: 0 0 percentage(math.div(1, $i)); }
+			}
+			@for $i from 0 through 12 {
+				&.column-spacing-lg-#{($i * 10)} #{$column-container-selector} { margin-left: $i * -10px; margin-bottom: $i * -10px; }
+				&.column-spacing-lg-#{($i * 10)} #{$column-cell-selector} { padding-left: $i * 10px; padding-bottom: $i * 10px; }
+			}
+		}
+	}
+
+	@media (min-width: 1200px) {
+		&.column-breakpoint-xs, &.column-breakpoint-sm, &.column-breakpoint-md, &.column-breakpoint-lg, &.column-breakpoint-xl {
+			@for $i from 1 through 12 {
+				&.column-count-xl-#{$i} #{$column-cell-selector} { flex: 0 0 percentage(math.div(1, $i)); }
+			}
+			@for $i from 0 through 12 {
+				&.column-spacing-xl-#{($i * 10)} #{$column-container-selector} { margin-left: $i * -10px; margin-bottom: $i * -10px; }
+				&.column-spacing-xl-#{($i * 10)} #{$column-cell-selector} { padding-left: $i * 10px; padding-bottom: $i * 10px; }
+			}
+		}
+	}
+
+	.line-one,
+	.line-two {
+		display: none;
+		position: absolute;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: left;
+
+		@media (min-width: 1300px) {
+			display: block;
+		}
+	}
+
+	.line-one {
+		width: 100vw;
+		top: 0;
+		left: 0;
+		background-image: escape-svg(url('data:image/svg+xml,<svg width="2932px" height="321px" viewBox="0 0 2932 321" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="12.4251079%" y1="94.6245035%" x2="27.3438537%" y2="94.6245035%" id="linearGradient-1"><stop stop-color="#FFFFFF" offset="0%"></stop><stop stop-color="#2158F3" offset="100%"></stop></linearGradient></defs><g id="Certification-Process*" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="CERTIFICATION-PROCESS" transform="translate(120.000000, -4193.000000)"><g id="Certification-Process" transform="translate(-1388.000000, 3641.000000)"><g id="Group-17" transform="translate(1269.984280, 553.470118)"><g id="Group-8" transform="translate(738.507860, 80.106287) rotate(180.000000) translate(-738.507860, -80.106287) translate(0.000000, -0.000000)" fill="url(#linearGradient-1)"><path d="M0,159.682692 L0,134.682692 L1130.01572,134.682692 L1394.23887,134.532373 C1425.65333,134.482119 1451.11032,109.010639 1451.1427,77.5961538 L1451.1427,77.5961538 L1451.1427,0 L1477.01572,0 L1477.01557,82.7690803 C1476.93126,125.62417 1442.12199,160.296734 1399.2669,160.212421 L1399.2669,160.212421 L1130.01572,159.682692 L0,159.682692 Z" id="Combined-Shape" transform="translate(738.507860, 80.106287) scale(-1, 1) translate(-738.507860, -80.106287) "></path></g><g id="Group-8" transform="translate(2189.523581, 238.029882) scale(-1, -1) rotate(180.000000) translate(-2189.523581, -238.029882) translate(1451.015720, 157.847189)" fill="#2158F3"><path d="M1477.01572,4.54747351e-13 L1477.01572,82.7692308 C1477.01572,125.624403 1442.27474,160.365385 1399.41957,160.365385 L1399.41957,160.365385 L1130.31731,160.365385 L1130.317,159.682 L0,159.682692 L0,134.682692 L1130.317,134.682 L1130.31731,134.5 L1394.23886,134.5 C1425.66598,134.5 1451.1427,109.02328 1451.1427,77.5961538 L1451.1427,77.5961538 L1451.1427,4.54747351e-13 L1477.01572,4.54747351e-13 Z" id="Combined-Shape" transform="translate(738.507860, 80.182692) scale(-1, 1) translate(-738.507860, -80.182692) "></path></g></g></g></g></g></svg>'));
+		padding-bottom: 24.13%;
+	}
+
+	.line-two {
+		width: 100vw;
+		right: 0;
+		background-image: escape-svg(url('data:image/svg+xml,<svg width="2929px" height="320px" viewBox="0 0 2929 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="17.3967983%" y1="94.6245035%" x2="35.3451911%" y2="94.6245035%" id="linearGradient-1"><stop stop-color="#FFFFFF" offset="0%"></stop><stop stop-color="#2158F3" offset="100%"></stop></linearGradient></defs><g id="Certification-Process*" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="CERTIFICATION-PROCESS" transform="translate(1389.000000, -4563.000000)"><g id="Certification-Process" transform="translate(-1388.000000, 3641.000000)"><g id="Group-16" transform="translate(0.000000, 923.000000)"><g id="Group-8" transform="translate(738.507860, 80.182692) rotate(180.000000) translate(-738.507860, -80.182692) " fill="#2158F3"><path d="M1477.01572,4.54747351e-13 L1477.01572,82.7692308 C1477.01572,125.624403 1442.27474,160.365385 1399.41957,160.365385 L1399.41957,160.365385 L1130.31731,160.365385 L1130.317,159.682 L0,159.682692 L0,134.682692 L1130.317,134.682 L1130.31731,134.5 L1394.23886,134.5 C1425.66598,134.5 1451.1427,109.02328 1451.1427,77.5961538 L1451.1427,77.5961538 L1451.1427,4.54747351e-13 L1477.01572,4.54747351e-13 Z" id="Combined-Shape" transform="translate(738.507860, 80.182692) scale(-1, 1) translate(-738.507860, -80.182692) "></path></g><g id="Group-8" transform="translate(2189.500000, 238.500001) scale(-1, -1) rotate(180.000000) translate(-2189.500000, -238.500001) translate(1451.000000, 158.000000)" fill="url(#linearGradient-1)"><path d="M1476.98428,4.54747351e-13 L1476.99242,83.4038465 C1477,83.4063713 1477,83.4088969 1477,83.4114224 C1477,126.266595 1442.25902,161.007576 1399.40385,161 L1399.40385,161 L1131,161 L1131,160.999 L-4.54747351e-13,161 L-4.54747351e-13,134 L1364,134 L1364,134 L1394.09615,134 C1425.19074,133.953204 1450.46393,109.011218 1451.03745,78.0366246 L1451.04725,77.0961735 L1451.11126,4.54747351e-13 L1476.98428,4.54747351e-13 Z" id="Combined-Shape" transform="translate(738.500000, 80.500001) scale(-1, 1) translate(-738.500000, -80.500001) "></path></g></g></g></g></g></svg>'));
+		padding-bottom: 24.13%;
+		background-position: right;
+		transform: translateY(-100%);
+	}
+
+}

@@ -1,0 +1,17 @@
+{
+	"apiVersion": 2,
+	"name": "crown-blocks/technical-library-search",
+	"version": "0.1.0",
+	"title": "Technical Library Search",
+	"category": "layout",
+	"icon": "block-default",
+	"description": "Displays the search form for the technical library for products.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "crown-blocks",
+	"editorScript": "file:./build/index.js",
+    "script": "file:./build/public.js",
+    "editorStyle": "file:./build/index.css",
+    "style": "file:./build/style-index.css"
+}

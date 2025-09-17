@@ -1,0 +1,17 @@
+{
+	"apiVersion": 2,
+	"name": "crown-blocks/latest-posts",
+	"version": "0.1.0",
+	"title": "Latest Posts",
+	"category": "layout",
+	"icon": "cover-image",
+	"description": "Latest Posts block",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "crown-blocks",
+	"editorScript": "file:./build/index.js",
+    "script": "file:./build/public.js",
+    "editorStyle": "file:./build/index.css",
+    "style": "file:./build/style-index.css"
+}

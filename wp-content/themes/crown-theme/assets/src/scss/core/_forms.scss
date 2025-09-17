@@ -1,0 +1,33 @@
+
+
+@each $selector in $form-control-selectors {
+	#{$selector} {
+		@extend .form-control;
+		border-width: 0;
+		border-bottom-width: 1px;
+	}
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	&::-webkit-search-cancel-button,
+	&::-webkit-search-decoration {
+	  -webkit-appearance: none;
+	}
+}
+
+select {
+	@extend .custom-select;
+	border-radius: 0;
+}
+
+label {
+	line-height: $line-height-base;
+	font-size: 12px;
+	font-family: $font-family-base;
+	font-weight: 600;
+}
+
+.form-group {
+	font-size: $font-size-sm;
+	line-height: $input-line-height-sm;
+}

@@ -1,0 +1,68 @@
+{
+	"version": 1,
+	"settings": {
+
+		"color": {
+			"palette": [
+				{ "slug": "pure-black", "name": "Black", "color": "#000000" },
+				{ "slug": "light-gray", "name": "Light Gray", "color": "#E6E6E6" },
+				{ "slug": "extra-light-gray", "name": "Extra Light Gray", "color": "#FBF9F9" },
+				{ "slug": "pure-white", "name": "White", "color": "#FFFFFF" }
+			]
+		},
+
+		"typography": {
+			"fontSizes": [
+				{ "slug": "12", "name": "12", "size": "12px" },
+				{ "slug": "14", "name": "14", "size": "14px" },
+				{ "slug": "16", "name": "16", "size": "16px" },
+				{ "slug": "18", "name": "18", "size": "18px" },
+				{ "slug": "24", "name": "24", "size": "24px" }
+			]
+		},
+
+		"layout": {
+			"contentSize": "900px",
+			"wideSize": "1260px",
+			"units": [ "px", "em", "rem", "%", "vw" ]
+		},
+
+		"spacing": {
+			"customPadding": true,
+			"customMargin": true,
+			"units": [ "px", "em", "rem", "vh", "vw" ]
+		},
+
+		"postThumbnailSize": { "width": 200, "height": 200, "crop": true },
+
+		"imageSizes": [
+			{ "slug": "small_thumbnail", "width": 100, "height": 100, "crop": true },
+			{ "slug": "extra_large", "width": 1200, "height": 1200 },
+			{ "slug": "fullscreen", "width": 2000 }
+		],
+	
+		"gridBreakpoints": [
+			{ "name": "xs", "width": 0 },
+			{ "name": "sm", "width": 576 },
+			{ "name": "md", "width": 768 },
+			{ "name": "lg", "width": 992 },
+			{ "name": "xl", "width": 1200 }
+		],
+	
+		"navMenuLocations": [
+			{ "name": "Header: Primary Navigation", "slug": "header_primary" },
+			{ "name": "Mobile Menu: Primary Navigation", "slug": "mobile_menu_primary" },
+			{ "name": "Footer: Primary Navigation", "slug": "footer_primary" },
+			{ "name": "Footer: Legal Links", "slug": "footer_legal_links" }
+		],
+	
+		"widgetLocations": [
+			{ "name": "Blog Sidebar", "slug": "blog-sidebar", "description": "Widgets in this area will be displayed in the sidebar of the blog index." }
+		],
+	
+		"uploadMimes": {
+			"svg": "image/svg+xml",
+			"csv": "text/csv"
+		}
+	}
+}

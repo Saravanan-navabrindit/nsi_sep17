@@ -1,0 +1,43 @@
+.smmgk_active_tab {
+    background: #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: -1px;
+}
+
+.notice-success.smmgk-success-msg {
+    border-left-color: #46b450;
+}
+
+.notice-error.smmgk-error-msg {
+    border-left-color: red!important;
+}
+
+.smmgk-design-form .form-table td {
+    padding-bottom: 15px;
+}
+
+.smmgk_maintenance-tabing a.nav-tab span.dashicons {
+    vertical-align: middle;
+}
+
+form .smmgk_current_gmt {
+    background-color: #fff3cd;
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: #856404;
+    border: 1px solid #856404;
+    width: fit-content;
+    margin: 15px 0 25px 211px;
+}
+
+@media (min-width:783px) {
+    form.smmgk-design-form .form-table td input[type="text"],
+    form.smmgk-seo-tab .form-table td input[type="text"],
+    form.smmgk-seo-tab .form-table td textarea {
+        width: 35%;
+    }
+}
+
+.smmgk-design-form .timestamp-wrap>select {
+    vertical-align: top;
+}

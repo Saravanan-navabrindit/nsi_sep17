@@ -1,0 +1,156 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FME Addons: Shop as a Customer for WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 09:21+0000\n"
+"PO-Revision-Date: 2021-04-13 09:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.2; wp-5.7\n"
+"X-Domain: shop-as-a-customer-for-woocommerce"
+
+#: shop-as-a-customer-for-woocommerce.php:175
+#: shop-as-a-customer-for-woocommerce.php:1172
+msgid "Shop as Customer"
+msgstr "Магазин как Клиент"
+
+#: shop-as-a-customer-for-woocommerce.php:195
+msgid "Your settings has been saved!"
+msgstr "Ваши настройки были сохранены!"
+
+#: shop-as-a-customer-for-woocommerce.php:197
+msgid "Switch To Customers"
+msgstr "Переключитесь На Клиентов"
+
+#: shop-as-a-customer-for-woocommerce.php:198
+msgid "Customer Logs"
+msgstr "Журналы клиентов"
+
+#: shop-as-a-customer-for-woocommerce.php:199
+msgid "Settings"
+msgstr "Настройки"
+
+#: shop-as-a-customer-for-woocommerce.php:204
+msgid "Select Role(s)"
+msgstr "Выберите роль(ы)"
+
+#: shop-as-a-customer-for-woocommerce.php:206
+msgid ""
+"Only Selected Roles will be allowed to switch & View orders. If no role is "
+"selected all roles will be considered as selected"
+msgstr ""
+"Только выбранным ролям будет разрешено переключаться и просматривать заказы. "
+"Если ни одна роль не выбрана все роли будут считаться выбранными"
+
+#: shop-as-a-customer-for-woocommerce.php:251
+msgid "By Default Order Status During Offline Payment"
+msgstr "По Умолчанию Статус Заказа Во Время Автономной Оплаты"
+
+#: shop-as-a-customer-for-woocommerce.php:267
+msgid "Save Settings"
+msgstr "Сохранить Настройки"
+
+#: shop-as-a-customer-for-woocommerce.php:276
+#: shop-as-a-customer-for-woocommerce.php:344
+#: shop-as-a-customer-for-woocommerce.php:467
+#: shop-as-a-customer-for-woocommerce.php:554
+msgid "ID"
+msgstr "ID"
+
+#: shop-as-a-customer-for-woocommerce.php:282
+#: shop-as-a-customer-for-woocommerce.php:350
+msgid "Name"
+msgstr "Имя"
+
+#: shop-as-a-customer-for-woocommerce.php:288
+#: shop-as-a-customer-for-woocommerce.php:356
+msgid "Email"
+msgstr "Электронная почта"
+
+#: shop-as-a-customer-for-woocommerce.php:293
+#: shop-as-a-customer-for-woocommerce.php:361
+msgid "Action"
+msgstr "Экшен"
+
+#: shop-as-a-customer-for-woocommerce.php:328
+#: shop-as-a-customer-for-woocommerce.php:1327
+msgid "Switch"
+msgstr "Переключатель"
+
+#: shop-as-a-customer-for-woocommerce.php:329
+#: shop-as-a-customer-for-woocommerce.php:1330
+msgid "View Orders"
+msgstr "Просмотр Заказов"
+
+#: shop-as-a-customer-for-woocommerce.php:330
+#: shop-as-a-customer-for-woocommerce.php:1332
+msgid "Edit Profile"
+msgstr "Изменить профиль"
+
+#: shop-as-a-customer-for-woocommerce.php:473
+#: shop-as-a-customer-for-woocommerce.php:560
+msgid "Logged in At"
+msgstr "Вошел в систему По Адресу"
+
+#: shop-as-a-customer-for-woocommerce.php:479
+#: shop-as-a-customer-for-woocommerce.php:566
+msgid "Customer"
+msgstr "Покупатель"
+
+#: shop-as-a-customer-for-woocommerce.php:484
+#: shop-as-a-customer-for-woocommerce.php:571
+msgid "Products"
+msgstr "Продукты"
+
+#: shop-as-a-customer-for-woocommerce.php:489
+#: shop-as-a-customer-for-woocommerce.php:576
+msgid "Message On Whatsapp"
+msgstr "Сообщение В Whatsapp"
+
+#: shop-as-a-customer-for-woocommerce.php:930
+#: shop-as-a-customer-for-woocommerce.php:940
+msgid "compress to right"
+msgstr "сжатие вправо"
+
+#: shop-as-a-customer-for-woocommerce.php:947
+msgid "You are now login as "
+msgstr "Теперь вы входите в систему как "
+
+#: shop-as-a-customer-for-woocommerce.php:955
+msgid "Switch Back "
+msgstr "Переключиться Обратно "
+
+#: shop-as-a-customer-for-woocommerce.php:957
+msgid "compress to left"
+msgstr "сжатие влево"
+
+#: shop-as-a-customer-for-woocommerce.php:1028
+msgid "Switch Back And View Orders"
+msgstr "Переключитесь Назад И Просмотрите Заказы"
+
+#: shop-as-a-customer-for-woocommerce.php:1181
+msgid "No Records found"
+msgstr "Никаких записей не найдено"
+
+#: shop-as-a-customer-for-woocommerce.php:1182
+msgid "next"
+msgstr "Далее"
+
+#: shop-as-a-customer-for-woocommerce.php:1337
+msgid "Recent Customer:"
+msgstr "Недавний Клиент:"
+
+#. Name of the plugin
+msgid "FME Addons: Shop as a Customer for WooCommerce"
+msgstr "FME Addons: Магазин в качестве клиента для WooCommerce"
+
+#. Author of the plugin
+msgid "fmeaddons"
+msgstr "fmeaddons"
