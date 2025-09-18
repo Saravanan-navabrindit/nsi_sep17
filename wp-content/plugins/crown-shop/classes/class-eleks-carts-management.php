@@ -191,7 +191,7 @@ if ( ! class_exists( 'Eleks_Carts_Management' ) ) {
                 $query = $wpdb->prepare($query, $query_args);
             }
             $sessions = $wpdb->get_results($query);
-            // Assuming a function to get the current user context key (selected_quote_type)
+            // fetching current user context key(selected_quote_type) for removing it from session value
             $context_key = get_current_user_contextual_quote_type_key();
             if (!empty($sessions)) {
                 foreach ($sessions as $session) {
@@ -200,7 +200,7 @@ if ( ! class_exists( 'Eleks_Carts_Management' ) ) {
                         continue;
                     }
                     $session_data['quotes'] = [];
-                    // Remove selected quote type if applicable
+                    // Remove selected quote type from session table if applicable
                     if (isset($session_data[$context_key])) {
                         unset($session_data[$context_key]);
                     }
