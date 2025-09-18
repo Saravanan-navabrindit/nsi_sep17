@@ -1683,7 +1683,13 @@ if (!class_exists('Crown_Shop_Custom_Roles')) {
             $author_query_results = get_posts($author_query);
             if ($plus_authored) {
             $results_combined = array_merge($dualshop_query_results, $author_query_results);
-               $results = $mode === 'ids'
+            
+            // Sort by post_date descending (newest first)
+            usort($results_combined, function ($a,$b) {
+                return strtotime($b->post_date) <=> strtotime($a->post_date);
+            });
+   
+            $results = $mode === 'ids'
                    ? $results_combined
                    : Nsi_Helper::get_unique_objects_by_property($results_combined, 'ID');
             } else {
