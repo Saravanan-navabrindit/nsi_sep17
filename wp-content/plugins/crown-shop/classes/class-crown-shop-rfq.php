@@ -3167,7 +3167,6 @@ if ( ! class_exists( 'Crown_Shop_Rfq' ) ) {
 
         public static function handle_clear_quotes_cart_button(): void {
             $user_id = get_current_user_id();
-            update_user_meta( $user_id, 'selected_quote_type', null );
             $context_key = get_current_user_contextual_quote_type_key();
             update_user_meta( $user_id, $context_key, null );
             update_user_meta( $user_id, 'quote_pricing_groups', null );

@@ -16,6 +16,8 @@ $colspan          = 4;
 $colspan          = $price_display ? $colspan + 2 : $colspan;
 $colspan          = $of_price_display ? $colspan + 4 : $colspan;
 $quote_status     = get_post_meta( $quote_post_id, 'quote_status', true );
+$quote_type_id     = get_post_meta( $quote_post_id, 'quote_type', true );
+$stock_price_request_type = (get_post_meta($quote_type_id, 'quote_type_name', true) === 'Stock Price Request');
 $price_title_origin = 'Requested';
 $disabled = '';
 if ( in_array( $quote_status, array( 'af_accepted', 'af_in_process', 'af_converted' ), true ) ) {
@@ -45,7 +47,7 @@ if (isset($warnings) && is_array($warnings) && !empty($warnings)) {
     WC()->session->__unset( 'warning_messages');
 }
 ?>
-    <form class="addify-quote-form-profile">
+<form class="addify-quote-form-profile">
 	<table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents  addify-quote-form__contents" cellspacing="0">
 		<thead>
 			<tr>
@@ -259,6 +261,7 @@ if (isset($warnings) && is_array($warnings) && !empty($warnings)) {
 					<?php
 				}
 			}
+			if (!$stock_price_request_type) {
 			?>
             <tr class="addify-quote-form-profile-actions">
                 <td colspan="<?php echo esc_attr( ($colspan/2) ); ?>" class="actions add-to-quote" style="text-align: left;">
@@ -333,14 +336,15 @@ if (isset($warnings) && is_array($warnings) && !empty($warnings)) {
 
                         <?php wp_nonce_field( 'addify-cart', 'addify-cart-nonce' ); ?>
                     </td>
-                </tr>
+			</tr>
+			<?php } ?>
 			</tbody>
             <input type="hidden" id="post_id_profile" name="post_id_profile" value="<?php echo $quote_post_id;?>" />
 			<?php do_action( 'addify_quote_contents' ); ?>
-			</tbody>
-		</table>
-    </form>
-			<?php do_action( 'addify_after_quote_contents' ); ?>
+		</tbody>
+	</table>
+</form>
+	<?php do_action( 'addify_after_quote_contents' ); ?>
 
 	<?php do_action( 'addify_after_quote_table' ); ?>
 <?php
