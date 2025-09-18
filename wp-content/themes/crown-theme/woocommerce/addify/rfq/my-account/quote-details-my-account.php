@@ -39,7 +39,7 @@ $tax_display      = 'yes' === get_option( 'afrfq_enable_tax' ) ? true : false;
 
 $has_discount_rules = ( get_post_meta( $quote->ID, 'quote_type_discount_rules', true ) === 'yes' );
 $discount_rule = (get_post_meta($quote_type_id, 'quote_type_discount_rules', true));
-
+$stock_price_request_type = (get_post_meta($quote_type_id, 'quote_type_name', true) === 'Stock Price Request');
 $quote_pricing_groups = get_post_meta( $afrfq_id, 'quote_pricing_groups', true );
 
 $customer_info   = array();
@@ -194,7 +194,7 @@ $frontend_quote_fields_editable = apply_filters( 'frontend_quote_fields_editable
 			<?php endif; ?>
 		</table>
         <?php
-        if ( $frontend_quote_fields_editable && ($discount_rule !== 'yes') && 'af_accepted' === $quote_status ) { ?>
+        if ( $frontend_quote_fields_editable && ($discount_rule !== 'yes' && !$stock_price_request_type) && 'af_accepted' === $quote_status ) { ?>
 		    <button type="submit" class="btn btn-dark ml-2">Update</button>
         <?php } ?>
 		<?php wp_nonce_field( 'update-rfq-fields' ); ?>
