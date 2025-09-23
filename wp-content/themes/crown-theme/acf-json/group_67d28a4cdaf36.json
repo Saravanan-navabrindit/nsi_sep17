@@ -103,6 +103,26 @@
                     "parent_repeater": "field_67da6f41ed174"
                 }
             ]
+        },
+        {
+            "key": "field_68cc13f3736d8",
+            "label": "Login page",
+            "name": "login_page",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -140,5 +160,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1742377428
+    "modified": 1758205219
 }

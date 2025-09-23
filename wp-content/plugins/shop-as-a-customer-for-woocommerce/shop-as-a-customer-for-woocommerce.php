@@ -901,9 +901,7 @@ class MainFmeaddonsClass {
 			$array_for_log_child['time']=gmdate('M d, Y h:i:s A'); 
 			$array_for_log_child['customer']=$nammee . ' < ' . $emaill . ' > ';
 			$array_for_log[]=$array_for_log_child;
-			session_start();
-			$_SESSION['admin']='adminisloggedin';
-            session_write_close();
+            WC()->session->set( 'admin', 'adminisloggedin' );
 			update_option('all_logs', $array_for_log, false);
 			die();
 		} else {
@@ -914,12 +912,13 @@ class MainFmeaddonsClass {
 
 	}
 	public function fmeaddons_end_session() {
-		if ( isset($_SESSION['admin']) ) {
+        $adminisloggedin = WC()->session ? WC()->session->get( 'admin', null ) : null;
+		if ( isset($adminisloggedin) ) {
             setcookie('sac_admin_id', '', -1, '/');
             if (isset($_COOKIE['sac_admin_id'])) {
                 unset($_COOKIE['sac_admin_id']);
             }
-            unset($_SESSION['admin']);
+            WC()->session->set( 'admin', '' );
             session_destroy();
 		}  
 
@@ -988,9 +987,7 @@ class MainFmeaddonsClass {
 				}
 				$admin=array();
 				array_push ($admin, $current_id);
-				session_start();
-				$_SESSION['admin']='adminisloggedin';
-                session_write_close();
+                WC()->session->set( 'admin', 'adminisloggedin' );
 				update_option('admin111', $current_id );
 				$items = $woocommerce->cart->get_cart();
 				update_option('whole_admin_cart', $items);
@@ -1063,10 +1060,8 @@ class MainFmeaddonsClass {
                 // Need to have cookie set in current request before cart and quote restoring.
                 $_COOKIE['sac_admin_id'] = $current_id;
                 Eleks_Carts_Management::restore_shopping_cart_from_db($id);
-                session_start();
-				$_SESSION['admin']='adminisloggedin';
                 Eleks_Carts_Management::restore_quotes_cart_from_db($id);
-                session_write_close();
+                WC()->session->set( 'admin', 'adminisloggedin' );
 				update_option('admin111', $current_id );
 				setcookie( 'sac_admin_id', $current_id, time() + ( 60 * 60 * 24 ), '/' );
 //                $this->set_cookies_admin_cart();
@@ -1089,8 +1084,7 @@ class MainFmeaddonsClass {
 		// $admin_id=get_option( 'admin111' );
 		$admin_id = isset( $_COOKIE['sac_admin_id'] ) ? $_COOKIE['sac_admin_id'] : 0;
 		if ( $id != $admin_id && $admin_id != 0) {
-			if (isset($_SESSION['admin']) && 'adminisloggedin' == $_SESSION['admin'] ) {
-				
+			if ( Nsi_Helper::is_admin_session_set() ) {
 				if ( '0' != $id) {
 					$user=get_userdata( $id );
 					
@@ -1186,7 +1180,7 @@ class MainFmeaddonsClass {
 		// $admin_id=get_option( 'admin111' );
 		$admin_id = isset( $_COOKIE['sac_admin_id'] ) ? $_COOKIE['sac_admin_id'] : 0;
 		$id= get_current_user_ID();
-		if (isset( $_SESSION['admin'] ) && 'adminisloggedin' == $_SESSION['admin'] ) {
+        if ( Nsi_Helper::is_admin_session_set() ) {
 			$order = wc_get_order( $order_id );
 			$items = $order->get_items();
 			$products_array='';
