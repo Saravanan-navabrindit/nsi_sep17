@@ -175,5 +175,11 @@ if ( ! class_exists('Nsi_Helper') ) {
             }
         }
 
+        public static function is_admin_session_set() {
+            $admin_session = WC()->session ? WC()->session->get( 'admin', null ) : null;
+            if ( isset( $admin_session ) && $admin_session === 'adminisloggedin' ) return true;
+            return false;
+        }
+
     }
 }

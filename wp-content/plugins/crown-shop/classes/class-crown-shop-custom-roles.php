@@ -874,8 +874,8 @@ if (!class_exists('Crown_Shop_Custom_Roles')) {
                 $admin_user = get_user_by( 'id', $admin_id );
 
                 if (
-                    $current_user_id != $admin_id && $admin_id != 0 && isset( $admin_user->roles[0] ) && $admin_user->roles[0] === self::$internal_sales_rep_role_name &&
-                    isset( $_SESSION['admin'] ) && 'adminisloggedin' == $_SESSION['admin']
+                    $current_user_id != $admin_id && $admin_id != 0 && isset( $admin_user->roles[0] ) && $admin_user->roles[0] === self::$internal_sales_rep_role_name
+                    && Nsi_Helper::is_admin_session_set()
                 ) {
                     self::remove_cart_and_checkout_access();
                     add_filter( 'display_cart_in_header', '__return_false' );
@@ -1683,7 +1683,13 @@ if (!class_exists('Crown_Shop_Custom_Roles')) {
             $author_query_results = get_posts($author_query);
             if ($plus_authored) {
             $results_combined = array_merge($dualshop_query_results, $author_query_results);
-               $results = $mode === 'ids'
+            
+            // Sort by post_date descending (newest first)
+            usort($results_combined, function ($a,$b) {
+                return strtotime($b->post_date) <=> strtotime($a->post_date);
+            });
+   
+            $results = $mode === 'ids'
                    ? $results_combined
                    : Nsi_Helper::get_unique_objects_by_property($results_combined, 'ID');
             } else {
@@ -1718,7 +1724,7 @@ if (!class_exists('Crown_Shop_Custom_Roles')) {
                 } else {
                     $current_user_email = '';
                 }
-            } elseif ( $admin_id != 0 && ( ! isset($_SESSION['admin']) || 'adminisloggedin' != $_SESSION['admin'] ) ) {
+            } elseif ( $admin_id != 0 && ! Nsi_Helper::is_admin_session_set() ) {
                 return $user_email_domain;
             } else {
                 $current_user_email = self::$current_user->user_email;
@@ -1735,7 +1741,7 @@ if (!class_exists('Crown_Shop_Custom_Roles')) {
             $admin_user = get_user_by('id', $admin_id);
             if (self::is_switched_from_role($admin_id, $admin_user, $role_to_check_authority)) {
                 $user_id = $admin_id;
-            } elseif ( $admin_id != 0 && ( ! isset($_SESSION['admin']) || 'adminisloggedin' != $_SESSION['admin'] ) ) {
+            } elseif ( $admin_id != 0 && ! Nsi_Helper::is_admin_session_set() ) {
                 $user_id = 0;
             }
             return $user_id;
@@ -1793,7 +1799,7 @@ if (!class_exists('Crown_Shop_Custom_Roles')) {
          * @return bool True if the user is switched from the given role, false otherwise.
          */
         public static function is_switched_from_role(mixed $admin_id, WP_User|bool $admin_user, string $switched_role): bool {
-            return isset($_SESSION['admin']) && 'adminisloggedin' == $_SESSION['admin']
+            return Nsi_Helper::is_admin_session_set()
                     && self::$current_user->ID != $admin_id && $admin_id != 0
                     && isset($admin_user->roles[0]) && $admin_user->roles[0] === $switched_role;
         }

@@ -332,10 +332,9 @@ if ( ! class_exists( 'Eleks_Carts_Management' ) ) {
             $quote_key = '_addify_quote-cart_' . $id;
             $quote_contents = get_user_meta($user_id, $quote_key, true);
 
+            WC()->session->destroy_session();
+            WC()->session->set_customer_session_cookie(true);
             if ($quote_contents) {
-                WC()->session->destroy_session();
-                WC()->session->set_customer_session_cookie(true);
-
                 $quote_contents = $quote_contents['quotes'] ?? $quote_contents;
                 wc()->session->set('quotes', $quote_contents);
             }

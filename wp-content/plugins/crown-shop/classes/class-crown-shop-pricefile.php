@@ -156,7 +156,7 @@ if ( ! class_exists( 'Crown_Shop_Pricefile' ) ) {
             $switched_user = get_user_by( 'id', $switched_id );
 
             if ( ( $switched_id == 0 ) ||
-                ( isset( $_SESSION['admin'] ) && 'adminisloggedin' == $_SESSION['admin']
+                ( Nsi_Helper::is_admin_session_set()
                 && $current_user->ID != $switched_id && $switched_id != 0
                 && isset( $switched_user->roles[0] ) && in_array( $switched_user->roles[0], self::$switch_roles_allowed_for_price_file ) )
             ) {

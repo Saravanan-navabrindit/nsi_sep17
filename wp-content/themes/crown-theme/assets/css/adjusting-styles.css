@@ -305,6 +305,43 @@ span.add-to-quote-group--message {
 .select2-container--open {
    z-index: 99999;
 }
+
+
+.page--login__holder form {
+    padding: 20px;
+    margin: 2em 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.page--login__holder form .label--fullwidth {
+    display: block;
+    width: 100%;
+}
+
+.page--login__holder form .label--fullwidth input {
+    margin-top: 5px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.page--login__holder form .button {
+    margin-top: 10px;
+}
+
+.page--login__holder form .button:hover {
+    background: #dfdcde;
+}
+
+.page--login__holder form .label--checkbox {
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.page--login__holder form .link--forgotpassword {
+    margin-top: 15px;
+}
 span.select2-container.select2-container--default.select2-container--open {
     width: auto;
 }

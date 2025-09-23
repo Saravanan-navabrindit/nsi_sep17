@@ -747,7 +747,7 @@ if ( ! class_exists( 'Crown_Shop_Display' ) ) {
             $admin_id = isset( $_COOKIE['sac_admin_id'] ) ? $_COOKIE['sac_admin_id'] : 0;
             $admin_user = get_user_by( 'id', $admin_id );
             if (
-                isset( $_SESSION['admin'] ) && 'adminisloggedin' == $_SESSION['admin']
+                Nsi_Helper::is_admin_session_set()
                 && $current_user_id != $admin_id && $admin_id != 0
                 && isset( $admin_user->roles[0] ) && in_array( $admin_user->roles[0], self::$roles_restricted_for_sales_rep_domains_brands )
             ) {
@@ -764,7 +764,7 @@ if ( ! class_exists( 'Crown_Shop_Display' ) ) {
             $admin_id = isset( $_COOKIE['sac_admin_id'] ) ? $_COOKIE['sac_admin_id'] : 0;
             $admin_user = get_user_by( 'id', $admin_id );
             if (
-                isset( $_SESSION['admin'] ) && 'adminisloggedin' == $_SESSION['admin']
+                Nsi_Helper::is_admin_session_set()
                 && $current_user_id != $admin_id && $admin_id != 0
             ) {
                 return $admin_user;

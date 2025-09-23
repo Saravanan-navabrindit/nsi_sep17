@@ -1456,7 +1456,7 @@ if ( ! class_exists( 'Crown_Shop_Orders' ) ) {
                 $admin_id = isset( $_COOKIE['sac_admin_id'] ) ? $_COOKIE['sac_admin_id'] : 0;
                 $admin_user = get_user_by( 'id', $admin_id );
                 if (
-                    isset( $_SESSION['admin'] ) && 'adminisloggedin' == $_SESSION['admin']
+                    Nsi_Helper::is_admin_session_set()
                     && $user->ID != $admin_id && $admin_id != 0
                     && isset( $admin_user->roles[0] ) && $admin_user->roles[0] === 'dual_shop_manager'
                 ) {

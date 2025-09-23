@@ -63,10 +63,13 @@ $shipping_details = json_decode( $shipping_details, true );
 
     <td class="woocommerce-table__product-qty-shipped product-qty-shipped">
         <?php
-        $sku = $product->get_sku();
-        if ( isset($shipping_details[$sku]) ) {
-            echo '× ' . $shipping_details[$sku]['quantity_billed'];
+        if ( $product ) {
+            $sku = $product->get_sku();
+            if ( isset($shipping_details[$sku]) ) {
+                echo '× ' . $shipping_details[$sku]['quantity_billed'];
+            } else echo '× 0';
         } else echo '× 0';
+
         ?>
     </td>
 </tr>

@@ -268,3 +268,39 @@ function do_replace_category_pages_with_hawksearch() {
 //    $is_replace_categories = get_field( 'nsi_replace_category_pages_with_hawksearch', 'option' );
 //    return isset( $is_replace_categories[0] ) && $is_replace_categories[0] === 'yes';
 }
+
+add_action( 'wp_loaded', 'crown_custom_login_form_authenticate_user' );
+
+function crown_custom_login_form_authenticate_user() {
+    if (
+        !is_user_logged_in() && !empty($_REQUEST['custom-email']) && trim($_REQUEST['custom-email']) != "" &&
+        !empty($_REQUEST['custom-password']) && trim($_REQUEST['custom-password']) != ""
+    ) {
+        $nonce = wc_get_var( $_REQUEST['custom-login-form-nonce'] );
+        $valid_nonce = wp_verify_nonce( $nonce, 'custom-login-form' );
+
+        if ( !$valid_nonce ) {
+            return;
+        }
+
+        $user_verify = wp_signon(array(
+            'user_login' => $_REQUEST['custom-email'],
+            'user_password' => $_REQUEST['custom-password'],
+            'remember' => isset($_REQUEST['custom-rememberme']) && $_REQUEST['custom-rememberme'] == 'yes'
+        ));
+
+        if ( is_wp_error( $user_verify ) ) {
+            wc_add_notice( $user_verify->get_error_message(), 'error' );
+        } else {
+            $user_id = $user_verify->ID;
+            if ( !empty($user_id) ) {
+                do_action( 'wp_login', $user_verify->user_login, $user_verify );
+                wp_set_current_user( $user_id );
+                wp_set_auth_cookie( $user_id );
+                $my_account_page = wc_get_page_permalink( 'myaccount' );
+                wp_safe_redirect( $my_account_page ); //redirect is required to render page in 'logged-in' state
+                exit;
+            }
+        }
+    }
+}
