@@ -82,7 +82,7 @@
                     }
                     $user_selected_quote_type = get_user_meta(get_current_user_id(), $context_key);
                     $session_selected_quote_type = WC()->session->get( $context_key );
-                    if($user_selected_quote_type !== null){
+                    if(!null == $user_selected_quote_type){
                         $selected_quote_type = $user_selected_quote_type[0]['id'];
                     } else {
                         !empty($session_selected_quote_type) === $selected_quote_type = $session_selected_quote_type['id'] ? : 0;
@@ -96,7 +96,7 @@
                     $logger->error('WC session was not created for getting quotes', array('source' => 'db_issues'));
                 }
                 ?>
-                <?php if ( ( $quote_item_count > 0 || $has_discount_rules ) ) { ?>
+                <?php if (( $quote_item_count > 0 ) || ($has_discount_rules)) { ?>
                   <li class="menu-item quote">
                     <a href="<?php echo $quote_url; ?>">
 											<span class="icon">
