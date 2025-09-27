@@ -31,13 +31,8 @@
         $bridge_port_product = false;
 
         $current_user = wp_get_current_user();
-        $admin_id     = get_original_admin_id();
-        $admin_user   = $admin_id ? get_userdata($admin_id) : null;
-
-        $is_manager          = in_array($current_user->roles[0], ['shop_manager', 'dual_shop_manager'], true);
-        $is_switched_manager = is_switched_customer() && $admin_user && in_array($admin_user->roles[0], ['shop_manager','dual_shop_manager'], true);
         $context_key = get_current_user_contextual_quote_type_key();
-        if ( $is_manager || $is_switched_manager ) {
+        if ( is_manager_or_switched_manager( $current_user ) ) {
             // DSM allowed brands check
             $current_user_email = $current_user->user_email;
             $admin_user_email   = $admin_user->user_email;
@@ -64,11 +59,7 @@
             // Bridgeport blocking
             $block_bridgeport = false;
             $quote_type_bridgeport_only = '';
-            $user_selected_quote_type   = get_user_meta(get_current_user_id(), $context_key, true);
-            $session_selected_quote_type= WC()->session->get($context_key);
-            $selected_quote_type        = !empty($user_selected_quote_type['id'])
-                                            ? $user_selected_quote_type['id']
-                                            : (!empty($session_selected_quote_type) ? $session_selected_quote_type['id'] : 0);
+            $selected_quote_type = get_selected_quote_type_id();
             if ($selected_quote_type) {
                 $quote_type_bridgeport_only = get_post_meta($selected_quote_type, 'quote_type_bridgeport_brand', true);
             }

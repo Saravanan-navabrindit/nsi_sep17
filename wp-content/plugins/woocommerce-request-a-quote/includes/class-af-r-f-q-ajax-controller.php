@@ -1003,20 +1003,7 @@ class AF_R_F_Q_Ajax_Controller {
 			$data_array = array();
 
 			$current_user = wp_get_current_user();
-            $allowed_roles = [ 'shop_manager', 'dual_shop_manager' ];
-			$admin_id = get_original_admin_id();
-			$admin_user = $admin_id ? get_userdata($admin_id) : null;
-			$is_manager = in_array( $current_user->roles[0], $allowed_roles, true );
-			$is_switched_manager = is_switched_customer() && $admin_user && in_array( $admin_user->roles[0], $allowed_roles, true );
-			$context_key = get_current_user_contextual_quote_type_key();
-			$user_selected_quote_type = get_user_meta(get_current_user_id(), $context_key);
-			$session_selected_quote_type = WC()->session->get( $context_key );
-			if(!null == $user_selected_quote_type){
-				$selected_quote_type = $user_selected_quote_type[0]['id'];
-			} else {
-				!empty($session_selected_quote_type) === $selected_quote_type = $session_selected_quote_type['id'] ? : 0;
-			}
-			$selected_quote_type_id = $selected_quote_type;
+			$selected_quote_type_id = get_selected_quote_type_id();
             $quote_type_bridgeport_req = get_post_meta($selected_quote_type_id, 'quote_type_bridgeport_brand', true);
 
 			$args = array(
@@ -1041,7 +1028,7 @@ class AF_R_F_Q_Ajax_Controller {
 					$sku = get_post_meta($proo->ID, '_sku', true);
 					$title = '(' . $sku . ') ';
 					$title .= ( mb_strlen( $proo->post_title ) > 50 ) ? mb_substr( $proo->post_title, 0, 49 ) . '...' : $proo->post_title;
-					if ( ($is_manager || $is_switched_manager) && $quote_type_bridgeport_req === 'yes' ) {
+					if ( is_manager_or_switched_manager( $current_user ) && $quote_type_bridgeport_req === 'yes' ) {
 						if ( has_term( 'bridgeport', 'product_brand', $product->ID ) ) {
 							$data_array[] = array( $product->ID, $title );
 						}
@@ -1068,7 +1055,7 @@ class AF_R_F_Q_Ajax_Controller {
 				$sku = get_post_meta($product->ID, '_sku', true);
 				$title = '(' . $sku . ') ';
 				$title .= ( mb_strlen( $product->post_title ) > 50 ) ? mb_substr( $product->post_title, 0, 49 ) . '...' : $product->post_title;
-				if ( ($is_manager || $is_switched_manager) && $quote_type_bridgeport_req === 'yes' ) {
+				if ( is_manager_or_switched_manager( $current_user ) && $quote_type_bridgeport_req === 'yes' ) {
 					if ( has_term( 'bridgeport', 'product_brand', $product->ID ) ) {
 						$data_array[] = array( $product->ID , $title );
 					}
@@ -1323,9 +1310,8 @@ class AF_R_F_Q_Ajax_Controller {
 			}
 
 			if ( is_user_logged_in() ) {
-				delete_user_meta( get_current_user_id(), $context_key , null );
-				update_user_meta(get_current_user_id(), 'quote_pricing_groups', null);
-				update_user_meta(get_current_user_id(), $context_key, null );
+				update_user_meta($user_id, 'quote_pricing_groups', null);
+				update_user_meta($user_id, $context_key, null );
 			}
 
 			wp_send_json_success();
@@ -1339,18 +1325,12 @@ class AF_R_F_Q_Ajax_Controller {
 			$context_key = get_current_user_contextual_quote_type_key();
 			$user_id = get_current_user_id();
 
-			if ( WC()->session->get( 'selected_quote_type' ) ) {
-				WC()->session->__unset( 'selected_quote_type' );
-			}
-
 			if ( WC()->session->get( $context_key ) ) {
 				WC()->session->__unset( $context_key );
 			}
 
 			if ( is_user_logged_in() ) {
-				delete_user_meta( get_current_user_id(), $context_key , null );
-				update_user_meta(get_current_user_id(), 'selected_quote_type', null);
-				update_user_meta(get_current_user_id(), $context_key, null );
+				delete_user_meta( $user_id, $context_key , null );
 			}
 
 			wp_send_json_success();
@@ -1804,12 +1784,8 @@ class AF_R_F_Q_Ajax_Controller {
 				}
 
 				$current_user = wp_get_current_user();
-				$admin_id     = function_exists('get_original_admin_id') ? get_original_admin_id() : 0;
-				$admin_user   = $admin_id ? get_userdata($admin_id) : null;
-				$is_manager   = in_array($current_user->roles[0] ?? '', ['shop_manager', 'dual_shop_manager'], true);
-				$is_switched_manager = function_exists('is_switched_customer') && is_switched_customer() && $admin_user && in_array($admin_user->roles[0] ?? '', ['shop_manager', 'dual_shop_manager'], true);
 
-				if ( ($is_manager || $is_switched_manager) && $quote_type_id > 0 ) {
+				if ( is_manager_or_switched_manager( $current_user ) && $quote_type_id > 0 ) {
 					$quote_type_bridgeport_only = get_post_meta($quote_type_id, 'quote_type_bridgeport_brand', true);
 					$quote_type_discount_rules  = get_post_meta($quote_type_id, 'quote_type_discount_rules', true);
 
@@ -2099,11 +2075,7 @@ class AF_R_F_Q_Ajax_Controller {
 			$quote_type_id = !empty($selected_quote_type['id']) ? intval($selected_quote_type['id']) : 0;
 			$current_user = wp_get_current_user();
 			$allowed_roles = [ 'shop_manager', 'dual_shop_manager' ];
-			$admin_id = get_original_admin_id();
-			$admin_user = $admin_id ? get_userdata($admin_id) : null;
-			$is_manager = in_array( $current_user->roles[0], $allowed_roles, true );
-			$is_switched_manager = is_switched_customer() && $admin_user && in_array( $admin_user->roles[0], $allowed_roles, true );
-			if ( $is_manager || $is_switched_manager ) {
+			if ( is_manager_or_switched_manager( $current_user ) ) {
 				if (!$quote_type_id) {
 					wp_send_json_error(array('code' => 'no_quote_type'));
 					die();

@@ -35,18 +35,12 @@ if ( WC()->session ) {
 		<?php
 		global $addify_rfq;
 		$current_user = wp_get_current_user();
-		$user_roles = (array) $current_user->roles;
-		$admin_id = get_original_admin_id();
-		$admin_user = $admin_id ? get_userdata($admin_id) : null;
-		$admin_user_roles = $admin_user ? (array) $admin_user->roles : [];
 
 		foreach ( wc_get_account_menu_items() as $endpoint => $label ) : ?>
 			<li class="<?php echo wc_get_account_menu_item_classes( $endpoint ); ?>">
 				<?php
-				$is_manager = in_array( 'dual_shop_manager', $user_roles, true ) || in_array( 'shop_manager', $user_roles, true );
-				$is_switched_manager = is_switched_customer() && ( in_array( 'dual_shop_manager', $admin_user_roles, true ) || in_array( 'shop_manager', $admin_user_roles, true ) );
 				$has_selected_quote_type = get_current_user_quote_type_value();
-				if ( $endpoint === 'request-a-quote' && ( $is_manager || $is_switched_manager ) && ! $has_quote_items_in_session && ! $has_selected_quote_type ) : ?>
+				if ( $endpoint === 'request-a-quote' && is_manager_or_switched_manager( $current_user ) && ! $has_quote_items_in_session && ! $has_selected_quote_type ) : ?>
 					<a href="javascript:void(0);" class="open-new-quote-popup">
 						<?php echo esc_html( $label ); ?>
 					</a>

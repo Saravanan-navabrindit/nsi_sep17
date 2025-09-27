@@ -2264,28 +2264,13 @@ if ( ! class_exists( 'Crown_Shop_Rfq' ) ) {
                 $product       = wc_get_product($product_id);
 
                 $current_user = wp_get_current_user();
-                $allowed_roles = [ 'shop_manager', 'dual_shop_manager' ];
-                $context_key = get_current_user_contextual_quote_type_key();
-                $selected_quote_type = WC()->session->get($context_key);
 
-                $selected_quote_type_id = 0;
-                $user_selected_quote_type = get_user_meta(get_current_user_id(), $context_key);
-                $session_selected_quote_type = WC()->session->get( $context_key );
-                if(!null == $user_selected_quote_type){
-                    $selected_quote_type = $user_selected_quote_type[0]['id'];
-                } else {
-                    !empty($session_selected_quote_type) === $selected_quote_type = $session_selected_quote_type['id'] ? : 0;
-                }
-                $selected_quote_type_id = $selected_quote_type;
+                $selected_quote_type_id = get_selected_quote_type_id();
                 $quote_type_bridgeport_req = get_post_meta($selected_quote_type_id, 'quote_type_bridgeport_brand', true);
 
                 $allow_product = true;
-                $admin_id = get_original_admin_id();
-                $admin_user = $admin_id ? get_userdata($admin_id) : null;
-                $is_manager = in_array( $current_user->roles[0], $allowed_roles, true );
-                $is_switched_manager = is_switched_customer() && $admin_user && in_array( $admin_user->roles[0], $allowed_roles, true );
 
-                if ( ( $is_manager || $is_switched_manager ) && $quote_type_bridgeport_req === 'yes' ) {
+                if ( is_manager_or_switched_manager( $current_user ) && $quote_type_bridgeport_req === 'yes' ) {
                     $allow_product = false;
 
                     if ($product) {
@@ -2812,27 +2797,13 @@ if ( ! class_exists( 'Crown_Shop_Rfq' ) ) {
             }
 
             $current_user   = wp_get_current_user();
-            $allowed_roles = [ 'shop_manager', 'dual_shop_manager' ];
-	        $selected_quote_type_id = 0;
-            $context_key = get_current_user_contextual_quote_type_key();
-            $user_selected_quote_type = get_user_meta(get_current_user_id(), $context_key);
-            $session_selected_quote_type = WC()->session->get( $context_key );
-            if(!null == $user_selected_quote_type){
-                $selected_quote_type = $user_selected_quote_type[0]['id'];
-            } else {
-                !empty($session_selected_quote_type) === $selected_quote_type = $session_selected_quote_type['id'] ? : 0;
-            }
-            $selected_quote_type_id = $selected_quote_type;
+            $selected_quote_type_id = get_selected_quote_type_id();
 
             $quote_type_bridgeport_req = get_post_meta($selected_quote_type_id, 'quote_type_bridgeport_brand', true);
 
             $require_bridgeport = false;
-            $admin_id = get_original_admin_id();
-            $admin_user = $admin_id ? get_userdata($admin_id) : null;
-            $is_manager = in_array( $current_user->roles[0], $allowed_roles, true );
-            $is_switched_manager = is_switched_customer() && $admin_user && in_array( $admin_user->roles[0], $allowed_roles, true );
 
-            if ( ( $is_manager || $is_switched_manager ) && $quote_type_bridgeport_req === 'yes' ) {
+            if ( is_manager_or_switched_manager( $current_user ) && $quote_type_bridgeport_req === 'yes' ) {
                 $require_bridgeport = true;
             }
 

@@ -8,9 +8,9 @@ function addify_render_quote_type_popup() {
     get_template_part( 'woocommerce/addify/rfq/my-account/select-quote-type' );
 }
 
-add_action( 'wp_ajax_set_selected_quote_type', 'my_set_selected_quote_type' );
+add_action( 'wp_ajax_set_selected_quote_type', 'set_selected_quote_type' );
 
-function my_set_selected_quote_type() {
+function set_selected_quote_type() {
      if ( ! isset( $_POST['id'], $_POST['title'] ) || ! WC()->session ) {
         wp_send_json_error( array( 'message' => 'Missing data or session.' ) );
         return;
@@ -47,12 +47,12 @@ function my_set_selected_quote_type() {
     ) );
 }
 
-add_action( 'wp_ajax_nopriv_set_selected_quote_type', 'my_set_selected_quote_type' );
+add_action( 'wp_ajax_nopriv_set_selected_quote_type', 'set_selected_quote_type' );
 
-add_action( 'wp_ajax_unset_selected_quote_type', 'my_unset_selected_quote_type' );
-add_action( 'wp_ajax_nopriv_unset_selected_quote_type', 'my_unset_selected_quote_type' );
+add_action( 'wp_ajax_unset_selected_quote_type', 'unset_selected_quote_type' );
+add_action( 'wp_ajax_nopriv_unset_selected_quote_type', 'unset_selected_quote_type' );
 
-function my_unset_selected_quote_type() {  
+function unset_selected_quote_type() {  
     if ( ! WC()->session ) {
         wp_send_json_error( array( 'message' => 'WooCommerce session not available.' ) );
         return;
@@ -68,16 +68,16 @@ function my_unset_selected_quote_type() {
 }
 
 
-add_action('wp_ajax_get_selected_quote_type', 'my_get_selected_quote_type');
-add_action('wp_ajax_nopriv_get_selected_quote_type', 'my_get_selected_quote_type');
+add_action('wp_ajax_get_selected_quote_type', 'get_selected_quote_type');
+add_action('wp_ajax_nopriv_get_selected_quote_type', 'get_selected_quote_type');
 
-function my_get_selected_quote_type() {
+function get_selected_quote_type() {
     $data = null;
     $context_key = get_current_user_contextual_quote_type_key();
     if (function_exists('WC') && WC()->session) {
         $user_selected_quote_type = get_user_meta(get_current_user_id(), $context_key);
 		$session_selected_quote_type = WC()->session->get( $context_key );
-		if(!null == $user_selected_quote_type){
+		if($user_selected_quote_type !== null){
 			$data = $user_selected_quote_type[0];
         }else {
             $data = WC()->session->get($context_key);
@@ -87,7 +87,7 @@ function my_get_selected_quote_type() {
     wp_send_json_success($data);
 }
 
-function my_theme_enqueue_scripts() {
+function theme_enqueue_scripts() {
     // Enqueue the JS
     wp_enqueue_script(
         'my-theme-custom',
@@ -106,7 +106,7 @@ function my_theme_enqueue_scripts() {
         )
     );
 }
-add_action('wp_enqueue_scripts', 'my_theme_enqueue_scripts');
+add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
 
 add_filter('script_loader_tag', function($tag, $handle, $src) {
     if ($handle === 'my-main-js') {
@@ -176,15 +176,7 @@ function get_current_user_quote_type_value() {
 add_action( 'template_redirect', 'restrict_url_based_on_session' );
 
 function restrict_url_based_on_session() {
-    $context_key = get_current_user_contextual_quote_type_key();
-    $user_selected_quote_type = get_user_meta(get_current_user_id(), $context_key);
-    $session_selected_quote_type = WC()->session->get( $context_key );
-    if(!null == $user_selected_quote_type){
-        $selected_quote_type = $user_selected_quote_type[0]['id'];
-    } else {
-        !empty($session_selected_quote_type) === $selected_quote_type = $session_selected_quote_type['id'] ? : 0;
-    }
-    $selected_quote_type_id = $selected_quote_type;
+    $selected_quote_type_id = get_selected_quote_type_id();
     // The URL (slug or path) you want to restrict
     $restricted_slug = 'request-a-quote'; 
     

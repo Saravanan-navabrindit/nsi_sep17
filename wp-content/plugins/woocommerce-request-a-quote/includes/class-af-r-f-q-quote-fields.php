@@ -509,15 +509,7 @@ class AF_R_F_Q_Quote_Fields {
 	 * Validate Fields.a
 	 */
 	public function afrfq_validate_fields_data( $data ) {
-		$context_key = get_current_user_contextual_quote_type_key();
-		$user_selected_quote_type = get_user_meta(get_current_user_id(), $context_key);
-		$session_selected_quote_type = WC()->session->get( $context_key );
-		if(!null == $user_selected_quote_type){
-			$selected_quote_type = $user_selected_quote_type[0]['id'];
-		} else {
-			!empty($session_selected_quote_type) === $selected_quote_type = $session_selected_quote_type['id'] ? : 0;
-		}
-		$quote_type_id = $selected_quote_type;
+		$quote_type_id = get_selected_quote_type_id();
 		
 		$messages = array();
 

@@ -10,15 +10,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-$context_key = get_current_user_contextual_quote_type_key();
-$user_selected_quote_type = get_user_meta(get_current_user_id(), $context_key);
-$session_selected_quote_type = WC()->session->get( $context_key );
-if(!null == $user_selected_quote_type){
-    $selected_quote_type = $user_selected_quote_type[0]['id'];
-} else {
-    !empty($session_selected_quote_type) === $selected_quote_type = $session_selected_quote_type['id'] ? : 0;
-}
-$quote_type_id = $selected_quote_type;
+$quote_type_id = get_selected_quote_type_id();
 $has_discount_rules  = ( 'yes' === get_post_meta( $quote_type_id, 'quote_type_discount_rules', true ) );
 
 $user_id = get_current_user_id();

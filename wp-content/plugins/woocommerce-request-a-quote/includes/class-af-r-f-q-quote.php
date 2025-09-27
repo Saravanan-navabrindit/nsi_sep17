@@ -1093,15 +1093,7 @@ class AF_R_F_Q_Quote {
 				$quote_type_name = $addify_rfq->quote_types_obj->afrfq_get_quote_type_name( $selected_quote_type );
 					add_post_meta( $quote_id, 'quote_type', $selected_quote_type );
 			}else {
-				$user_selected_quote_type = get_user_meta(get_current_user_id(), $context_key);
-                $session_selected_quote_type = WC()->session->get( $context_key );
-                if(!null == $user_selected_quote_type){
-                    $selected_quote_type = $user_selected_quote_type[0]['id'];
-                } else {
-                    !empty($session_selected_quote_type) === $selected_quote_type = $session_selected_quote_type['id'] ? : 0;
-                }
-
-				add_post_meta( $quote_id, 'quote_type', $selected_quote_type );
+				add_post_meta( $quote_id, 'quote_type', get_selected_quote_type_id() );
 			}
 			$quote_fields = $af_fields_obj->afrfq_get_fields_enabled();
 
@@ -1203,14 +1195,7 @@ class AF_R_F_Q_Quote {
 		$af_fields_obj = new AF_R_F_Q_Quote_Fields();
     	$all_quote_fields = (array) $af_fields_obj->quote_fields;
 		$context_key = get_current_user_contextual_quote_type_key();
-		$selected_quote_type = WC()->session->get( $context_key );
-		$user_selected_quote_type = get_user_meta(get_current_user_id(), $context_key);
-        $session_selected_quote_type = WC()->session->get( $context_key );
-        if(!null == $user_selected_quote_type){
-            $quote_type_id = $user_selected_quote_type[0]['id'];
-        } else {
-            !empty($session_selected_quote_type) === $quote_type_id = $session_selected_quote_type['id'] ? : 0;
-        }
+		$quote_type_id = get_selected_quote_type_id();
 		foreach ( $all_quote_fields as $field ) {
 			$field_id = $field->ID;
 			$is_required = ( 'yes' === get_post_meta( $field_id, 'afrfq_field_required', true ) );

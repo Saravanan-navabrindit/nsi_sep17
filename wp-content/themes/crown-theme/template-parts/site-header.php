@@ -73,19 +73,26 @@
                     $quotes = (array)$wc_session->get('quotes');
                     $pricing_quotes = (array)$wc_session->get('quote_pricing_groups');
                     $context_key = get_current_user_contextual_quote_type_key();
-                    if(!empty(get_user_meta(get_current_user_id(), 'quote_pricing_groups'))) {
-                      $pricing_quotes = (array) get_user_meta(get_current_user_id(), 'quote_pricing_groups')[0];
+                    $user_id = get_current_user_id();
+                    $user_pricing = get_user_meta( $user_id, 'quote_pricing_groups', true );
+
+                    if ( ! empty( $user_pricing ) ) {
+                        $pricing_quotes = (array) $user_pricing;
                     }
+
                     $quote_url = get_page_link(get_option('addify_atq_page_id', true));
                     foreach ($quotes as $qoute_item) {
                         $quote_item_count += $qoute_item['quantity'] ?? 0;
                     }
-                    $user_selected_quote_type = get_user_meta(get_current_user_id(), $context_key);
-                    $session_selected_quote_type = WC()->session->get( $context_key );
-                    if(!null == $user_selected_quote_type){
-                        $selected_quote_type = $user_selected_quote_type[0]['id'];
+                    $meta_data = get_user_meta( $user_id, $context_key, true );
+                    $session   = WC()->session ? WC()->session->get( $context_key ) : null;
+
+                    if ( ! empty( $meta_data['id'] ) ) {
+                        $selected_quote_type = $meta_data['id'];
+                    } elseif ( ! empty( $session['id'] ) ) {
+                        $selected_quote_type = $session['id'];
                     } else {
-                        !empty($session_selected_quote_type) === $selected_quote_type = $session_selected_quote_type['id'] ? : 0;
+                        $selected_quote_type = 0;
                     }
                     $quote_type_id = $selected_quote_type;
                     $has_discount_rules = ( get_post_meta( $quote_type_id, 'quote_type_discount_rules', true ) === 'yes' );
@@ -96,7 +103,7 @@
                     $logger->error('WC session was not created for getting quotes', array('source' => 'db_issues'));
                 }
                 ?>
-                <?php if (( $quote_item_count > 0 ) || ($has_discount_rules)) { ?>
+                <?php if ( is_user_logged_in() && ( $quote_item_count > 0 || $has_discount_rules ) ) { ?>
                   <li class="menu-item quote">
                     <a href="<?php echo $quote_url; ?>">
 											<span class="icon">

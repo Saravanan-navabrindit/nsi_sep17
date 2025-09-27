@@ -30,10 +30,6 @@
             $add_to_cart_button = '';
             $current_user = wp_get_current_user();
             $user_role    = $current_user->roles[0] ?? '';
-            $admin_id     = get_original_admin_id();
-            $admin_user   = $admin_id ? get_userdata( $admin_id ) : null;
-            $is_manager = in_array( $current_user->roles[0] ?? '', [ 'shop_manager', 'dual_shop_manager' ], true );
-            $is_switched_manager = is_switched_customer() && $admin_user && in_array( $admin_user->roles[0] ?? '', [ 'shop_manager', 'dual_shop_manager' ], true );
 
             $context_key = get_current_user_contextual_quote_type_key();
             if ( $user_role === 'customer' ) {
